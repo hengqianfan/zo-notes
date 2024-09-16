@@ -1,0 +1,105 @@
+@import '../../style/vars.scss';
+
+.page-webdesign-all {
+    height: 90vh;
+    width: 100%;
+
+    .pw-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $my_bg_color_01;
+
+
+        .pw-card-group {
+            margin-top: 20px;
+            width: 95%;
+            min-height: 300px;
+            background-color: $my_bg_color_02 ;
+            display: flex;
+            flex-direction: column;
+            padding: .625rem;
+            border-radius: 15px;
+            box-shadow: 0.125rem 0.125rem .25rem #b3c0a4,
+                -0.125rem -0.125rem .25rem #d3e2c0;
+
+
+            .pw-card-group-title {
+                margin-top: .625rem;
+                margin-left: .625rem;
+                background-color: $my_bg_color_01;
+                height: 50px;
+                width: 200px;
+                line-height: 50px;
+                text-align: center;
+                font-size: 20px;
+                font-family: '剑豪体';
+                color: $my_bg_color_03;
+                border-radius: 15px;
+                box-shadow: 0.125rem 0.125rem .1875rem #b3c0a4,
+                    -0.125rem -0.125rem .1875rem #d3e2c0;
+            }
+
+            .pw-card-group-content {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding: 20px;
+
+
+
+                .pw-show-card {
+                    margin: 20px;
+                    width: 180px;
+                    height: 220px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    background: #d9e2db;
+                    box-shadow: .125rem .125rem .1875rem #c3cbc5,
+                        -0.125rem -0.125rem .1875rem #eff9f1;
+
+                    .pw-show-card-name {
+
+                        width: 120px;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 14px;
+                        color: $my_bg_color_03;
+                        background: #d9e2db;
+
+                        box-shadow: .125rem .125rem .1875rem #c3cbc5,
+                            -0.125rem -0.125rem .1875rem #eff9f1;
+                    }
+
+
+
+                    .pw-show-card-icon {
+                        margin-bottom: 1.25rem;
+                        width: 110px;
+                        height: 110px;
+                        padding: 5px;
+                        background-color: $my_bg_color_02;
+
+                        background: #d9e2db;
+                        box-shadow: .125rem .125rem .1875rem #c3cbc5,
+                            -0.125rem -0.125rem .1875rem #eff9f1;
+
+                    }
+
+
+                }
+            }
+
+
+        }
+
+
+    }
+}

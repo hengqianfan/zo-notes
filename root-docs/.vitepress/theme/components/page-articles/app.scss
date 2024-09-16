@@ -1,0 +1,128 @@
+// 移动端适配
+// 这个页面如果只使用 rem 的适配，比例不好看
+// 所以 文章卡片 特别缩放了 0.7 倍 
+@media (min-width: 0) and (max-width: 62.5rem) {
+    .page-articles-all {
+
+
+        .pa-content {
+            //  app 特别调整的样式，保证两个卡片并行 
+            padding-left: 1.25rem !important;
+
+            .pa-article-card {
+
+                margin: 1.3125rem !important;
+                width: 7.875rem !important;
+                height: 11.375rem !important;
+                border-radius: .75rem;
+
+
+
+                .pa-article-card-icon {
+                    margin-top: .875rem !important;
+                    padding: .4375rem !important;
+                    width: 4.375rem !important;
+                    height: 4.375rem !important;
+                    border-radius: .75rem;
+
+
+
+                }
+
+                .pa-article-card-title {
+                    margin-top: .875rem !important;
+                    padding: 0 .375rem !important;
+                    font-size: .75rem !important;
+                    border-radius: .5rem;
+
+
+
+                }
+
+                .pa-article-card-zoid {
+                    margin-top: .875rem !important;
+                    padding: 0 .375rem !important;
+
+
+                    border-radius: .25rem;
+
+                    font-size: .75rem !important;
+
+
+                }
+            }
+
+            // 文章卡片悬浮的时候
+            .pa-article-card:hover {
+                background-color: #7399b0;
+                margin: 1.875rem;
+                width: 11.25rem;
+                height: 16.25rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                box-shadow: none;
+
+
+
+
+
+                .pa-article-card-icon {
+                    margin-top: 1.25rem;
+                    padding: .625rem;
+                    width: 6.25rem;
+                    height: 6.25rem;
+                    background-color: #7399b0;
+
+
+                    border-radius: .3125rem;
+
+                    box-shadow: .3125rem .3125rem .625rem #688a9e,
+                        -0.3125rem -0.3125rem .625rem #7fa8c2;
+
+
+                }
+
+                .pa-article-card-title {
+                    margin-top: 1.25rem;
+                    padding: 0 .5rem;
+
+
+                    text-align: center;
+
+                    font-size: 1.125rem;
+                    font-weight: 800;
+                    font-family: "剑豪体";
+
+
+                    // color: #133717;
+
+                    color: #ffffff;
+                    background-color: #7399b0;
+
+                    box-shadow: .3125rem .3125rem .625rem #688a9e,
+                        -0.3125rem -0.3125rem .625rem #7fa8c2;
+                }
+
+                .pa-article-card-zoid {
+                    margin-top: 1.25rem;
+                    padding: 0 .3125rem;
+                    background-color: #7399b0;
+
+
+                    color: #e7e2e7;
+
+
+
+
+                    border-radius: .25rem;
+
+                    box-shadow: .3125rem .3125rem .625rem #688a9e,
+                        -0.3125rem -0.3125rem .625rem #7fa8c2;
+
+                }
+            }
+        }
+    }
+}

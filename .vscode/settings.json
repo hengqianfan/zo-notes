@@ -1,0 +1,18 @@
+{
+    // 这个文件是控制本项目在 VScode 软件环境内的用户配置
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [],
+    },
+    // 控制VSC软件左侧目录视图：文件与文件夹可以按名称混合排序
+    "explorer.sortOrder": "mixed",
+    // 开启markdown语法的代码提示
+    "[markdown]": {
+        "editor.renderWhitespace": "all",
+        "editor.quickSuggestions": {
+            "other": "on",
+            "comments": "on",
+            "strings": "on"
+        },
+        "editor.acceptSuggestionOnEnter": "on"
+    }
+}

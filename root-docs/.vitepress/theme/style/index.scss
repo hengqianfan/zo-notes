@@ -1,0 +1,29 @@
+// 引入自定义变量
+@import './vars.scss';
+
+
+// vitepress 自带的样式
+// @import 'vitepress.scss';
+
+// 
+@import 'fans.scss';
+
+// 字体样式
+@import 'font.scss';
+
+
+@import 'vp-block.scss';
+
+
+// medium-zoom 的样式
+.medium-zoom-overlay {
+    z-index: 20;
+}
+
+.medium-zoom-image {
+    z-index: 21;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

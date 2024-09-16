@@ -1,0 +1,98 @@
+:root {
+    // --vp-custom-block-font-size: 14px;
+    // --vp-custom-block-code-font-size: 13px;
+
+
+    .custom-block.info {
+        //  这里只能改颜色
+        --vp-custom-block-info-border: transparent;
+        //  所以自己重写一个覆盖
+        border: 2px dashed gray;
+        --vp-custom-block-info-text: var(--vp-c-text-1);
+        --vp-custom-block-info-bg: #f1efef;
+        --vp-custom-block-info-code-bg: var(--vp-c-default-soft);
+    }
+
+    & {
+        --vp-custom-block-note-border: transparent;
+        --vp-custom-block-note-text: var(--vp-c-text-1);
+        --vp-custom-block-note-bg: var(--vp-c-default-soft);
+        --vp-custom-block-note-code-bg: var(--vp-c-default-soft);
+    }
+
+    .custom-block.tip {
+        //  这里只能改颜色
+        --vp-custom-block-tip-border: transparent;
+        //  所以自己重写一个覆盖
+        // border: 2px dashed #4a426a;
+        border: 2px dashed #2d1a76;
+
+        --vp-custom-block-tip-text: var(--vp-c-text-1);
+        --vp-custom-block-tip-bg: #d9d1f3;
+        color: rgb(25, 31, 24);
+        --vp-custom-block-tip-code-bg: var(--vp-c-tip-soft);
+    }
+
+
+
+    .custom-block.warning {
+        //  这里只能改颜色
+        --vp-custom-block-warning-border: transparent;
+        //  所以自己重写一个覆盖
+        // border: 2px dashed #7e7e40;
+        border: 2px dashed #bb4322;
+        border: 2px dashed #454ece;
+
+
+        --vp-custom-block-warning-text: var(--vp-c-text-1);
+        // --vp-custom-block-warning-bg: #fcfcbe;
+        --vp-custom-block-warning-bg: #c8e7ee;
+
+        --vp-custom-block-warning-code-bg: var(--vp-c-warning-soft);
+        --vp-custom-block-warning-code-bg: #1e5aa8;
+
+
+    }
+
+    .custom-block.warning a,
+    .custom-block.warning code {
+        color: white;
+    }
+
+
+
+
+
+    .custom-block.danger {
+        //  这里只能改颜色
+        --vp-custom-block-danger-border: red;
+        //  所以自己重写一个覆盖
+        border: 2px dashed red;
+        --vp-custom-block-danger-text: var(--vp-c-text-1);
+        --vp-custom-block-danger-bg: #fbe2e5;
+        --vp-custom-block-danger-code-bg: var(--vp-c-danger-soft);
+        transition: 1s ease;
+    }
+
+
+    .custom-block.details {
+        --vp-custom-block-details-border: var(--vp-custom-block-info-border);
+        border: 2px dashed transparent;
+
+        --vp-custom-block-details-text: var(--vp-custom-block-info-text);
+        --vp-custom-block-details-bg: var(--vp-custom-block-info-bg);
+        --vp-custom-block-details-code-bg: var(--vp-custom-block-info-code-bg);
+        transition: 1s ease;
+    }
+
+
+    .custom-block.details:hover {
+        --vp-custom-block-details-border: var(--vp-custom-block-info-border);
+        border: 2px dashed rgb(19, 16, 16);
+        --vp-custom-block-details-text: var(--vp-custom-block-info-text);
+        --vp-custom-block-details-bg: var(--vp-custom-block-info-bg);
+        --vp-custom-block-details-code-bg: var(--vp-custom-block-info-code-bg);
+    }
+
+
+}

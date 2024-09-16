@@ -1,0 +1,288 @@
+.page-articles-all {
+
+    width: 100%;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: row;
+
+
+    .pa-main {
+        width: 80%;
+        max-height: 80vh;
+
+
+        .pa-navbar {
+
+            min-height: 50px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            background-color: white;
+            border-bottom: 1px dashed rgb(182, 182, 232);
+            position: relative;
+
+            .pa-navbar-info {
+                background-color: #5b6187;
+                width: 500px;
+                height: 50px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                border-radius: 20px;
+
+                .pa-navbar-info-item {
+                    width: 100px;
+                    height: 30px;
+                    padding: 2px;
+                    background-color: #c3cbc5;
+                    display: flex;
+                    flex-direction: row;
+                    text-align: center;
+                    line-height: 30px;
+                }
+            }
+
+
+            .pa-navbar-search {
+                margin: 20px 0;
+                width: 18%;
+                // 设置最小宽度是为了手机端看上去比例和谐
+                // 因为手机端的18% 是占屏幕是很少的
+                min-width: 120px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+
+
+
+        }
+
+        .pa-tabbar {
+            margin: 10px;
+
+            background-color: #abc9da;
+            padding: 20px;
+            border-radius: 20px;
+            // transition: all 0.8s ease;
+
+
+
+            .pa-navbar-tabbar-item {
+                margin: 10px;
+                min-width: 100px;
+                padding: 0 10px;
+                transition: all 0.8s ease;
+
+
+                .pa-navbar-tabbar-item-text {
+                    font-weight: 500;
+                }
+
+                .pa-navbar-tabbar-item-num {
+                    margin-left: 5px;
+                    width: 16px;
+                    height: 16px;
+                    background-color: #d0a451;
+                    border-radius: 8px;
+                    line-height: 16px;
+                    text-align: center;
+                    color: white;
+                    font-size: 9px;
+                }
+
+
+            }
+
+            .pa-navbar-tabbar-item:hover {
+                .pa-navbar-tabbar-item-num {
+                    background-color: red;
+                }
+            }
+
+
+        }
+
+        .pa-content {
+            display: flex;
+            flex-direction: row;
+            min-height: 60vh;
+            width: 100%;
+            padding-left: 10px;
+
+            position: relative;
+
+            .list {
+                height: 80vh;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                overflow-x: scroll;
+
+                .pa-article-card {
+
+                    margin: 20px;
+                    width: 180px;
+                    height: 260px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    border-radius: 12px;
+
+                    background: $my_bg_color_05;
+
+                    box-shadow: 2px 2px 3px #c3cbc5,
+                        -2px -2px 3px #eff9f1;
+
+
+                    transition: all 0.8s ease;
+
+
+                    .pa-article-card-icon {
+                        margin-top: 20px;
+                        padding: 10px;
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 12px;
+
+                        background: #d9e2db;
+                        box-shadow: 2px 2px 3px #c3cbc5,
+                            -2px -2px 3px #eff9f1;
+
+                        transition: all 0.8s ease;
+
+
+
+                    }
+
+                    .pa-article-card-title {
+                        margin-top: 20px;
+                        padding: 0 8px;
+                        max-width: 160px;
+                        background-color: white;
+                        text-align: center;
+
+                        font-size: 18px;
+                        font-weight: 800;
+                        font-family: "剑豪体";
+                        border-radius: 8px;
+                        background: #d9e2db;
+                        box-shadow: 2px 2px 3px #c3cbc5,
+                            -2px -2px 3px #eff9f1;
+
+                        transition: all 0.8s ease;
+
+
+                    }
+
+                    .pa-article-card-zoid {
+                        margin-top: 20px;
+                        padding: 0 10px;
+
+
+                        color: #5b6187;
+                        border-radius: 4px;
+                        border-radius: 44px;
+                        background: #d9e2db;
+                        box-shadow: 2px 2px 3px $my_bg_color_02_a inset,
+                            -2px -2px 3px $my_bg_color_02_b inset;
+                        transition: all 0.8s ease;
+
+                    }
+                }
+
+                // 文章卡片悬浮的时候
+                .pa-article-card:hover {
+                    background-color: $my_bg_color_04;
+
+
+                    box-shadow: none;
+
+
+
+
+
+                    .pa-article-card-icon {
+                        margin-top: 20px;
+                        padding: 10px;
+                        width: 100px;
+                        height: 100px;
+                        background-color: #7399b0;
+
+
+                        border-radius: 5px;
+
+                        box-shadow: 5px 5px 10px #688a9e,
+                            -5px -5px 10px #7fa8c2;
+
+
+                    }
+
+                    .pa-article-card-title {
+                        margin-top: 20px;
+                        padding: 0 8px;
+
+
+                        text-align: center;
+
+                        font-size: 18px;
+                        font-weight: 800;
+                        font-family: "剑豪体";
+
+
+                        // color: #133717;
+
+                        color: #ffffff;
+                        background-color: #7399b0;
+
+                        box-shadow: 5px 5px 10px #688a9e,
+                            -5px -5px 10px #7fa8c2;
+                    }
+
+                    .pa-article-card-zoid {
+
+                        background-color: #7399b0;
+
+                        color: #e7e2e7;
+
+                        box-shadow: 5px 5px 10px #688a9e inset,
+                            -5px -5px 10px #7fa8c2 inset;
+
+                    }
+                }
+
+            }
+
+
+        }
+
+
+    }
+
+    .pa-side {
+        width: 20%;
+        max-height: 90vh;
+        background-color: aliceblue;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+
+    }
+
+}
+
+.test1 {
+    transition: all 0.8s ease;
+
+}
