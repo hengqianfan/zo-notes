@@ -11,12 +11,6 @@
     flex-direction: column;
     justify-content: flex-start;
 
-
-
-
-
-
-
     .ps-nav {
         // 此处必须设置最小高度，否则加入 overflow 属性会消失（原因不明）
         min-height: 3.125rem;
@@ -26,18 +20,11 @@
         justify-content: space-between;
         align-items: center;
 
-
-
         overflow-x: scroll;
-
 
 
         box-shadow: 0.125rem 0.125rem .25rem $my_bg_color_02_a,
             -0.125rem -0.125rem .25rem $my_bg_color_02_b;
-
-
-
-
 
 
         .ps-nav-item {

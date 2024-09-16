@@ -130,7 +130,7 @@ const toPage = (momo) => {
             // box-shadow: 2px 2px 3px #c3cbc5,
             //     -2px -2px 3px #eff9f1;
 
-
+            overflow: hidden;
         }
     }
 

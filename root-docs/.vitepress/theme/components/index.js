@@ -9,7 +9,7 @@ import PageNotes from './page-of-notes/index.vue'
 
 import PageArticles from './page-articles/index.vue'
 
-import PageSites from './page-of-sites/index.vue'
+import PageSites from './page-sites/index.vue'
 
 import PageTask from './page-task/index.vue'
 

@@ -12,6 +12,7 @@
 
 
         .pa-navbar {
+            padding: 0 10px;
 
             min-height: 50px;
             width: 100%;
@@ -25,25 +26,54 @@
             position: relative;
 
             .pa-navbar-info {
-                background-color: #5b6187;
-                width: 500px;
+                margin: 10px;
+
+                // background-color: #5b6187;
+                border: 1px dashed rgb(182, 182, 232);
+
+                min-width: 520px;
                 height: 50px;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
                 align-items: center;
-                border-radius: 20px;
+                border-radius: 10px;
 
                 .pa-navbar-info-item {
-                    width: 100px;
-                    height: 30px;
-                    padding: 2px;
-                    background-color: #c3cbc5;
+                    width: 140px;
+                    height: 40px;
+                    padding: 10px;
+                    background-color: #99b8a1;
                     display: flex;
                     flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
                     text-align: center;
                     line-height: 30px;
+                    border-radius: 5px;
+
+                    .pa-navbar-info-item-title {
+                        padding: 0 8px;
+                        width: 120px;
+                        height: 30px;
+                        line-height: 30px;
+                        background-color: #c4f4c3;
+                        color: rgb(202, 180, 38);
+                    }
+
+
+                    .pa-navbar-info-item-num {
+                        margin-left: 10px;
+                        width: 16px;
+                        height: 16px;
+                        line-height: 16px;
+                        font-size: 14px;
+                        background-color: rgb(229, 177, 137);
+                        text-align: center;
+                    }
                 }
+
+
             }
 
 
@@ -159,8 +189,7 @@
 
                         transition: all 0.8s ease;
 
-
-
+                        text-overflow: ellipsis
                     }
 
                     .pa-article-card-title {

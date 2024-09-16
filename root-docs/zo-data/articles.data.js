@@ -8,6 +8,36 @@ import { createContentLoader } from 'vitepress'
 import { reckonReadTime } from '../.vitepress/myscript/setArticleDatabase'
 
 
+const now_time = new Date().getTime()
+
+const getArticleTime = (id) => {
+    let arr = id.toString().split('')
+    let year = `20` + arr[0] + arr[1]
+    let month = `${arr[2]}` + `${arr[3]}`
+    let day = `${arr[4]}` + `${arr[5]}`
+    const res = new Date(`${year}-${month}-${day} 00:00:00`).getTime()
+
+    return res
+}
+
+const judgeIsMonthly = (time) => {
+    let res = now_time - time
+    if (res < 2592000000) {
+        return true
+    } else {
+        return false
+    }
+}
+const judgeIsWeekly = (time) => {
+    let res = now_time - time
+    if (res < 604800000) {
+        return true
+    } else {
+        return false
+    }
+}
+
+
 export default createContentLoader('zo-articles/*.md', {
     includeSrc: true, // 包含原始 markdown 源?
     excerpt: true,    // 包含摘录?
@@ -28,7 +58,38 @@ export default createContentLoader('zo-articles/*.md', {
             rawData[i].frontmatter.title = filename.split(' ')[1]
             // 文章ID
             rawData[i].frontmatter.id = filename.split(' ')[0]
-            // 文章链接
+            // 文章的时间戳
+            rawData[i].frontmatter.time = getArticleTime(filename.split(' ')[0])
+
+
+            // 判断是否为本月文章
+            rawData[i].frontmatter.isMonthly = judgeIsMonthly(rawData[i].frontmatter.time)
+
+            // 追加本月文章的标签
+            if (rawData[i].frontmatter.isMonthly) {
+                let arr = []
+                if (rawData[i].frontmatter.tags) {
+                    arr.push(...rawData[i].frontmatter.tags)
+                }
+                arr.push('本月文章')
+                rawData[i].frontmatter.tags = arr
+            }
+
+
+            // 判断是否为本周文章
+            rawData[i].frontmatter.isWeekly = judgeIsWeekly(rawData[i].frontmatter.time)
+
+
+            // 追加本周文章的标签
+            if (rawData[i].frontmatter.isWeekly) {
+                let arr = []
+                if (rawData[i].frontmatter.tags) {
+                    arr.push(...rawData[i].frontmatter.tags)
+                }
+                arr.push('本周文章')
+                rawData[i].frontmatter.tags = arr
+            }
+
 
         }
 

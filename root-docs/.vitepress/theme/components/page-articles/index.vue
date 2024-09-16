@@ -6,32 +6,20 @@
 
                 <div class="pa-navbar-info">
 
-                    <div class="pa-navbar-info-item">
-                        <div class="pa-navbar-info-item-title">
-                            全部文章
-                        </div>
-                        <div class="pa-navbar-info-item-num">
-                            {{ allnum }}
-                        </div>
-                    </div>
 
-                    <div class="pa-navbar-info-item">
-                        <div class="pa-navbar-info-item-title">
-                            全部文章
-                        </div>
-                        <div class="pa-navbar-info-item-num">
-                            {{ allnum }}
-                        </div>
-                    </div>
+                    <el-badge :value="allnum" class="item" type="primary" @click="findX(`全部文章`)">
+                        <el-button>全部文章</el-button>
+                    </el-badge>
 
-                    <div class="pa-navbar-info-item">
-                        <div class="pa-navbar-info-item-title">
-                            全部文章
-                        </div>
-                        <div class="pa-navbar-info-item-num">
-                            {{ allnum }}
-                        </div>
-                    </div>
+                    <el-badge :value="all_tags[`本月文章`]" class="item" type="primary" @click="findX(`本月文章`)">
+                        <el-button>本月文章</el-button>
+                    </el-badge>
+
+                    <el-badge :value="all_tags[`本周文章`]" class="item" type="primary" @click="findX(`本周文章`)">
+                        <el-button>本周文章</el-button>
+                    </el-badge>
+
+                    <el-button @click="re_arr(showData)">随机排序</el-button>
 
                 </div>
 
@@ -143,6 +131,9 @@ const showData = ref(data)
 const allnum = data.length
 
 
+
+
+
 const show_tabs = ref(false)
 
 // 定义 tag 对象
@@ -233,6 +224,8 @@ const toPage = (momo) => {
 }
 
 
+
+
 const findX = (momo, autoClose) => {
     if (autoClose) {
         show_tabs.value = !show_tabs.value
@@ -256,7 +249,17 @@ const findX = (momo, autoClose) => {
 }
 
 
+// 随机排列
+const re_arr = (arr) => {
+    showData.value = arr.sort(() => Math.random() - 0.5);
+}
+
+
 let newList = data.reverse().slice(0, 11)
+
+
+console.log(all_tags);
+
 
 </script>
 

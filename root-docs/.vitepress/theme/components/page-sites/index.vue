@@ -1,50 +1,54 @@
 <template>
-    <div class="ps-all">
-        <el-scrollbar height="100vh" class="ps-nav">
 
-            <el-menu default-active="1" @open="handleOpen" @close="handleClose">
+    <div class="page-sites-all">
 
-                <el-sub-menu v-for="item in sites">
-                    <template #title>
-
-                        <span>{{ item.value }}</span>
-                    </template>
-                    <el-menu-item-group>
-                        <el-menu-item v-for="xitem in item.children" @click="getSites(item.value, xitem.value)">{{
-                            xitem.value
-                            }}</el-menu-item>
-                    </el-menu-item-group>
+        <div class="ps-nav">
 
 
-                </el-sub-menu>
-
-            </el-menu>
-
-        </el-scrollbar>
-
-        <div class="ps-content">
-            <div class="ps-content-block-sites">
-                <div v-for="item in showed_sites" class="site-card">
-
-                    <img :src="withBase(gain_icon(item.icon))" class="site-icon">
 
 
-                    <div class="site-info">
+            <div class="ps-nav-item" v-for="item in level_1_classlist" @click="get_sites(item)">{{ item }}</div>
+        </div>
 
-                        <div @click="tosite(item.link)" class="site-title">{{ item.value }}</div>
-
-                        <div class="site-intro">{{ item.intro }}</div>
-
-                    </div>
-
-                </div>
-            </div>
+        <div class="ps-search">
+            <el-cascader placeholder="选择网址" size="small" :options="sites" filterable :props="props" clearable
+                v-model="searchkey" @change="get_sites2(searchkey)" />
         </div>
 
 
+        <div class="ps-content">
 
+
+
+            <div class="ps-content-block" v-for="item in level_2_classlist">
+                <div class="ps-content-block-title">{{ item.value }}</div>
+
+                <div class="ps-content-block-sites">
+                    <div v-for="item2 in item.children" class="site-card">
+
+                        <img :src="withBase(gain_icon(item2.icon))" class="site-icon">
+
+
+                        <div class="site-info">
+
+                            <div @click="tosite(item2.link)" class="site-title">{{ item2.value }}</div>
+
+                            <div class="site-intro">{{ item2.intro }}</div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
 
     </div>
+
 </template>
 
 <script setup>
@@ -54,35 +58,45 @@ import { withBase, useData } from 'vitepress'
 // 获取网址的原始信息
 const sites = ref(sites_data)
 
+let searchkey = ref()
 
-const showed_sites = ref([])
+const props = {
 
-
-const getSites = (mo1, mo2) => {
-
-    let res = sites.value.filter((item, index) => item.value == mo1)
-
-    let ress = res[0].children.filter((item, index) => item.value == mo2)
-
-    showed_sites.value = ress[0].children
-
-
-
+    label: 'value'
 }
 
+// 定义导航菜单的数组(一级菜单)
+const level_1_classlist = ref([])
 
-getSites('常用', '最近常用')
+// 提取数据到菜单数组
+level_1_classlist.value = sites.value.map((item, index) => { return item.value })
 
-const get_sites2 = (momo) => {
+// 当前的选定的一级菜单
+const now_class_1_selected = ref()
 
-    console.log(momo);
+now_class_1_selected.value = level_1_classlist.value[0]
 
+// 定义动态的二级菜单
 
+const level_2_classlist = ref([])
+
+// 找到数据
+level_2_classlist.value = sites.value.filter((item, index) => item.value == now_class_1_selected.value)
+// 提取数据
+level_2_classlist.value = level_2_classlist.value[0].children
+
+// 一级菜单的点击的筛选功能
+
+const get_sites = (momo) => {
+
+    now_class_1_selected.value = momo
+    // 找到数据
+    level_2_classlist.value = sites.value.filter((item, index) => item.value == now_class_1_selected.value)
+    // 提取数据
+    level_2_classlist.value = level_2_classlist.value[0].children
 }
 
-
-
-
+get_sites(now_class_1_selected.value)
 
 const gain_icon = (momo) => {
     return `/icon/png/${momo}.png`
@@ -92,8 +106,27 @@ const gain_icon = (momo) => {
 const tosite = (momo) => {
     window.open(momo)
 }
+
+const get_sites2 = (momo) => {
+
+    console.log(momo);
+
+
+    if (momo) {
+        get_sites(momo[0])
+
+    } else if (momo == undefined) {
+        get_sites('常用')
+    }
+
+}
+
+
+
+
+
+
+
 </script>
 
-<style lang="scss" scoped>
-@import './my.scss'
-</style>
+<style src="./style.scss" lang="scss" scoped></style>
