@@ -1,5 +1,5 @@
 *.js linguist-language=javascript
 *.css linguist-language=css
 *.html linguist-language=vue
-*.md linguist-language=markdown
+*.md linguist-language=Markdown
 # 语言备注
