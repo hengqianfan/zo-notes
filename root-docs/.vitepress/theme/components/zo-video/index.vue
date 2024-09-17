@@ -1,8 +1,10 @@
 <template>
-
-    <iframe :src="z_src" class="video-iframe" width="100%" v-resize="{ log: true }" frameborder="no" scrolling="no"
-        seamless="" allowfullscreen="allowfullscreen"></iframe>
-
+    <div class="myvideo">
+        <ClientOnly>
+            <iframe :src="z_src" v-resize="{ log: true }" frameborder="no" scrolling="no" seamless=""
+                allowfullscreen="allowfullscreen" class="myiframe"></iframe>
+        </ClientOnly>
+    </div>
 </template>
 
 <script setup>
@@ -14,23 +16,34 @@ const props = defineProps(['z_src'])
 // 0.75 --> 3:4 
 const ratio = 0.5625
 
-onMounted(() => {
-    function changeVideoIframe() {
-        const video = document.getElementsByClassName('video-iframe');
-        const width = document.getElementsByClassName('video-iframe')[0].scrollWidth;
-        for (let i = 0; i < video.length; i++) {
-            video[i].style.height = width * ratio + 'px'
-        }
+function changeVideoIframe() {
+    // 直接作用于 <iframe> 会存在问题
+    // 所以，只能将改变作用于外层div, 然后内容元素占满它来实现自适应
+    const video = document.querySelectorAll('.myvideo');
+    const width = document.querySelectorAll('.myvideo')[0].scrollWidth;
+
+    for (let i = 0; i < video.length; i++) {
+        video[i].style.height = width * ratio + 'px'
     }
+}
+
+onMounted(() => {
+
     changeVideoIframe()
     window.onresize = function () { changeVideoIframe() }
+
 })
 
 </script>
 
 <style>
-.video-iframe {
+.myvideo {
     padding: 5px;
     border: 2px dashed blue;
+}
+
+.myiframe {
+    width: 100%;
+    height: 100%;
 }
 </style>
