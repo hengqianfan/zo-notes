@@ -8,6 +8,7 @@
 
     .pa-main {
         width: 80%;
+        width: 100%;
         max-height: 80vh;
 
 
@@ -97,12 +98,17 @@
 
         .pa-tabbar {
             margin: 10px;
-
-            background-color: #abc9da;
+            // background-color: #ecfced;
             padding: 20px;
             border-radius: 20px;
             // transition: all 0.8s ease;
+            border: 2px dashed #1d1d7e;
+            background-color: #e3edf3;
 
+
+            background-image: linear-gradient(to right, rgba(60, 10, 30, 0.04) 1px, transparent 0),
+                linear-gradient(to bottom, rgba(60, 10, 30, 0.04) 1px, transparent 0);
+            background-size: 20px 20px;
 
 
             .pa-navbar-tabbar-item {
@@ -110,7 +116,6 @@
                 min-width: 100px;
                 padding: 0 10px;
                 transition: all 0.8s ease;
-
 
                 .pa-navbar-tabbar-item-text {
                     font-weight: 500;

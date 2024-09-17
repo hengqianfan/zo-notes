@@ -1,6 +1,4 @@
-
 import fs from 'node:fs'
-
 
 import { createContentLoader } from 'vitepress'
 

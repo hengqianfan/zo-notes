@@ -1,8 +1,8 @@
 <template>
-    <ClientOnly>
-        <iframe :src="z_src" class="video-iframe" width="100%" v-resize="{ log: true }" frameborder="no" scrolling="no"
-            seamless="" allowfullscreen="allowfullscreen"></iframe>
-    </ClientOnly>
+
+    <iframe :src="z_src" class="video-iframe" width="100%" v-resize="{ log: true }" frameborder="no" scrolling="no"
+        seamless="" allowfullscreen="allowfullscreen"></iframe>
+
 </template>
 
 <script setup>

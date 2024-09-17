@@ -1,6 +1,8 @@
 ---
 aside: left
 tags: ['vitepress']
+icon: 'vitepress'
+
 ---
 
 ###### {{ 24091101}}

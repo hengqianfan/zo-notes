@@ -3,7 +3,13 @@
 // 所以 文章卡片 特别缩放了 0.7 倍 
 @media (min-width: 0) and (max-width: 62.5rem) {
     .page-articles-all {
-
+        .pa-main {
+            .pa-navbar {
+                .pa-navbar-info {
+                    display: none !important;
+                }
+            }
+        }
 
         .pa-content {
             //  app 特别调整的样式，保证两个卡片并行 

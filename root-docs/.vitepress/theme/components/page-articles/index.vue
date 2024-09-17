@@ -60,7 +60,7 @@
 
 
 
-                        <div class="pa-article-card" v-for="item in showData">
+                        <div class="pa-article-card" v-for="(item, key) in showData" :key="key">
 
                             <div class="pa-article-card-zoid">{{ item.frontmatter.id || 0 }}</div>
 
@@ -86,7 +86,7 @@
         </div>
 
 
-        <div class="pa-side">
+        <!-- <div class="pa-side">
 
 
 
@@ -109,7 +109,7 @@
 
 
 
-        </div>
+        </div> -->
 
 
 
@@ -130,9 +130,9 @@ const showData = ref(data)
 
 const allnum = data.length
 
+const monthlyNum = ref(0)
 
-
-
+const weeklyNum = ref(0)
 
 const show_tabs = ref(false)
 
@@ -256,9 +256,6 @@ const re_arr = (arr) => {
 
 
 let newList = data.reverse().slice(0, 11)
-
-
-console.log(all_tags);
 
 
 </script>

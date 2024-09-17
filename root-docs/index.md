@@ -6,7 +6,7 @@ hero:
   text: 数码猿猴的知识库
   tagline: 拥抱开源，立志成为斜杠少年
   image:
-    src: /icon/png/logo.png
+    src: /icon/svg/logo.svg
     alt: zonotes
   actions:
     - text: 更新日志

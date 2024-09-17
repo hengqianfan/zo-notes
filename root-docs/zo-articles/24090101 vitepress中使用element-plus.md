@@ -1,6 +1,7 @@
 ---
 aside: left
 tags: ['vitepress','elementPlus']
+icon: 'vitepress'
 ---
 
 ###### 24090101

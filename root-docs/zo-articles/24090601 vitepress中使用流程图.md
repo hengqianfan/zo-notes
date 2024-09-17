@@ -1,6 +1,8 @@
 ---
 aside: left
 tags: ['vitepress','mermaid']
+icon: 'vitepress'
+
 ---
  
 ###### 24090601
