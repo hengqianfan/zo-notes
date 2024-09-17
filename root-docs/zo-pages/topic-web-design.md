@@ -9,7 +9,7 @@ layout: page
 </ClientOnly>
 
 <script setup>
-    const mymomo =[
+    const mymomo = [
 
     {
         text: '基础部分', items: [

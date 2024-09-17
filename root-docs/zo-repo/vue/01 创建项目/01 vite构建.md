@@ -1,6 +1,6 @@
 ::: danger  <Badge type='info'>警示</Badge>
 请先安装node！！！
-[enter](/zo-repo/programming/nodejs/00%20简述.md){target='_blank'}
+[enter](/zo-repo/nodejs/00%20简述.md){target='_blank'}
 :::
 
 

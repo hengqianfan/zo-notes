@@ -42,32 +42,40 @@ pnpm install element-plus
 
 ---
 
-```js{4-8,15-16}
+::: code-group
+
+```js [纯净版]
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
-
-// ⭐1. 导入 elementplus 
 import ElementPlus from 'element-plus'
-
-// ⭐2. 导入 elementplus 的样式
 import 'element-plus/dist/index.css'
-
 export default {
-
   extends: DefaultTheme,
   enhanceApp({ app }) {
-
-    // ⭐3. 注册 elementplus
     app.use(ElementPlus)
-
   },
 }
-
-
-
 ```
 
 
+
+```js{3-6,10-11} [说明版]
+import { h } from 'vue'
+import DefaultTheme from 'vitepress/theme'
+// ⭐1. 导入 elementplus 
+import ElementPlus from 'element-plus'
+// ⭐2. 导入 elementplus 的样式
+import 'element-plus/dist/index.css'
+export default {
+  extends: DefaultTheme,
+  enhanceApp({ app }) {
+    // ⭐3. 注册 elementplus
+    app.use(ElementPlus)
+  },
+}
+```
+
+:::
 
 
 ## 3. 补充：使用elementplus图标 
@@ -109,36 +117,51 @@ pnpm install @element-plus/icons-vue
 
 ---
 
+::: code-group
 
-```js:line-numbers{9-10,20-23}
+```js [纯净版]
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+export default {
+  extends: DefaultTheme,
+  enhanceApp({ app }) {
+    app.use(ElementPlus)
+    for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+      app.component(key, component)
+    }
+  },
+}
+```
 
+
+
+
+```js:line-numbers{7-8,14-16} [说明版]
+import { h } from 'vue'
+import DefaultTheme from 'vitepress/theme'
 //  1. 导入 elementplus 
 import ElementPlus from 'element-plus'
 //  2. 导入 elementplus 的样式
 import 'element-plus/dist/index.css'
-
 // ⭐ 4. 导入 elementplus-icon
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
-
 export default {
-
   extends: DefaultTheme,
   enhanceApp({ app }) {
-
     // 3. 注册 elementplus
     app.use(ElementPlus)
-
     // ⭐ 5. 注册 elementplus 图标
     for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
       app.component(key, component)
     }
   },
 }
-
 ```
 
+:::
 
 
 

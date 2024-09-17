@@ -174,6 +174,7 @@ $search_max_width: 150px;
 
     .engine_select {
         z-index: 1;
+
         position: absolute;
         height: $search_max_height;
         min-width: 500px;
@@ -183,6 +184,8 @@ $search_max_width: 150px;
         justify-content: flex-start;
         align-items: center;
         border: 1px solid #6876e2;
+        border: 2px dashed #7564e7;
+
 
 
 
@@ -190,7 +193,7 @@ $search_max_width: 150px;
 
 
         .searchEngineIcon {
-            margin: 0 8px;
+            margin: 0 7px;
             // background-color: #f5dd65;
             width: 30px;
             height: 30px;
