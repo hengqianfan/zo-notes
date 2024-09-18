@@ -1,3 +1,4 @@
+import { fileURLToPath, URL } from 'node:url'
 // vitepress 的配置项
 import { defineConfig } from 'vitepress'
 // 主题的配置项
@@ -7,6 +8,9 @@ import { themeConfig } from './config/theme'
 // markdown 插件
 import markdownItFootnote from 'markdown-it-footnote'
 import mermaidPlugin from './myscript/myMermaid';
+
+// 代码预览插件
+import { demoPreviewPlugin } from '@vitepress-code-preview/plugin'
 
 
 export default defineConfig({
