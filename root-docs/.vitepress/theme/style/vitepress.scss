@@ -3,7 +3,7 @@
 
 // 设置最高级别的全局背景色
 #app {
-    background-color: $my_bg_color_02;
+    // background-color: $my_bg_color_02;
 
     // 文档大纲需要补充设置
     // 这部分是底部的一小部分
@@ -25,11 +25,17 @@
 
 .VPNav {
     // 菜单背景的设置
-    background-color: $my_bg_color_03;
-    background-color: $my_bg_color_02_a;
+    // background-color: $my_bg_color_03;
+    // background-color: $my_bg_color_02_a;
 
-    --vp-nav-bg-color: $my_bg_color_02;
-    font-family: 'zqk英文';
+    // --vp-nav-bg-color: $my_bg_color_02;
+    // font-family: 'zqk英文';
+
+    .VPNavBar {
+        border-radius: 0 0 20px 20px;
+        box-shadow: 2px 2px 3px #c3cbc5,
+            -2px -2px 3px #eff9f1;
+    }
 
     // 站点标题颜色
     .VPNavBarTitle {

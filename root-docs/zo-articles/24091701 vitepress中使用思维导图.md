@@ -70,14 +70,30 @@ mindmap
 
 ## 2. 集成 xmind 预览
 
+### 2.1 参考文章
+
+可以参考这篇大佬的文章
+
 https://juejin.cn/post/7265112695837655080
 
-https://xmind.cn/
+> `xmind官网` https://xmind.cn/
 
+### 2.2 题外话
 
-```shell
-pnpm i xmind-embed-viewer
+这个看上去不错，很合适正在使用 **xmind** 的用户  
+
+但我没用过，专门为思维导图去使用它，  
+
+会增加了我笔记库的维护成本  
+
+类似的效果，对于我这种WPS用户完全可以靠嵌入网页来实现 👇  
+
+```html
+<iframe src="你的WPS文档的分享链接"></iframe>
 ```
+不过，我更想通过 `js库 `来实现它 
+
+
 
 ## 3. 集成 G6   
 

@@ -2,9 +2,51 @@
 aside: left 
 doc-before: false
 ---
-## 建站系列
 
-### 建站相关笔记
+# 笔记聚合页面
+
+## 1. 编程笔记
+
+### 1.1 基础语言类
+
+---
+
+
+
+#### 1.1.1 HTML
+
+---
+
+<CardNote :momo="{
+    title:'HTML笔记',
+    intro:'它是一门标记语言',
+    icon:'html',
+    link:'/zo-repo/html/00 简述'
+    }" />
+
+#### 1.1.2 SCSS
+#### 1.1.3 JavaScript
+
+---
+
+<CardNote :momo="{
+    title:'Javascript笔记',
+    intro:'。',
+    icon:'javascript',
+    link:'/zo-repo/javascript/00 简述'
+    }" />
+
+
+### 1.2 框架类
+
+### 1.3 库与项目
+
+### 1.4 编程类工具
+
+
+## 2. 网址知识
+
+### 2.1 建站总笔记
 
 ---
 
@@ -17,10 +59,9 @@ doc-before: false
 
 ---
 
-### vitepress笔记
+### 2.2 vitepress
 
 ---
-
 
 <CardNote :momo="{
     title:'vitepress笔记',
@@ -29,15 +70,6 @@ doc-before: false
     link:'/zo-repo/vitepress/00 简述'
     }" />
 
-## 编程知识
 
 
-### Javascript笔记
-
-<CardNote :momo="{
-    title:'Javascript笔记',
-    intro:'。',
-    icon:'javascript',
-    link:'/zo-repo/programming/javascript/00 简述'
-    }" />
 

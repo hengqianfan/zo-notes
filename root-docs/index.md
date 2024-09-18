@@ -14,6 +14,8 @@ hero:
     - text: 网址导航
       link: /zo-pages/all-sites.md
       theme: alt
+    - text: 文章合集
+      link: /zo-pages/all-articles.md
 
 
 features:
