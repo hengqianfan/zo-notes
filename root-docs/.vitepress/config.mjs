@@ -13,6 +13,9 @@ import mermaidPlugin from './myscript/myMermaid';
 import { demoPreviewPlugin } from '@vitepress-code-preview/plugin'
 
 
+
+
+
 export default defineConfig({
   lang: 'cn',
   title: "zo-notes",
@@ -37,5 +40,10 @@ export default defineConfig({
 
     },
     Math: true
+  },
+  vite: {
+    ssr: {
+      noExternal: ["@antv/g2plot"]
+    }
   }
 })

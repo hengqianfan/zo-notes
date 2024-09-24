@@ -97,7 +97,17 @@ https://juejin.cn/post/7265112695837655080
 
 ## 3. 集成 G6   
 
+::: danger <Badge type='warning'>警告</Badge>
+尝试失败，期盼有大佬出手解决
+:::
 
+https://g6.antv.antgroup.com/manual/getting-started
+
+### 3.1 安装依赖
+
+```shell
+pnpm install --save @antv/g6 
+```
 
 
 

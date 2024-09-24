@@ -11,10 +11,11 @@
     "docs:preview": "vitepress preview root-docs"
   },
   "dependencies": {
+    "@antv/g6": "^5.0.22",
     "@element-plus/icons-vue": "^2.3.1",
-    "element-plus": "^2.8.0",
     "@vitepress-code-preview/container": "^1.0.8",
     "@vitepress-code-preview/plugin": "^1.0.6",
+    "element-plus": "^2.8.0",
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-mermaid": "^0.2.5",
     "medium-zoom": "^1.1.0",
