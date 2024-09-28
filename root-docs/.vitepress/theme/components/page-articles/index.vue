@@ -11,11 +11,11 @@
                         <el-button>全部文章</el-button>
                     </el-badge>
 
-                    <el-badge :value="all_tags[`本月文章`]" class="item" type="primary" @click="findX(`本月文章`)">
+                    <el-badge :value="all_tags[`本月文章`] || 0" class="item" type="primary" @click="findX(`本月文章`)">
                         <el-button>本月文章</el-button>
                     </el-badge>
 
-                    <el-badge :value="all_tags[`本周文章`]" class="item" type="primary" @click="findX(`本周文章`)">
+                    <el-badge :value="all_tags[`本周文章`] || 0" class="item" type="primary" @click="findX(`本周文章`)">
                         <el-button>本周文章</el-button>
                     </el-badge>
 
