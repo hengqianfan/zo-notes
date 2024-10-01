@@ -14,6 +14,7 @@ const props = defineProps(['z_src'])
 
 // 0.5625 --> 9:16
 // 0.75 --> 3:4 
+// 视频屏幕比例
 const ratio = 0.5625
 
 function changeVideoIframe() {

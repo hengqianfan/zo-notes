@@ -14,7 +14,7 @@
     .ps-nav {
         // 此处必须设置最小高度，否则加入 overflow 属性会消失（原因不明）
         min-height: 3.125rem;
-
+        margin-top: 2px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -22,40 +22,58 @@
 
         overflow-x: scroll;
 
+        border: 2px dashed rgb(182, 182, 232);
 
-        box-shadow: 0.125rem 0.125rem .25rem $my_bg_color_02_a,
-            -0.125rem -0.125rem .25rem $my_bg_color_02_b;
+
+
+
+
 
 
         .ps-nav-item {
 
-            background-color: $my_bg_color_02_b;
-            background-color: aliceblue;
-            height: 1.875rem;
-            min-width: 5rem;
+
             // 边距加高度必须等于外部容器的高，不然会出现异常
             margin: .625rem;
             border-radius: .25rem;
-            color: rgb(88, 83, 83);
+
             display: flex;
             justify-content: center;
             align-items: center;
 
-            font-family: '剑豪体';
-            box-shadow: 0.125rem 0.125rem .1875rem $my_bg_color_02_a inset,
-                -0.125rem -0.125rem .1875rem $my_bg_color_02_b inset;
-        }
-
-        .ps-nav-item:hover {
-            color: white;
-
-            background-color: #194848;
-            font-weight: 400;
-            box-shadow: none;
-
-            border: .125rem white dotted;
+            // font-family: '剑豪体';
 
         }
+
+        // .ps-nav-item {
+
+        //     background-color: $my_bg_color_02_b;
+        //     background-color: aliceblue;
+        //     height: 1.875rem;
+        //     min-width: 5rem;
+        //     // 边距加高度必须等于外部容器的高，不然会出现异常
+        //     margin: .625rem;
+        //     border-radius: .25rem;
+        //     color: rgb(88, 83, 83);
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+
+        //     font-family: '剑豪体';
+        //     box-shadow: 0.125rem 0.125rem .1875rem $my_bg_color_02_a inset,
+        //         -0.125rem -0.125rem .1875rem $my_bg_color_02_b inset;
+        // }
+
+        // .ps-nav-item:hover {
+        //     color: white;
+
+        //     background-color: #194848;
+        //     font-weight: 400;
+        //     box-shadow: none;
+
+        //     border: .125rem white dotted;
+
+        // }
 
 
     }

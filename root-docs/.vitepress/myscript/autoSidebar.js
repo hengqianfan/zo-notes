@@ -11,7 +11,7 @@ const root = __dirname.split('.vitepress')[0]
 /**
  * 侧边栏中要忽略的文件或者目录
  */
-const ignore_list = ['index.md', '.vitepress', 'node_modules', '.idea', 'assets', 'embedded_notes', 'xrepo']
+const ignore_list = ['index.md', '.vitepress', 'node_modules', '.idea', 'assets', 'embedded_notes', 'xrepo', '0.intro']
 
 // 判断是否是文件夹
 const isDir = (path) => fs.lstatSync(path).isDirectory()

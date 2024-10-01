@@ -11,11 +11,11 @@
                         <el-button>全部文章</el-button>
                     </el-badge>
 
-                    <el-badge :value="all_tags[`本月文章`] || 0" class="item" type="primary" @click="findX(`本月文章`)">
+                    <el-badge :value="findArticlesNum(`本月文章`) || 0" class="item" type="primary" @click="findX(`本月文章`)">
                         <el-button>本月文章</el-button>
                     </el-badge>
 
-                    <el-badge :value="all_tags[`本周文章`] || 0" class="item" type="primary" @click="findX(`本周文章`)">
+                    <el-badge :value="findArticlesNum(`本周文章`) || 0" class="item" type="primary" @click="findX(`本周文章`)">
                         <el-button>本周文章</el-button>
                     </el-badge>
 
@@ -137,12 +137,14 @@ const weeklyNum = ref(0)
 const show_tabs = ref(false)
 
 // 定义 tag 对象
-let all_tags = ref({})
+let all_tags = ref()
 // 定义当前的 tag
 let now_tag = ref('全部')
 
 // 从数据中提取所有的 tag 放入 tag 数组中
-const getALLTags = () => {
+const getALLTags = (data) => {
+
+
     // 临时存放数据的数组
     let temp_arr = []
     // 遍历原始数据，把所有 tag 添加到 临时数组中
@@ -204,7 +206,7 @@ const getALLTags = () => {
 
 }
 
-getALLTags()
+getALLTags(data)
 
 const getIcon = (momo) => {
     if (momo) {
@@ -256,6 +258,19 @@ const re_arr = (arr) => {
 
 
 let newList = data.reverse().slice(0, 11)
+
+
+
+const findArticlesNum = (momo) => {
+    if (momo == `本月文章`) {
+        return all_tags.value[`本月文章`]
+
+    } else if (momo == `本周文章`) {
+        return all_tags.value[`本周文章`]
+    } else {
+        return 0
+    }
+}
 
 
 </script>

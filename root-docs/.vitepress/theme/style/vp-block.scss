@@ -20,6 +20,9 @@
         --vp-custom-block-note-code-bg: var(--vp-c-default-soft);
     }
 
+    // .custom-block.info a,
+    .custom-block.info code {}
+
     .custom-block.tip {
         //  这里只能改颜色
         --vp-custom-block-tip-border: transparent;
@@ -40,23 +43,21 @@
         --vp-custom-block-warning-border: transparent;
         //  所以自己重写一个覆盖
         // border: 2px dashed #7e7e40;
-        border: 2px dashed #bb4322;
-        border: 2px dashed #454ece;
 
-
+        border: 2px dashed #cf962b;
         --vp-custom-block-warning-text: var(--vp-c-text-1);
         // --vp-custom-block-warning-bg: #fcfcbe;
-        --vp-custom-block-warning-bg: #c8e7ee;
+        // --vp-custom-block-warning-bg: #e7ec81;
 
         --vp-custom-block-warning-code-bg: var(--vp-c-warning-soft);
-        --vp-custom-block-warning-code-bg: #1e5aa8;
+        // --vp-custom-block-warning-code-bg: #1e5aa8;
 
 
     }
 
     .custom-block.warning a,
     .custom-block.warning code {
-        color: white;
+        // color: white;
     }
 
 

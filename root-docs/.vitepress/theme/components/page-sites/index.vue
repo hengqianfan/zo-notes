@@ -4,10 +4,13 @@
 
         <div class="ps-nav">
 
+            <el-button size="default" @click="get_sites(item)" class="ps-nav-item" v-for="item in level_1_classlist">{{
+                item }}</el-button>
 
 
 
-            <div class="ps-nav-item" v-for="item in level_1_classlist" @click="get_sites(item)">{{ item }}</div>
+
+            <!-- <div class="ps-nav-item" v-for="item in level_1_classlist" @click="get_sites(item)">{{ item }}</div> -->
         </div>
 
         <div class="ps-search">
@@ -109,14 +112,11 @@ const tosite = (momo) => {
 
 const get_sites2 = (momo) => {
 
-    console.log(momo);
-
-
     if (momo) {
         get_sites(momo[0])
 
     } else if (momo == undefined) {
-        get_sites('常用')
+        get_sites('常用网址')
     }
 
 }

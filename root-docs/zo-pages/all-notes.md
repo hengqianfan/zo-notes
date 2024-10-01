@@ -19,12 +19,27 @@ doc-before: false
 
 <CardNote :momo="{
     title:'HTML笔记',
-    intro:'它是一门标记语言',
+    intro:'HTML是一门标记语言，也是web的基础，该笔记积累了站长本人学习HTML的一些碎片化笔记，以及遇到问题与小技巧。',
     icon:'html',
     link:'/zo-repo/html/00 简述'
     }" />
 
+
+---
+
 #### 1.1.2 SCSS
+
+---
+
+<CardNote :momo="{
+    title:'SCSS',
+    intro:'这个笔记库主要归纳了CSS的相关知识，包括SCSS、LESS等。关于网站样式的代码知识也会放在这里。',
+    icon:'sass',
+    link: '/zo-repo/scss/00 简述'
+}"/>
+
+---
+
 #### 1.1.3 JavaScript
 
 ---

@@ -1,7 +1,7 @@
 // 网址导航页面的网址数据
 export const sites_data = [
     {
-        value: '常用',
+        value: '常用网址',
         children: [
             {
                 value: '最近常用',
@@ -37,6 +37,17 @@ export const sites_data = [
                         link: 'https://www.kdocs.cn/latest',
                         icon: 'wps',
                         intro: '在线文档编辑'
+                    }
+                ]
+            },
+            {
+                value: '自媒体',
+                children: [
+                    {
+                        value: '微信公众号',
+                        icon: 'wechat',
+                        intro: "老牌自媒体平台",
+                        link: 'https://mp.weixin.qq.com/'
                     }
                 ]
             }
@@ -142,7 +153,7 @@ export const sites_data = [
 
     },
     {
-        value: '服务器',
+        value: '服务器商',
         children: [
             {
                 value: '国内厂商',
