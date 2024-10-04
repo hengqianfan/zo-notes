@@ -10,7 +10,16 @@ icon: 'vitepress'
 
 # vitepress 中使用 ElementPlus
 
-## 1. 安装 element-plus
+
+## 1. 不使用配套图标
+
+::: warning <Badge type='warning'>提示</Badge>
+
+**如果你对 ElementPlus 不太熟悉，可以不安装图标，然后注意查看说明版代码**
+
+:::
+
+### 1.1 安装 element-plus
 
 ::: code-group
 
@@ -28,23 +37,18 @@ pnpm install element-plus
 
 :::
 
-## 2. 进行代码配置 
+### 1.2. 配置代码 
 
-**文件路径**： `docs/.vitepress/theme/index.js` 👈    
 
----
 
-1. 导入 `elementplus` 
-
-2. 导入 `elementplus` 的样式
-
-3. 注册 `elementplus`
 
 ---
+
+**配置文件**： `docs/.vitepress/theme/index.js` 👈    
 
 ::: code-group
 
-```js [纯净版]
+```js:line-numbers{3,4,8} [纯净版]
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import ElementPlus from 'element-plus'
@@ -78,12 +82,44 @@ export default {
 :::
 
 
-## 3. 补充：使用elementplus图标 
+### 1.3 使用
+
+- 因为全局注册，你可以直接在项目中的 `vue` 文件中使用
+
+ 
+<br/>
+ 
+<hr class="hr-twill-colorful">
+ 
+<br/>
+ 
+
+## 2. 使用配套图标 
 
 <br/>
 
+### 2.1 安装依赖
 
-- 1️⃣ **先安装依赖**  <Badge type='danger'>注意图标是单独的包，所以要另外安装它</Badge>  
+- **安装 element-plus** 
+
+::: code-group
+
+```shell [npm]
+npm install element-plus --save
+```
+
+```shell [yarn]
+yarn add element-plus
+```
+
+```shell [pnpm]
+pnpm install element-plus
+```
+
+:::
+
+
+- **安装 图标依赖** <Badge type='danger'>注意图标是单独的包，所以要另外安装它</Badge>  
 
 ::: code-group
 
@@ -101,19 +137,8 @@ pnpm install @element-plus/icons-vue
 
 :::
 
--  2️⃣ **然后配置代码**
+### 2.2 配置代码 
 
----
-
-<Badge type='info'>这个步骤是接前面的</Badge>   
-
-<br/>
-
-<Badge type='info'>如果你没有安装 elementplus 记得先安装前面的步骤 elementplus</Badge>
-
-4. 导入 `elementplus-icon` 
-
-5. 注册 `elementplus-iocn`
 
 ---
 

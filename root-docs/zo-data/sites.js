@@ -333,6 +333,18 @@ export const sites_data = [
                 value: '编程工具网站',
                 children: [
                     {
+                        value: 'shields',
+                        link: 'https://shields.io/',
+                        icon: 'shields',
+                        intro: '徽章制作网站'
+                    },
+                    {
+                        value: 'simpleicons',
+                        link: "https://simpleicons.org/",
+                        icon: 'img',
+                        intro: '配合shields制作图标徽章'
+                    },
+                    {
                         value: '香蕉云编',
                         link: 'https://www.yunedit.com/',
                         icon: 'xjyb',
@@ -352,7 +364,6 @@ export const sites_data = [
                         icon: 'tool',
                         intro: '解决CSS的各种需求'
                     },
-
 
                     {
                         value: '图司机',

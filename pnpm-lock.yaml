@@ -42,9 +42,15 @@ importers:
       sass:
         specifier: ^1.71.1
         version: 1.79.1
+      vite:
+        specifier: ^5.4.8
+        version: 5.4.8(@types/node@22.5.5)(sass@1.79.1)(terser@5.33.0)
       vitepress:
         specifier: 1.0.0-rc.45
         version: 1.0.0-rc.45(@algolia/client-search@4.24.0)(@types/node@22.5.5)(async-validator@4.2.5)(postcss@8.4.47)(sass@1.79.1)(search-insights@2.17.2)(terser@5.33.0)
+      vitepress-plugin-group-icons:
+        specifier: ^1.2.4
+        version: 1.2.4
       vue:
         specifier: ^3.4.21
         version: 3.5.6
@@ -404,6 +410,12 @@ packages:
 
   '@floating-ui/vue@1.1.5':
     resolution: {integrity: sha512-ynL1p5Z+woPVSwgMGqeDrx6HrJfGIDzFyESFkyqJKilGW1+h/8yVY29Khn0LaU6wHBRwZ13ntG6reiHWK6jyzw==}
+
+  '@iconify-json/logos@1.2.2':
+    resolution: {integrity: sha512-Z78rxWqmAu9pBczootCg4/TjVTAqcoNdqzZ3KRD8Nof3BD1AMqyDXS7+BNBcsGMBgSkfUJYHk0iInBi6wUEvUw==}
+
+  '@iconify-json/vscode-icons@1.2.2':
+    resolution: {integrity: sha512-bTpT0HJDRqGkxQv8oiETNHLEnBZpnA1QaRD35CQyO7M7qgWVLx2xwn/lK6e4waojmlPC3ckMBx3WFIUUn0/Jdg==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -1739,8 +1751,8 @@ packages:
   vfile@6.0.3:
     resolution: {integrity: sha512-KzIbH/9tXat2u30jf+smMwFCsno4wHVdNmzFyL+T/L3UGqqk6JKfVqOFOZEpZSHADH1k40ab6NUIXZq422ov3Q==}
 
-  vite@5.4.6:
-    resolution: {integrity: sha512-IeL5f8OO5nylsgzd9tq4qD2QqI0k2CQLGrWD0rCN0EQJZpBK5vJAx0I+GDkMOXxQX/OfFHMuLIx6ddAxGX/k+Q==}
+  vite@5.4.8:
+    resolution: {integrity: sha512-FqrItQ4DT1NC4zCUqMB4c4AZORMKIa0m8/URVCZ77OZ/QSNeJ54bU1vrFADbDsuwfIPcgknRkmqakQcgnL4GiQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -1769,6 +1781,9 @@ packages:
         optional: true
       terser:
         optional: true
+
+  vitepress-plugin-group-icons@1.2.4:
+    resolution: {integrity: sha512-pxYzphvRy0Jhpgl3lHszH9Z8Qaj83v4bVr0b8Oi4zSIOQW/uuqGAZ8SaYwkZ1f/8a6ckIeIwZiLfLHA6ySCScQ==}
 
   vitepress@1.0.0-rc.45:
     resolution: {integrity: sha512-/OiYsu5UKpQKA2c0BAZkfyywjfauDjvXyv6Mo4Ra57m5n4Bxg1HgUGoth1CLH2vwUbR/BHvDA9zOM0RDvgeSVQ==}
@@ -2276,6 +2291,14 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
+  '@iconify-json/logos@1.2.2':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/vscode-icons@1.2.2':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify/types@2.0.0': {}
 
   '@iconify/utils@2.1.33':
@@ -2446,9 +2469,9 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-vue@5.1.4(vite@5.4.6(@types/node@22.5.5)(sass@1.79.1)(terser@5.33.0))(vue@3.5.6)':
+  '@vitejs/plugin-vue@5.1.4(vite@5.4.8(@types/node@22.5.5)(sass@1.79.1)(terser@5.33.0))(vue@3.5.6)':
     dependencies:
-      vite: 5.4.6(@types/node@22.5.5)(sass@1.79.1)(terser@5.33.0)
+      vite: 5.4.8(@types/node@22.5.5)(sass@1.79.1)(terser@5.33.0)
       vue: 3.5.6
 
   '@vitepress-code-preview/container@1.0.8(vue@3.5.6)':
@@ -3846,7 +3869,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
 
-  vite@5.4.6(@types/node@22.5.5)(sass@1.79.1)(terser@5.33.0):
+  vite@5.4.8(@types/node@22.5.5)(sass@1.79.1)(terser@5.33.0):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.47
@@ -3857,6 +3880,14 @@ snapshots:
       sass: 1.79.1
       terser: 5.33.0
 
+  vitepress-plugin-group-icons@1.2.4:
+    dependencies:
+      '@iconify-json/logos': 1.2.2
+      '@iconify-json/vscode-icons': 1.2.2
+      '@iconify/utils': 2.1.33
+    transitivePeerDependencies:
+      - supports-color
+
   vitepress@1.0.0-rc.45(@algolia/client-search@4.24.0)(@types/node@22.5.5)(async-validator@4.2.5)(postcss@8.4.47)(sass@1.79.1)(search-insights@2.17.2)(terser@5.33.0):
     dependencies:
       '@docsearch/css': 3.6.1
@@ -3864,7 +3895,7 @@ snapshots:
       '@shikijs/core': 1.17.7
       '@shikijs/transformers': 1.17.7
       '@types/markdown-it': 13.0.9
-      '@vitejs/plugin-vue': 5.1.4(vite@5.4.6(@types/node@22.5.5)(sass@1.79.1)(terser@5.33.0))(vue@3.5.6)
+      '@vitejs/plugin-vue': 5.1.4(vite@5.4.8(@types/node@22.5.5)(sass@1.79.1)(terser@5.33.0))(vue@3.5.6)
       '@vue/devtools-api': 7.4.5
       '@vueuse/core': 10.11.1(vue@3.5.6)
       '@vueuse/integrations': 10.11.1(async-validator@4.2.5)(focus-trap@7.6.0)(vue@3.5.6)
@@ -3872,7 +3903,7 @@ snapshots:
       mark.js: 8.11.1
       minisearch: 6.3.0
       shiki: 1.17.7
-      vite: 5.4.6(@types/node@22.5.5)(sass@1.79.1)(terser@5.33.0)
+      vite: 5.4.8(@types/node@22.5.5)(sass@1.79.1)(terser@5.33.0)
       vue: 3.5.6
     optionalDependencies:
       postcss: 8.4.47

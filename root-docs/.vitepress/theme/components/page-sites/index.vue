@@ -7,9 +7,6 @@
             <el-button size="default" @click="get_sites(item)" class="ps-nav-item" v-for="item in level_1_classlist">{{
                 item }}</el-button>
 
-
-
-
             <!-- <div class="ps-nav-item" v-for="item in level_1_classlist" @click="get_sites(item)">{{ item }}</div> -->
         </div>
 

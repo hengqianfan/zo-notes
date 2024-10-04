@@ -12,7 +12,8 @@ import mermaidPlugin from './myscript/myMermaid';
 // 代码预览插件
 import { demoPreviewPlugin } from '@vitepress-code-preview/plugin'
 
-
+// 代码组-增加图标
+import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 
 
 
@@ -34,14 +35,22 @@ export default defineConfig({
   themeConfig: themeConfig,
   markdown: {
     config: (md) => {
-
       md.use(markdownItFootnote)
       md.use(mermaidPlugin)
+      // 代码预览插件
+      const docRoot = fileURLToPath(new URL('../', import.meta.url))
+      md.use(demoPreviewPlugin, { docRoot })
+      // 代码组图标扩展
+      md.use(groupIconMdPlugin)
 
     },
+
     Math: true
   },
   vite: {
+    plugins: [
+      groupIconVitePlugin()
+    ],
     ssr: {
       noExternal: ["@antv/g2plot"]
     }
