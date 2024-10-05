@@ -1,9 +1,10 @@
 .page-articles-all {
 
     width: 100%;
-    max-height: 90vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: row;
+    background-color: #f4f4f4;
 
 
     .pa-main {
@@ -161,136 +162,131 @@
                 flex-wrap: wrap;
                 overflow-x: scroll;
 
-                .pa-article-card {
 
+
+
+                .pa-article-card {
                     margin: 20px;
-                    width: 180px;
-                    height: 260px;
                     display: flex;
                     flex-direction: column;
-                    justify-content: flex-start;
-                    align-items: center;
-                    border-radius: 12px;
-
-                    background: $my_bg_color_05;
-
-                    box-shadow: 2px 2px 3px #c3cbc5,
-                        -2px -2px 3px #eff9f1;
+                    width: 320px;
+                    height: 220px;
+                    border: 2px dashed #3b72a3;
+                    background-color: aliceblue;
 
 
-                    transition: all 0.8s ease;
+
+                    .pa-article-card-cover {
+                        width: 320px;
+                        height: 180px;
+
+                        display: flex;
+
+                        position: relative;
+                        border-bottom: 1px solid rgb(226, 224, 224);
+                        background-image: linear-gradient(to right, rgba(60, 10, 30, 0.04) 1px, transparent 0),
+                            linear-gradient(to bottom, rgba(60, 10, 30, 0.04) 1px, transparent 0);
 
 
-                    .pa-article-card-icon {
-                        margin-top: 20px;
-                        padding: 10px;
-                        width: 100px;
-                        height: 100px;
-                        border-radius: 12px;
 
-                        background: #d9e2db;
-                        box-shadow: 2px 2px 3px #c3cbc5,
-                            -2px -2px 3px #eff9f1;
 
-                        transition: all 0.8s ease;
 
-                        text-overflow: ellipsis
+
+                        .pa-article-card-cover-id {
+                            position: absolute;
+                            background-color: aliceblue;
+                            height: 20px;
+                            width: 100px;
+                            border-radius: 0 0 15px 0;
+                            top: 0;
+                            left: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 12px;
+
+
+
+                        }
+
+                        .pa-article-card-cover-img {
+                            max-height: 178px;
+                            // background-image: url('../../../../public/gallery/24082801.png');
+
+
+                        }
+
+
+                        .pa-article-card-tags {
+                            position: absolute;
+                            display: none;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            width: 320px;
+                            bottom: 0;
+
+
+
+                            .pa-article-card-tags-tag {
+                                margin: 5px;
+                                padding: 3px;
+                                min-width: 50px;
+                                height: 20px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 10px;
+                                background-color: #1d1d45;
+                                color: white;
+                                font-size: 10px;
+
+
+                            }
+                        }
+
+
                     }
 
+
+
+
                     .pa-article-card-title {
-                        margin-top: 20px;
-                        padding: 0 8px;
-                        max-width: 160px;
+                        height: 50px;
+                        font-size: 18px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         background-color: white;
                         text-align: center;
-
-                        font-size: 18px;
-                        font-weight: 800;
-                        font-family: "剑豪体";
-                        border-radius: 8px;
-                        background: #d9e2db;
-                        box-shadow: 2px 2px 3px #c3cbc5,
-                            -2px -2px 3px #eff9f1;
-
-                        transition: all 0.8s ease;
+                        // background-color: rebeccapurple;
+                        font-family: '剑豪体';
 
 
                     }
 
-                    .pa-article-card-zoid {
-                        margin-top: 20px;
-                        padding: 0 10px;
 
-
-                        color: #5b6187;
-                        border-radius: 4px;
-                        border-radius: 44px;
-                        background: #d9e2db;
-                        box-shadow: 2px 2px 3px $my_bg_color_02_a inset,
-                            -2px -2px 3px $my_bg_color_02_b inset;
-                        transition: all 0.8s ease;
-
-                    }
                 }
 
-                // 文章卡片悬浮的时候
                 .pa-article-card:hover {
-                    background-color: $my_bg_color_04;
 
 
-                    box-shadow: none;
+                    .pa-article-card-tags {
+                        display: flex;
 
 
-
-
-
-                    .pa-article-card-icon {
-                        margin-top: 20px;
-                        padding: 10px;
-                        width: 100px;
-                        height: 100px;
-                        background-color: #7399b0;
-
-
-                        border-radius: 5px;
-
-                        box-shadow: 5px 5px 10px #688a9e,
-                            -5px -5px 10px #7fa8c2;
-
-
+                        .pa-article-card-tags-tag:hover {
+                            background-color: #e4af52;
+                        }
                     }
 
-                    .pa-article-card-title {
-                        margin-top: 20px;
-                        padding: 0 8px;
-
-
-                        text-align: center;
-
-                        font-size: 18px;
-                        font-weight: 800;
-                        font-family: "剑豪体";
-
-
-                        // color: #133717;
-
-                        color: #ffffff;
-                        background-color: #7399b0;
-
-                        box-shadow: 5px 5px 10px #688a9e,
-                            -5px -5px 10px #7fa8c2;
+                    .pa-article-card-title:hover {
+                        color: rgb(147, 145, 145);
                     }
 
-                    .pa-article-card-zoid {
 
-                        background-color: #7399b0;
 
-                        color: #e7e2e7;
 
-                        box-shadow: 5px 5px 10px #688a9e inset,
-                            -5px -5px 10px #7fa8c2 inset;
 
-                    }
                 }
 
             }

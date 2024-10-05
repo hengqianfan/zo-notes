@@ -35,6 +35,8 @@ import CardSite from './card-site/index.vue'
 import CardEvaluation from './card-evaluation/index.vue'
 
 
+
+
 import Mermaid from './zo-mermaid/index.vue'
 
 
@@ -57,6 +59,10 @@ const allGlobalComponents = {
     CardNote,
     CardSite,
     CardEvaluation,
+
+
+
+
     PageTask,
     Mermaid,
     ZoTest,

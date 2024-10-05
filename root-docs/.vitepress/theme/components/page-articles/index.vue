@@ -55,28 +55,33 @@
 
                 <div class="list">
 
-
                     <transition-group name="list">
 
 
+                        <!-- <card-article v-for="(item, key) in showData" :key="key" :momo="item"></card-article>
+                          -->
 
-                        <div class="pa-article-card" v-for="(item, key) in showData" :key="key">
+                        <div class="pa-article-card" v-for="(item, key) in showData">
 
-                            <div class="pa-article-card-zoid">{{ item.frontmatter.id || 0 }}</div>
+                            <div class="pa-article-card-cover">
+                                <div class="pa-article-card-cover-id"> {{ item.frontmatter.id }}</div>
+                                <img :src="withBase(getImgSrc(item.frontmatter.id))" class="pa-article-card-cover-img">
+                                <div class="pa-article-card-tags">
 
-
-
-                            <img :src="withBase(getIcon(item.frontmatter.icon))" alt="" class="pa-article-card-icon">
-
-
+                                    <div class="pa-article-card-tags-tag" v-for="item in item.frontmatter.tags"
+                                        @click="findX(item)">{{ item
+                                        }}</div>
+                                </div>
+                            </div>
 
                             <a class="pa-article-card-title" :href="withBase(item.url)">{{
                                 getTitle(item.frontmatter.title) }}</a>
 
 
                         </div>
-                    </transition-group>
 
+
+                    </transition-group>
 
                 </div>
 
@@ -124,6 +129,11 @@ import { ref, watch } from 'vue'
 import { withBase, useData } from 'vitepress'
 import { data } from '/zo-data/articles.data.js'
 import { Hide, View } from '@element-plus/icons-vue'
+
+const getImgSrc = (momo) => {
+
+    return `/articlesPic/${momo}.png`
+}
 
 const showData = ref(data)
 
