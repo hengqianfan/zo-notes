@@ -135,10 +135,33 @@ const getImgSrc = (momo) => {
     return `/articlesPic/${momo}.png`
 }
 
-const showData = ref(data)
+// 排除修改中的文章
+const removeData = (data) => {
+    let newData = []
+    for (let i = 0; i < data.length; i++) {
+        let tags = data[i].frontmatter.tags
+        let res = tags.indexOf('修改中');
+        if (res == -1) {
+            newData.push(data[i])
+        }
+    }
+    return newData
+}
+
+// 如果正式上线
+// const newData = removeData(data)
+
+// 调试阶段
+const newData = data
 
 
-const allnum = data.length
+
+
+
+const showData = ref(newData)
+
+
+const allnum = newData.length
 
 const monthlyNum = ref(0)
 
@@ -216,7 +239,7 @@ const getALLTags = (data) => {
 
 }
 
-getALLTags(data)
+getALLTags(newData)
 
 const getIcon = (momo) => {
     if (momo) {
@@ -257,7 +280,10 @@ const findX = (momo, autoClose) => {
             }
         })
     }
+
     showData.value = res
+
+
 }
 
 

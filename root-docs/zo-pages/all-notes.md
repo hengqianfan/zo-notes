@@ -56,7 +56,22 @@ doc-before: false
 
 ### 1.3 库与项目
 
-### 1.4 编程类工具
+### 1.4 相关知识
+
+#### 1.4.1 Github 
+
+
+---
+
+<CardNote :momo="{
+    title:'github',
+    intro:'',
+    icon:'github',
+    link:'/zo-repo/github/00 简述'
+    }" />
+
+---
+
 
 
 ## 2. 网址知识
