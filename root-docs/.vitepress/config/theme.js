@@ -77,7 +77,7 @@ export const themeConfig = {
     },
 
     socialLinks: [
-        { icon: 'github', link: 'https://github.com/hengqianfan/mo-notes' }
+        { icon: 'github', link: 'https://github.com/hengqianfan/zo-notes' }
     ],
     backToTop: {
         text: "返回顶部",
@@ -96,7 +96,7 @@ export const themeConfig = {
 
 
     editLink: {
-        pattern: 'https://github.com/hengqianfan/mo-notes/edit/main/root-docs/:path'
+        pattern: 'https://github.com/hengqianfan/zo-notes/edit/main/root-docs/:path'
 
     }
 

@@ -28,6 +28,9 @@ import ZoIframe from './zo-iframe/index.vue'
 
 import ZoMindmap from './zo-mindmap/index.vue'
 
+
+import ZoEditor from './zo-editor/index.vue'
+
 import CardNote from './card-note/index.vue'
 
 import CardSite from './card-site/index.vue'
@@ -54,6 +57,7 @@ const allGlobalComponents = {
     ZoVideo,
     ZoIframe,
     ZoMindmap,
+    ZoEditor,
 
 
     CardNote,

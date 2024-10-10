@@ -17,7 +17,7 @@ import slotSearch from './components/slot-search/index.vue'
 import myArticleInfo from './components/slot-articleInfo/index.vue'
 
 import notFound from './components/not-found/index.vue'
-
+import ZoEditor from './components/zo-editor/index.vue'
 
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
@@ -43,6 +43,7 @@ export default {
       'nav-bar-content-before': () => h(slotSearch),
       'not-found': () => h(notFound),
       'doc-before': () => h(myArticleInfo)
+      // 'doc-before': () => h(ZoEditor)
     })
   },
   // 启用自定义布局

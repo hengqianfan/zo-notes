@@ -2,6 +2,8 @@
     <div class="sa-all" v-if="isShow">
         <div class="sa-bar">
 
+            <div class="sa-edit" @click="drawer = !drawer">✒</div>
+
             <div class="sa-readTime"> ⏱ 预计 {{ readTime }} min</div>
             |
             <div class="sa-tags" v-for="item in frontmatter.tags" @click="toTagPage(item)">{{ item }}</div>
@@ -14,7 +16,9 @@
 
         <br />
 
-
+        <el-drawer v-model="drawer" title="I am the title" :with-header="false" size="80%">
+            <zo-editor />
+        </el-drawer>
 
     </div>
 </template>
@@ -25,6 +29,11 @@ import { useData, withBase } from 'vitepress';
 const { frontmatter, page, site } = useData()
 import { data as articlesData } from '/zo-data/articles.data.js'
 import { reckonReadTime } from '../../../myscript/reckonReadTime';
+
+console.log(page);
+
+
+const drawer = ref(false)
 
 
 const isShow = ref(true)

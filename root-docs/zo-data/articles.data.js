@@ -40,6 +40,8 @@ export default createContentLoader('zo-articles/*.md', {
     includeSrc: true, // 包含原始 markdown 源?
     excerpt: true,    // 包含摘录?
     transform(rawData) {
+
+
         // 追加 frontmatter 配置
         for (let i = 0; i < rawData.length; i++) {
             // 阅读时间
@@ -87,8 +89,6 @@ export default createContentLoader('zo-articles/*.md', {
                 arr.push('本周文章')
                 rawData[i].frontmatter.tags = arr
             }
-
-
 
 
 
