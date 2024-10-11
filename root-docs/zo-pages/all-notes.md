@@ -5,7 +5,7 @@ doc-before: false
 
 # 笔记聚合页面
 
-## 1. 编程笔记
+## 1. 编程
 
 ### 1.1 基础语言类
 
@@ -74,9 +74,9 @@ doc-before: false
 
 
 
-## 2. 网址知识
+## 2. 网站
 
-### 2.1 建站总笔记
+### 2.1 建站知识
 
 ---
 
@@ -101,5 +101,15 @@ doc-before: false
     }" />
 
 
+## 3. 电脑使用
 
+### 3.1. 电脑初始化
+
+
+<CardNote :momo="{
+    title:'初始化电脑',
+    intro:'这是本人的初始化电脑笔记，并不合适所有人，请谨慎阅览',
+    icon:'computer',
+    link:'/zo-repo/computer-init/00 简述'
+    }" />
 

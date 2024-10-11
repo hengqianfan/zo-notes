@@ -28,7 +28,9 @@
             position: relative;
 
             .pa-navbar-info {
+
                 margin: 10px;
+                margin-left: 50px;
 
                 // background-color: #5b6187;
                 border: 1px dashed rgb(182, 182, 232);
@@ -166,12 +168,14 @@
 
 
                 .pa-article-card {
-                    margin: 20px;
+                    margin: 10px;
                     display: flex;
                     flex-direction: column;
-                    width: 320px;
-                    height: 220px;
-                    border: 2px dashed #3b72a3;
+                    width: 280px;
+                    height: 190px;
+                    // border: 2px dashed #3b72a3;
+                    border: 2px dashed #889bac;
+
                     // border: 1px solid #dddfe0;
 
                     background-color: aliceblue;
@@ -179,31 +183,31 @@
 
 
                     .pa-article-card-cover {
-                        width: 320px;
-                        height: 180px;
+                        width: 276px;
+                        height: 155.25px;
                         background-color: transparent;
+                        // 设置默认封面
 
+                        background-image: url("../../../../public/articlesPic/momo.png");
+                        background-size: 100%;
                         display: flex;
 
                         position: relative;
-                        border-bottom: 1px solid rgb(226, 224, 224);
-                        background-image: linear-gradient(to right, rgba(60, 10, 30, 0.04) 1px, transparent 0),
-                            linear-gradient(to bottom, rgba(60, 10, 30, 0.04) 1px, transparent 0);
-
-
-
+                        border-bottom: 1px solid #b9c8d5;
 
 
 
                         .pa-article-card-cover-id {
                             position: absolute;
                             background-color: aliceblue;
-
+                            background-color: #75d7ef;
+                            color: white;
                             height: 20px;
                             width: 100px;
                             border-radius: 0 0 10px 0;
                             top: 0;
                             left: 0;
+                            // display: none;
                             display: flex;
                             align-items: center;
                             justify-content: center;
@@ -228,7 +232,7 @@
                             display: none;
                             flex-direction: row;
                             flex-wrap: wrap;
-                            width: 320px;
+                            width: 280px;
                             bottom: 0;
 
 
@@ -243,6 +247,8 @@
                                 align-items: center;
                                 border-radius: 10px;
                                 background-color: #1d1d45;
+                                background-color: #75d7ef;
+                                background-color: #192357;
                                 color: white;
                                 font-size: 10px;
 
@@ -257,7 +263,7 @@
 
 
                     .pa-article-card-title {
-                        height: 50px;
+                        height: 30px;
                         font-size: 18px;
                         display: flex;
                         justify-content: center;
@@ -266,6 +272,7 @@
                         text-align: center;
                         // background-color: rebeccapurple;
                         font-family: '剑豪体';
+                        color: rgb(87, 84, 84);
 
 
                     }
@@ -274,6 +281,10 @@
                 }
 
                 .pa-article-card:hover {
+
+                    .pa-article-card-cover-id {
+                        display: flex;
+                    }
 
 
                     .pa-article-card-tags {
@@ -286,7 +297,7 @@
                     }
 
                     .pa-article-card-title:hover {
-                        color: rgb(147, 145, 145);
+                        color: rgb(113, 150, 205);
                     }
 
 

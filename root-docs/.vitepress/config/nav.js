@@ -50,6 +50,11 @@ export const myNav = [
             { text: '建站专题', link: '/zo-repo/build-site/00 简述' }
         ]
     },
+    {
+        text: '工具箱', items: [
+            { text: '计算器', link: '/zo-pages/calculator' }
+        ]
+    },
 
     {
         text: '其他杂项', items: [

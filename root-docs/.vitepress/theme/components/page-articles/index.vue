@@ -3,11 +3,16 @@
 
         <div class="pa-main">
             <div class="pa-navbar">
+                <!-- 
+                <el-switch v-model="show_editing" class="ml-2" inline-prompt
+                    style="--el-switch-on-color: #13ce66; --el-switch-off-color: #ff4949" active-text="完整展示所有文章"
+                    inactive-text="不显示编辑中的文章" @change="updateShowData()" /> -->
 
                 <div class="pa-navbar-info">
 
 
-                    <el-badge :value="allnum" class="item" type="primary" @click="findX(`全部文章`)">
+
+                    <el-badge :value="data.length" class="item" type="primary" @click="findX(`全部文章`)">
                         <el-button>全部文章</el-button>
                     </el-badge>
 
@@ -21,6 +26,8 @@
 
                     <el-button @click="re_arr(showData)">随机排序</el-button>
 
+
+
                 </div>
 
 
@@ -31,7 +38,10 @@
                     </el-select>
                 </div>
 
-                <el-switch v-model="show_tabs" :active-action-icon="View" :inactive-action-icon="Hide" />
+                <el-switch v-model="show_tabs" :active-action-icon="View" :inactive-action-icon="Hide"
+                    inactive-text="标签分类" />
+
+
 
 
             </div>
@@ -53,13 +63,12 @@
 
 
 
+
                 <div class="list">
 
                     <transition-group name="list">
 
 
-                        <!-- <card-article v-for="(item, key) in showData" :key="key" :momo="item"></card-article>
-                          -->
 
                         <div class="pa-article-card" v-for="(item, key) in showData">
 
@@ -69,7 +78,8 @@
                                 <div class="pa-article-card-tags">
 
                                     <div class="pa-article-card-tags-tag" v-for="item in item.frontmatter.tags"
-                                        @click="findX(item)">{{ item
+                                        @click="findX(item)">{{
+                                            item
                                         }}</div>
                                 </div>
                             </div>
@@ -135,6 +145,9 @@ const getImgSrc = (momo) => {
     return `/articlesPic/${momo}.png`
 }
 
+// 是否显示修改中的文章
+const show_editing = ref(false)
+
 // 排除修改中的文章
 const removeData = (data) => {
     let newData = []
@@ -148,34 +161,26 @@ const removeData = (data) => {
     return newData
 }
 
-// 如果正式上线
-// const newData = removeData(data)
-
-// 调试阶段
-const newData = data
+// 展示的数据
+// const showData = ref(removeData(data))
 
 
 
+const showData = ref(data)
 
 
-const showData = ref(newData)
-
-
-const allnum = newData.length
-
-const monthlyNum = ref(0)
-
-const weeklyNum = ref(0)
 
 const show_tabs = ref(false)
 
 // 定义 tag 对象
-let all_tags = ref()
+let all_tags = ref([])
 // 定义当前的 tag
 let now_tag = ref('全部')
 
 // 从数据中提取所有的 tag 放入 tag 数组中
 const getALLTags = (data) => {
+    // 先清空数据
+    all_tags.value = []
 
 
     // 临时存放数据的数组
@@ -239,7 +244,7 @@ const getALLTags = (data) => {
 
 }
 
-getALLTags(newData)
+getALLTags(data)
 
 const getIcon = (momo) => {
     if (momo) {

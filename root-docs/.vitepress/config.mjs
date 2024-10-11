@@ -22,7 +22,7 @@ export default defineConfig({
   title: "zo-notes",
   description: "A VitePress Site",
 
-  base: '/zo-notes/',
+  // base: '/zo-notes/',
   // 标签页的LOGO
   head: [
     ['link', { rel: 'icon', href: './icon/png/logo.png' }]
