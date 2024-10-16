@@ -40,8 +40,6 @@ export default createContentLoader('zo-articles/*.md', {
     includeSrc: true, // 包含原始 markdown 源?
     excerpt: true,    // 包含摘录?
     transform(rawData) {
-
-
         // 追加 frontmatter 配置
         for (let i = 0; i < rawData.length; i++) {
             // 阅读时间
@@ -60,11 +58,8 @@ export default createContentLoader('zo-articles/*.md', {
             rawData[i].frontmatter.id = filename.split(' ')[0]
             // 文章的时间戳
             rawData[i].frontmatter.time = getArticleTime(filename.split(' ')[0])
-
-
             // 判断是否为本月文章
             rawData[i].frontmatter.isMonthly = judgeIsMonthly(rawData[i].frontmatter.time)
-
             // 追加本月文章的标签
             if (rawData[i].frontmatter.isMonthly) {
                 let arr = []
@@ -75,11 +70,8 @@ export default createContentLoader('zo-articles/*.md', {
                 rawData[i].frontmatter.tags = arr
             }
 
-
             // 判断是否为本周文章
             rawData[i].frontmatter.isWeekly = judgeIsWeekly(rawData[i].frontmatter.time)
-
-
             // 追加本周文章的标签
             if (rawData[i].frontmatter.isWeekly) {
                 let arr = []
@@ -89,8 +81,6 @@ export default createContentLoader('zo-articles/*.md', {
                 arr.push('本周文章')
                 rawData[i].frontmatter.tags = arr
             }
-
-
 
         }
 

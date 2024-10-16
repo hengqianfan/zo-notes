@@ -90,10 +90,18 @@
 
                         </div>
 
+                        <!-- <el-pagination layout="prev, pager, next" :total="data.length" /> -->
+
 
                     </transition-group>
 
+
+
                 </div>
+
+
+
+
 
 
 

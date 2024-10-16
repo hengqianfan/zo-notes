@@ -5,15 +5,10 @@ doc-before: false
 
 # 笔记聚合页面
 
-## 1. 编程
-
-### 1.1 基础语言类
-
----
+## 1. 编程类笔记
 
 
-
-#### 1.1.1 HTML
+### HTML
 
 ---
 
@@ -27,7 +22,7 @@ doc-before: false
 
 ---
 
-#### 1.1.2 SCSS
+### SCSS
 
 ---
 
@@ -40,32 +35,40 @@ doc-before: false
 
 ---
 
-#### 1.1.3 JavaScript
+### JavaScript
 
 ---
 
 <CardNote :momo="{
     title:'Javascript笔记',
-    intro:'。',
+    intro:'学习JS中遇到的问题，以及和JS相关知识的归纳。',
     icon:'javascript',
     link:'/zo-repo/javascript/00 简述'
     }" />
 
 
-### 1.2 框架类
 
-### 1.3 库与项目
+### electron
 
-### 1.4 相关知识
+<CardNote :momo="{
+    title:'electron',
+    intro:'',
+    icon:'electron',
+    link:'/zo-repo/electron/00 简述'
+    }" />
 
-#### 1.4.1 Github 
+
+
+
+
+### Github 
 
 
 ---
 
 <CardNote :momo="{
     title:'github',
-    intro:'',
+    intro:'Git的知识，以及Github平台相关知识。',
     icon:'github',
     link:'/zo-repo/github/00 简述'
     }" />
@@ -74,9 +77,9 @@ doc-before: false
 
 
 
-## 2. 网站
+## 2. 网站相关笔记
 
-### 2.1 建站知识
+### 建站知识
 
 ---
 
@@ -89,7 +92,7 @@ doc-before: false
 
 ---
 
-### 2.2 vitepress
+### vitepress
 
 ---
 
@@ -103,12 +106,12 @@ doc-before: false
 
 ## 3. 电脑使用
 
-### 3.1. 电脑初始化
+### 电脑初始化
 
 
 <CardNote :momo="{
     title:'初始化电脑',
-    intro:'这是本人的初始化电脑笔记，并不合适所有人，请谨慎阅览',
+    intro:'这是本人的初始化电脑笔记，并不合适所有人，请谨慎阅览。',
     icon:'computer',
     link:'/zo-repo/computer-init/00 简述'
     }" />
