@@ -96,7 +96,7 @@ export const themeConfig = {
 
 
     editLink: {
-        pattern: 'https://github.com/hengqianfan/zo-notes/edit/main/root-docs/:path'
+        pattern: 'https://github.com/zocv/zo-notes/edit/main/root-docs/:path'
 
     }
 

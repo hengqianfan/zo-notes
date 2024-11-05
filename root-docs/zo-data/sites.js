@@ -756,6 +756,15 @@ export const sites_data = [
                     }
                 ]
             },
+            {
+                value: '小说',
+                children: [{
+                    value: '天籁小说',
+                    link: 'https://tianlai100.com',
+                    icon: 'book',
+                    intro: '本平台提供的新小说资源均是搜集自各个网络平台.'
+                }]
+            },
 
             {
                 value: '电子书',
