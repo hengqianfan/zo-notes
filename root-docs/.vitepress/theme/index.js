@@ -11,6 +11,8 @@ import MyLayout from './Layout.vue'
 
 // 引入全局组件
 import gloalComponemnts from './components/index.js'
+// 游客徽章
+import visitor from './components/slot-visitor/index.vue'
 // 引入自定义搜索框（应用于导航栏）
 import slotSearch from './components/slot-search/index.vue'
 // 引入文章前的信息组件
@@ -40,6 +42,7 @@ export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
+      'nav-bar-title-after': () => h(visitor),
       'nav-bar-content-before': () => h(slotSearch),
       'not-found': () => h(notFound),
       'doc-before': () => h(myArticleInfo)

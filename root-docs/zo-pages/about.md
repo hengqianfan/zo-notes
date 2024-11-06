@@ -1,3 +1,6 @@
+---
+outline: [2,4]
+---
 # 关于本站
 
 
@@ -25,9 +28,10 @@
 
 - 假若，你将本站内容发布在第三方平台（包括不限于：Bilibili、抖音、小红书、百度、今日头条、知乎、小黑盒、CSDN等），**请在对应平台关注站长**，**并在文章末尾或评论区@站长的账号**。
 
-|平台|站长的账号|ID|链接地址|
+|平台|账号名称|平台ID|链接地址|
 |---|---|---|---|
-|Bilibili|数码猿猴|3546729108474211|https://space.bilibili.com/3546729108474211/|
+|Bilibili|数码猿猴|3546729108474211|[enter](https://space.bilibili.com/3546729108474211/ )|
+|小黑盒|冰刀快和飞|51427625|[enter](https://web.xiaoheihe.cn/bbs/user_profile_share?user_id=51427625&h_src=writer) |
 
 
 ### 3.2 争议解决
@@ -128,13 +132,51 @@ readTime: false
 
 ---
 ```
+### 4.4 参考博客
 
+::: warning <Badge type='warning'>说明</Badge>
+
+
+本站的某些功能实现与部分UI设计，多少吸纳了下列许多优秀的 vitepress 博客项目博客分享  
+
+
+:::
+
+<Badge type='danger'>下列都是Github仓库地址，请准备霍格沃兹环境！</Badge>
+
+- [`茂茂物语`](https://github.com/ATQQ/sugar-blog){target="_blank"}
+
+- [`粥里有勺糖`](https://github.com/ATQQ/sugar-blog){target="_blank"}
+
+- [`查尔斯`](https://github.com/Charles7c/charles7c.github.io){target="_blank"}
+
+- [`罗磊博客`](https://github.com/foru17/luoleiorg){target="_blank"}
 
 ## 5. 功能实现
 
 ### 4.1 文章数据库
 
 ### 4.2 自动侧边栏
+
+---
+
+#### 4.2.1 新建脚本
+
+- 你可以在你喜欢的位置创建一个`autoSidebar.js`的文件
+
+> 这个脚本将会自动生成侧边栏目录
+
+<<< @/.vitepress/myscript/autoSidebar.js 
+
+#### 4.2.2 实现原理
+
+将需要手动填写的目录结构，通过自动化脚本生成
+
+
+#### 4.2.3 注意事项
+
+调用脚本时，需要填写需要生成目录的文件夹位置
+
 
 ### 3.3 自定义搜索
 

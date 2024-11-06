@@ -26,16 +26,18 @@
                 <div class="ps-content-block-sites">
                     <div v-for="item2 in item.children" class="site-card">
 
-                        <img :src="withBase(gain_icon(item2.icon))" class="site-icon">
-
 
                         <div class="site-info">
-
+                            <img :src="withBase(gain_icon(item2.icon))" class="site-icon">
                             <div @click="tosite(item2.link)" class="site-title">{{ item2.value }}</div>
 
-                            <div class="site-intro">{{ item2.intro }}</div>
-
                         </div>
+
+
+
+
+                        <div class="site-intro">{{ item2.intro }}</div>
+
 
                     </div>
                 </div>

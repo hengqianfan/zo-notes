@@ -1,19 +1,30 @@
+// 导入处理路径的node模块
 import path from 'node:path'
+// 导入处理文件的node模块
 import fs from 'node:fs'
-
-
 /**
- * vitepress项目的根目录
+ * 项目的根目录
  */
 const root = __dirname.split('.vitepress')[0]
-
 
 /**
  * 侧边栏中要忽略的文件或者目录
  */
-const ignore_list = ['index.md', '.vitepress', 'node_modules', '.idea', 'assets', 'embedded_notes', 'xrepo', '0.intro']
+const ignore_list = [
+    'index.md',
+    '.vitepress',
+    'node_modules',
+    '.idea',
+    'assets',
+    'embedded_notes',
+    'xrepo',
+    '0.intro']
 
-// 判断是否是文件夹
+/**
+ * 判断是否属于文件夹
+ * @param {*} path 文件的路径
+ * @returns 判断的结果
+ */
 const isDir = (path) => fs.lstatSync(path).isDirectory()
 
 
@@ -54,9 +65,6 @@ export const create_sidebar = (dir_unprocessed, folder_level) => {
 
     // 获文件夹下的文件
     const files_all = fs.readdirSync(dir_path)
-
-
-
 
     // 剔除需要忽略文件夹
     const is_effective = (arr1, arr2) => Array.from(new Set(arr1.filter((item) => !new Set(arr2).has(item))))

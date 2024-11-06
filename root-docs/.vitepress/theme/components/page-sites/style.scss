@@ -89,7 +89,7 @@
 
     .ps-content {
         width: 100%;
-        margin-top: 10px;
+        // margin-top: 5px;
         display: flex;
         flex-direction: column;
 
@@ -135,24 +135,27 @@
                 flex-wrap: wrap;
                 padding: .625rem;
 
+
+                // 网站卡片
                 .site-card {
+                    background-color: $my_bg_color_02;
 
-
+                    // 防止悬浮时特效异常
                     border: .125rem $my_bg_color_02 dotted;
 
+                    padding: 10px;
 
-                    margin: .75rem;
+                    margin: .625rem;
 
-                    width: 18.75rem;
-                    height: 7.5rem;
+                    width: 15rem;
+                    height: 6.25rem;
                     display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
 
                     border-radius: .5rem;
 
-                    background-color: $my_bg_color_02;
 
                     box-shadow: .125rem .125rem .0625rem $my_bg_color_02_a,
                         -.125rem -.125rem .0625rem $my_bg_color_02_b;
@@ -160,135 +163,93 @@
                     transition: all 0.6s linear;
 
 
-                    .site-icon {
-                        margin-left: .9375rem;
-                        // background-color: $mycolor_y;
 
-                        padding: .3125rem;
-                        width: 4.375rem;
-                        height: 4.375rem;
-                        border-radius: .3125rem;
-                        box-shadow: .125rem .125rem .3125rem $my_bg_color_02_a inset,
-                            -0.125rem -0.125rem .3125rem $my_bg_color_02_b inset;
-                        transition: all 0.6s linear;
-
-
-                    }
 
                     .site-info {
-                        margin-right: .625rem;
+
                         // background-color: $mycolor_1;
                         width: 11.25rem;
                         height: 5rem;
                         display: flex;
-                        flex-direction: column;
+                        flex-direction: row;
                         justify-content: space-between;
                         transition: all 0.6s linear;
 
 
+
+                        .site-icon {
+
+                            // background-color: $mycolor_y;
+
+                            padding: .125rem;
+                            width: 1.875rem;
+                            height: 1.875rem;
+                            border-radius: .3125rem;
+                            box-shadow: .125rem .125rem .1875rem $my_bg_color_02_a ,
+                                -0.125rem -0.125rem .1875rem $my_bg_color_02_b ;
+                            transition: all 0.6s linear;
+
+
+                        }
+
+
                         .site-title {
-                            // background-color: $mycolor_y;
+                            margin-left: 15px;
                             width: 10rem;
                             height: 1.875rem;
                             line-height: 1.875rem;
-                            text-align: center;
                             font-weight: 600;
-                            // border-radius: .5rem;
                             border-radius: .125rem;
-
                             font-family: 'zqk英文';
-
-
-                            box-shadow: .125rem .125rem .1875rem $my_bg_color_02_a,
-                                -0.125rem -0.125rem .1875rem $my_bg_color_02_b;
                             transition: all 0.6s linear;
-
                         }
 
-                        .site-intro {
-                            // background-color: $mycolor_y;
-                            // 网址描述的首行缩进
-                            padding-left: .625rem;
-                            color: gray;
-                            width: 10rem;
-
-                            height: 1.875rem;
-                            font-size: .75rem;
-                            text-align: center;
-                            line-height: 1.875rem;
-                            // border-radius: .5rem;
-                            border-radius: .125rem;
-                            box-shadow: .125rem .125rem .1875rem $my_bg_color_02_a,
-                                -0.125rem -0.125rem .1875rem $my_bg_color_02_b;
-                            transition: all 0.6s linear;
 
 
-                        }
+
+
+                    }
+
+                    .site-intro {
+
+                        color: gray;
+                        width: 10rem;
+                        height: 1.875rem;
+                        font-size: .75rem;
+
+                        line-height: .9375rem;
+
+                        border-radius: .125rem;
+
+                        transition: all 0.6s linear;
+
+
                     }
                 }
 
                 // 悬浮时卡片特效
 
                 .site-card:hover {
+                    border: 2px blue dotted;
 
-                    background-color: $my_bg_color_03;
-
-                    display: flex;
-
-
-
-                    border: .125rem dashed white;
-
-                    .site-icon {
-                        margin-left: .9375rem;
-                        // background-color: $mycolor_x;
-                        padding: .3125rem;
-                        width: 4.375rem;
-                        height: 4.375rem;
-                        border-radius: .3125rem;
-
-                        background-color: $my_bg_color_02;
+                    .site-info {
+                        .site-icon {
+                            background-color: transparent;
+                        }
 
 
-                        // box-shadow: .125rem .125rem .1875rem $my_bg_color_03_a inset,
-                        //     -0.125rem -0.125rem .1875rem $my_bg_color_03_b inset;
+                        .site-title {
+                            color: rgb(40, 68, 128);
+                        }
+
+
 
 
 
                     }
 
-                    .site-info {
-
-                        display: flex;
-
-
-                        .site-title {
-
-
-                            font-weight: 600;
-                            border-radius: .625rem;
-
-
-                            color: whitesmoke;
-
-                            border: 1px dashed rgb(214, 214, 222);
-
-
-                            box-shadow: .125rem .125rem .1875rem $my_bg_color_03_a,
-                                -0.125rem -0.125rem .1875rem $my_bg_color_03_b;
-
-                        }
-
-                        .site-intro {
-
-                            text-align: center;
-                            color: white;
-
-                            box-shadow: .125rem .125rem .1875rem $my_bg_color_03_a,
-                                -0.125rem -0.125rem .1875rem $my_bg_color_03_b;
-
-
-                        }
+                    .site-intro {
+                        color: black;
                     }
                 }
             }
