@@ -1,8 +1,8 @@
 export const myNav = [
 
-    { text: '文章聚合 📰', link: '/zo-pages/all-articles' },
+    { text: '文章聚合', link: '/zo-pages/all-articles' },
 
-    { text: '笔记聚合 📚', link: '/zo-pages/notes' },
+    { text: '笔记聚合', link: '/zo-pages/notes' },
 
     {
         text: '全栈知识', items: [

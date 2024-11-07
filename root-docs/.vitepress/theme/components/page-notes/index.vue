@@ -10,7 +10,12 @@
                 <img :src="withBase(getImgSrc(item.cover))" alt="" class="pn-cover">
                 <a class="pn-title" :href="withBase(item.link)">{{ item.title }}</a>
             </div>
+
+
         </div>
+        <el-pagination :page-sizes="8" :size="size" :disabled="disabled" :background="background"
+            layout="total, prev, pager, next, jumper" :total="showedNotes.length" @size-change="handleSizeChange"
+            @current-change="handleCurrentChange" />
 
 
 
@@ -44,6 +49,18 @@ const getImgSrc = (momo) => {
     return `/notesCover/${momo}.png`
 }
 
+
+const handleCurrentChange = (momo) => {
+    console.log(momo);
+
+}
+
+
+
+
+
+
+
 </script>
 
 <style lang="scss" scoped>
@@ -60,6 +77,7 @@ const getImgSrc = (momo) => {
     background-color: rgb(244, 243, 243);
 
     .pn-nav {
+        margin-top: 10px;
         display: flex;
         flex-direction: row;
         width: 800px;
