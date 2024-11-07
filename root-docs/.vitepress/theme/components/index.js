@@ -5,7 +5,7 @@ import MyArticleInfo from './slot-articleInfo/index.vue'
 
 import PageTopic from './page-of-topic/index.vue'
 
-import PageNotes from './page-of-notes/index.vue'
+import PageNotes from './page-notes/index.vue'
 
 import PageArticles from './page-articles/index.vue'
 

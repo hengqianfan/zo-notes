@@ -110,19 +110,19 @@ export const sites_data = [
                         value: 'Alist',
                         link: 'http://127.0.0.1:5244/',
                         icon: 'alist',
-                        intro: '本地地址'
+                        intro: 'alist的浏览器本地端口地址'
                     },
                     {
                         value: 'Alist',
                         link: 'https://alist.nn.ci/zh/',
                         icon: 'alist',
-                        intro: '官网与文档'
+                        intro: 'alist的官网与文档说明'
                     },
                     {
                         value: 'Alist',
                         link: 'https://github.com/alist-org/docs',
                         icon: 'alist',
-                        intro: 'alist的仓库地址'
+                        intro: 'Alist的 Github 仓库地址'
                     },
                 ]
             },
@@ -183,6 +183,18 @@ export const sites_data = [
                     //     intro: '还可以，蛮稳定'
                     // },
 
+                ]
+            },
+            {
+                value: '国外厂商',
+                children: [
+                    {
+                        value: 'vercel',
+                        link: 'https://vercel.com/',
+                        icon: 'vercel',
+                        intro: '可以同步 Github Page 的平台'
+
+                    }
                 ]
             }
         ]
@@ -1027,7 +1039,7 @@ export const sites_data = [
                         value: '鑫空间',
                         link: 'https://www.zhangxinxu.com/',
                         icon: 'personal',
-                        intro: '有价值的个人博客'
+                        intro: '张鑫宇的博客，具有许多学习价值，存在干货。'
                     },
                     {
                         value: '阮一峰',
@@ -1038,22 +1050,28 @@ export const sites_data = [
                     {
                         value: '茂茂物语',
                         link: 'https://notes.fe-mm.com/',
-                        icon: 'personal',
+                        icon: 'vitepress',
                         intro: 'vitepress前端博客'
                     },
                     {
                         value: 'WL博客',
                         link: 'https://whlit.github.io/',
-                        icon: 'personal',
+                        icon: 'vitepress',
                         intro: 'vitepress博客'
                     },
 
                     {
                         value: '子卿博客',
                         link: 'https://zichin.com/blog/',
-                        icon: 'personal',
+                        icon: 'vitepress',
                         intro: 'vitepress博客'
                     },
+                    {
+                        value: '粥里有勺糖',
+                        link: 'https://sugarat.top/',
+                        icon: 'vitepress',
+                        intro: '目前发现的，功能比较花哨的vitepress博客'
+                    }
 
 
                 ]

@@ -50,12 +50,14 @@ doc-before: false
 
 ### electron
 
-<CardNote :momo="{
+<CardNote :momo="
+{
     title:'electron',
     intro:'',
     icon:'electron',
     link:'/zo-repo/electron/00 简述'
-    }" />
+    }
+    " />
 
 
 
