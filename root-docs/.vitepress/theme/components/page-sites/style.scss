@@ -22,7 +22,9 @@
 
         overflow-x: scroll;
 
-        border: 2px dashed rgb(182, 182, 232);
+        // border: 2px dashed rgb(182, 182, 232);
+        border-bottom: 2px dashed rgb(182, 182, 232);
+
 
 
 
@@ -138,10 +140,10 @@
 
                 // 网站卡片
                 .site-card {
-                    background-color: $my_bg_color_02;
+                    background-color: rgb(235, 238, 240);
 
                     // 防止悬浮时特效异常
-                    border: .125rem $my_bg_color_02 dotted;
+                    border: .125rem aliceblue dotted;
 
                     padding: 10px;
 
@@ -157,9 +159,6 @@
                     border-radius: .5rem;
 
 
-                    box-shadow: .125rem .125rem .0625rem $my_bg_color_02_a,
-                        -.125rem -.125rem .0625rem $my_bg_color_02_b;
-
                     transition: all 0.6s linear;
 
 
@@ -167,7 +166,7 @@
 
                     .site-info {
 
-                        // background-color: $mycolor_1;
+
                         width: 11.25rem;
                         height: 5rem;
                         display: flex;
@@ -178,15 +177,13 @@
 
 
                         .site-icon {
-
-                            // background-color: $mycolor_y;
+                            background-color: white;
 
                             padding: .125rem;
                             width: 1.875rem;
                             height: 1.875rem;
                             border-radius: .3125rem;
-                            box-shadow: .125rem .125rem .1875rem $my_bg_color_02_a ,
-                                -0.125rem -0.125rem .1875rem $my_bg_color_02_b ;
+
                             transition: all 0.6s linear;
 
 
@@ -195,7 +192,7 @@
 
                         .site-title {
                             margin-left: 15px;
-                            width: 10rem;
+                            width: 11.25rem;
                             height: 1.875rem;
                             line-height: 1.875rem;
                             font-weight: 600;
@@ -213,7 +210,7 @@
                     .site-intro {
 
                         color: gray;
-                        width: 10rem;
+                        width: 11.25rem;
                         height: 1.875rem;
                         font-size: .75rem;
 
@@ -230,7 +227,8 @@
                 // 悬浮时卡片特效
 
                 .site-card:hover {
-                    border: 2px blue dotted;
+                    border: 2px rgb(109, 188, 219) dotted;
+                    background-color: white;
 
                     .site-info {
                         .site-icon {

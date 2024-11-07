@@ -1081,10 +1081,10 @@ export const sites_data = [
                         intro: '周末小孩太多'
                     },
                     {
-                        value: '国家法律法规数据库',
+                        value: '法律法规数据库',
                         link: 'https://flk.npc.gov.cn/',
                         icon: 'book',
-                        intro: '权威性的官方网站'
+                        intro: '收录了以往与现行的法律法规，是权威性的官方网站。'
                     },
 
                     {

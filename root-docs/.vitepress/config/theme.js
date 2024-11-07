@@ -4,7 +4,8 @@ import { setAllSidebars } from '../myscript/autoSidebar'
 import { myNav } from './nav'
 
 export const themeConfig = {
-    siteTitle: 'zo-notes',
+    // 导航栏的网站标题
+    siteTitle: 'ZONOTES',
     logo: '/icon/png/logo.png',
     nav: myNav,
 

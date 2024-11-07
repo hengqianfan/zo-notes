@@ -7,6 +7,7 @@
 
 <style scoped>
 .visitor {
-    margin-left: 5px;
+    margin-left: 10px;
+    /* margin-right: 10px; */
 }
 </style>

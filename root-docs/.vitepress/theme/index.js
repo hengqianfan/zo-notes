@@ -44,6 +44,8 @@ export default {
     return h(DefaultTheme.Layout, null, {
       'nav-bar-title-after': () => h(visitor),
       'nav-bar-content-before': () => h(slotSearch),
+      // 'nav-bar-content-after': () => h(visitor),
+
       'not-found': () => h(notFound),
       'doc-before': () => h(myArticleInfo)
       // 'doc-before': () => h(ZoEditor)

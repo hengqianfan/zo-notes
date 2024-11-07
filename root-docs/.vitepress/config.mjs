@@ -19,7 +19,7 @@ import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-i
 
 export default defineConfig({
   lang: 'cn',
-  title: "zo-notes",
+  title: "ZONOTES",
   description: "A VitePress Site",
 
   base: '/zo-notes/',
