@@ -44,7 +44,13 @@
 
 
 
+
+
+
+
             </div>
+
+
 
             <transition name="test1">
                 <div class="pa-tabbar" v-if="show_tabs">
@@ -102,40 +108,13 @@
 
 
 
-
-
-
             </div>
+
+            <el-pagination :page-sizes="pageSize" :disabled="disabled" :background="background"
+                layout="total, prev, pager, next, jumper" :total="sortedData.length" @size-change="handleSizeChange"
+                @current-change="handleCurrentChange" class="pa-pagination" />
+
         </div>
-
-
-        <!-- <div class="pa-side">
-
-
-
-            <div class="pa-side-2">
-                <div class="pa-side-2-item">最近文章</div>
-                <div class="pa-side-2-articles">
-                    <div class="pa-side-2-article" v-for="(item, index) in newList" v-show="index < 10">
-                        {{ index + 1 }}
-
-                        {{ item.frontmatter.id + `:` }}
-
-                        {{ item.frontmatter.title }}
-                        <br>
-                        ---
-                    </div>
-                </div>
-            </div>
-
-            <div class=""></div>
-
-
-
-        </div> -->
-
-
-
 
 
     </div>
@@ -148,34 +127,18 @@ import { withBase, useData } from 'vitepress'
 import { data } from '/zo-data/articles.data.js'
 import { Hide, View } from '@element-plus/icons-vue'
 
+const pageSize = 15
+
 const getImgSrc = (momo) => {
 
     return `/articlesPic/${momo}.png`
 }
 
-// 是否显示修改中的文章
-const show_editing = ref(false)
 
-// 排除修改中的文章
-const removeData = (data) => {
-    let newData = []
-    for (let i = 0; i < data.length; i++) {
-        let tags = data[i].frontmatter.tags
-        let res = tags.indexOf('修改中');
-        if (res == -1) {
-            newData.push(data[i])
-        }
-    }
-    return newData
-}
-
-// 展示的数据
-// const showData = ref(removeData(data))
+let sortedData = ref(data)
 
 
-
-const showData = ref(data)
-
+let showData = ref(sortedData.value.slice(0, pageSize))
 
 
 const show_tabs = ref(false)
@@ -294,7 +257,9 @@ const findX = (momo, autoClose) => {
         })
     }
 
-    showData.value = res
+    sortedData.value = res
+
+    showData.value = sortedData.value.slice(0, pageSize)
 
 
 }
@@ -319,6 +284,13 @@ const findArticlesNum = (momo) => {
     } else {
         return 0
     }
+}
+
+
+const handleCurrentChange = (momo) => {
+    let start = (momo - 1) * pageSize
+    let end = momo * pageSize
+    showData.value = sortedData.value.slice(start, end)
 }
 
 

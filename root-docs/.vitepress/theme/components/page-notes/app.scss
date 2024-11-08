@@ -3,88 +3,22 @@
 @media (min-width: 0) and (max-width: 62.5rem) {
 
     .page-notes-all {
-
-        display: flex;
-
-        flex-direction: column;
-
         .pn-nav {
-
-            height: 2.5rem;
-            width: 100%;
-            // background-color: white !important;
+            margin-top: 10px;
             display: flex;
             flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-            background-color: white;
+            width: 100% !important;
+            height: 40px;
+            line-height: 40px;
+            font-size: 18px;
+            font-family: '优设';
 
-            .pn-nav-item {
-                margin: 0rem 1.25rem;
-                height: 1.25rem;
-                line-height: 1.25rem;
+            justify-content: space-around;
 
-
-            }
         }
 
         .pn-content {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            padding: 10px;
-
-            .pn-show-card {
-                height: 220px;
-                width: 160px;
-                background-color: $my_bg_color_02;
-                margin: 5px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                justify-content: space-around;
-
-                box-shadow: 2px 2px 3px #bebebe,
-                    -2px -2px 3px #ffffff;
-
-                border-radius: .3125rem;
-
-
-
-
-                .pn-show-card-icon {
-                    width: 100px;
-                    padding: .3125rem;
-                    background-color: $my_bg_color_01;
-
-                    box-shadow: 1px 1px 2px #bebebe inset,
-                        -1px -1px 2px #ffffff inset;
-
-
-                }
-
-                .pn-show-card-title {
-                    margin-bottom: 20px;
-                    font-size: 11px;
-                    width: 120px;
-                    background-color: $my_bg_color_02;
-
-                    text-align: center;
-
-
-                    box-shadow: 2px 2px 3px #bebebe,
-                        -2px -2px 3px #ffffff;
-
-
-                    border-radius: .125rem;
-
-                    color: $my_bg_color_04;
-
-                    font-weight: 600;
-
-                }
-            }
+            width: 100% !important;
         }
     }
 

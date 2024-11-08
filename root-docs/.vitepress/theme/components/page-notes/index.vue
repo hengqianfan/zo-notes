@@ -14,7 +14,7 @@
 
         </div>
         <el-pagination :page-sizes="8" :size="size" :disabled="disabled" :background="background"
-            layout="total, prev, pager, next, jumper" :total="showedNotes.length" @size-change="handleSizeChange"
+            layout="total, prev, pager, next, jumper" :total="sortedNotes.length" @size-change="handleSizeChange"
             @current-change="handleCurrentChange" />
 
 
@@ -27,21 +27,29 @@ import { ref } from 'vue'
 import { withBase, useData } from 'vitepress'
 import { notesList } from '/zo-data/notes'
 
-const noteClass = ['编程', '电脑', '软件', '网站']
+const noteClass = ['全部', '编程', '电脑', '软件', '网站']
+
+let sortedNotes = ref(notesList)
+
+let showedNotes = ref(sortedNotes.value.slice(0, 8))
 
 
 
-let showedNotes = ref(notesList)
 
 
 const sortNotes = (momo) => {
+
     let arr = []
     for (let i = 0; i < notesList.length; i++) {
         if (notesList[i].class == momo) {
             arr.push(notesList[i])
         }
     }
-    showedNotes.value = arr
+    if (momo == '全部') {
+        arr = notesList
+    }
+    sortedNotes.value = arr
+    showedNotes.value = sortedNotes.value.slice(0, 8)
 }
 
 const getImgSrc = (momo) => {
@@ -51,7 +59,10 @@ const getImgSrc = (momo) => {
 
 
 const handleCurrentChange = (momo) => {
-    console.log(momo);
+
+    let start = (momo - 1) * 8
+    let end = momo * 8
+    showedNotes.value = notesList.slice(start, end)
 
 }
 

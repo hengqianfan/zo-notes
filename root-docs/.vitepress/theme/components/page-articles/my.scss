@@ -8,9 +8,11 @@
 
 
     .pa-main {
-        width: 80%;
+
         width: 100%;
-        max-height: 80vh;
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
 
 
         .pa-navbar {
@@ -151,7 +153,7 @@
         .pa-content {
             display: flex;
             flex-direction: row;
-            min-height: 60vh;
+            min-height: 50vh;
             width: 100%;
             padding-left: 10px;
 
@@ -168,7 +170,7 @@
 
 
                 .pa-article-card {
-                    margin: 10px;
+                    margin: 5px;
                     display: flex;
                     flex-direction: column;
                     width: 280px;
@@ -311,6 +313,8 @@
 
         }
 
+        .pa-pagination {}
+
 
     }
 
@@ -322,8 +326,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
-
 
     }
 
