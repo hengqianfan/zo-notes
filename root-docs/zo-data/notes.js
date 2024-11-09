@@ -25,6 +25,15 @@ export const notesList = [
         class: '编程'
     },
     {
+        title: 'Nodejs',
+        intro: '',
+        icon: 'nodejs',
+        link: '/zo-repo/nodejs/00 简述',
+        cover: 'nodejscover',
+        class: '编程'
+    },
+
+    {
         title: 'electron笔记',
         intro: '',
         icon: 'electron',
@@ -63,6 +72,30 @@ export const notesList = [
         link: '/zo-repo/computer-init/00 简述',
         cover: 'computercover',
         class: '电脑'
+    },
+    {
+        title: 'Uniapp笔记',
+        intro: ' ',
+        icon: "uniapp",
+        link: '/zo-repo/uniapp/00 简述',
+        cover: 'uniappcover',
+        class: '编程'
+    },
+    {
+        title: 'cocosCreator',
+        intro: '',
+        icon: 'cocosCreator',
+        link: '/zo-repo/cocos-creator/00 简述',
+        cover: 'cocoscover',
+        class: '编程'
+    },
+    {
+        title: 'Docker',
+        intro: '',
+        icon: 'docker',
+        link: '/zo-repo/docker/00 简述',
+        cover: 'dockercover',
+        class: '编程'
     },
 
 

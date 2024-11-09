@@ -62,8 +62,6 @@
                 </div>
             </transition>
 
-
-
             <div class="pa-content">
 
 
@@ -110,9 +108,8 @@
 
             </div>
 
-            <el-pagination :page-sizes="pageSize" :disabled="disabled" :background="background"
-                layout="total, prev, pager, next, jumper" :total="sortedData.length" @size-change="handleSizeChange"
-                @current-change="handleCurrentChange" class="pa-pagination" />
+            <el-pagination :default-page-size="pageSize" layout="total, prev, pager, next, jumper"
+                :total="sortedData.length" @current-change="handleCurrentChange" class="pa-pagination" />
 
         </div>
 
@@ -134,7 +131,6 @@ const getImgSrc = (momo) => {
     return `/articlesPic/${momo}.png`
 }
 
-
 let sortedData = ref(data)
 
 
@@ -142,6 +138,7 @@ let showData = ref(sortedData.value.slice(0, pageSize))
 
 
 const show_tabs = ref(false)
+
 
 // 定义 tag 对象
 let all_tags = ref([])

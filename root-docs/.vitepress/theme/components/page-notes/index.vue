@@ -13,9 +13,8 @@
 
 
         </div>
-        <el-pagination :page-sizes="8" :size="size" :disabled="disabled" :background="background"
-            layout="total, prev, pager, next, jumper" :total="sortedNotes.length" @size-change="handleSizeChange"
-            @current-change="handleCurrentChange" />
+        <el-pagination :default-page-size="pageSize" layout="total, prev, pager, next, jumper"
+            :total="sortedNotes.length" @current-change="handleCurrentChange" />
 
 
 
@@ -27,11 +26,14 @@ import { ref } from 'vue'
 import { withBase, useData } from 'vitepress'
 import { notesList } from '/zo-data/notes'
 
-const noteClass = ['全部', '编程', '电脑', '软件', '网站']
+
+const pageSize = 8
+
+const noteClass = ['全部', '编程', '电脑', '软件', '网站', '其它']
 
 let sortedNotes = ref(notesList)
 
-let showedNotes = ref(sortedNotes.value.slice(0, 8))
+let showedNotes = ref(sortedNotes.value.slice(0, pageSize))
 
 
 
@@ -49,7 +51,7 @@ const sortNotes = (momo) => {
         arr = notesList
     }
     sortedNotes.value = arr
-    showedNotes.value = sortedNotes.value.slice(0, 8)
+    showedNotes.value = sortedNotes.value.slice(0, pageSize)
 }
 
 const getImgSrc = (momo) => {
@@ -60,9 +62,9 @@ const getImgSrc = (momo) => {
 
 const handleCurrentChange = (momo) => {
 
-    let start = (momo - 1) * 8
-    let end = momo * 8
-    showedNotes.value = notesList.slice(start, end)
+    let start = (momo - 1) * pageSize
+    let end = momo * pageSize
+    showedNotes.value = sortedNotes.value.slice(start, end)
 
 }
 
@@ -76,67 +78,6 @@ const handleCurrentChange = (momo) => {
 
 <style lang="scss" scoped>
 @import '../../style/vars.scss';
+@import './my.scss';
 @import './app.scss';
-
-.page-notes-all {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    // justify-content: center;
-    width: 100%;
-    height: 96vh;
-    background-color: rgb(244, 243, 243);
-
-    .pn-nav {
-        margin-top: 10px;
-        display: flex;
-        flex-direction: row;
-        width: 800px;
-        height: 40px;
-        line-height: 40px;
-        font-size: 18px;
-        font-family: '优设';
-
-        justify-content: space-around;
-
-    }
-
-    .pn-content {
-        margin-top: 10px;
-
-        width: 1500px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-
-
-        .pn-card {
-            width: 320px;
-            height: 240px;
-
-            margin: 10px;
-            border-radius: 10px;
-            background-color: white;
-            box-shadow: 1px 1px 1px rgb(229, 227, 227);
-
-            .pn-cover {
-                border-radius: 10px 10px 0 0;
-                width: 320px;
-                height: 180px;
-
-            }
-
-            .pn-title {
-                height: 60px;
-                width: 320px;
-                line-height: 60px;
-                font-size: 20px;
-                font-family: '剑豪体';
-                text-align: center;
-                display: flex;
-                justify-content: center;
-            }
-        }
-    }
-}
 </style>

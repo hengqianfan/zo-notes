@@ -283,6 +283,7 @@
                 }
 
                 .pa-article-card:hover {
+                    border: 2px dashed red;
 
                     .pa-article-card-cover-id {
                         display: flex;
@@ -313,7 +314,7 @@
 
         }
 
-        .pa-pagination {}
+
 
 
     }
