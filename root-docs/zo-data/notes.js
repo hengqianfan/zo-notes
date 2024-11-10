@@ -97,6 +97,14 @@ export const notesList = [
         cover: 'dockercover',
         class: '编程'
     },
+    {
+        title: 'VScode',
+        intro: '',
+        icon: 'vscode',
+        link: '/zo-repo/vscode/00 简述',
+        cover: 'vscodecover',
+        class: '软件'
+    }
 
 
 

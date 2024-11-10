@@ -171,6 +171,12 @@ export const sites_data = [
                         intro: '99元一年'
                     },
                     {
+                        value: '腾讯云',
+                        link: 'https://console.cloud.tencent.com/',
+                        icon: 'tencent',
+                        intro: '企鹅的域名还是蛮便宜的'
+                    },
+                    {
                         value: '七牛云',
                         link: 'https://qmall.qiniu.com/',
                         icon: 'qiniu',

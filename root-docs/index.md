@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: ZONOTES
-  text: 数码猿猴的知识库
+  text: a-niu的知识库
   tagline: 减少内耗，先完成，再完美！
   image:
     src: /icon/svg/logo.svg
