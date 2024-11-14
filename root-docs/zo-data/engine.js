@@ -1,5 +1,6 @@
 // 顶部搜素框小组件使用的数据
 export const engine_list = [
+
     { name: 'bing', icon: `bing`, baseurl: 'https://bing.com/search?q=' },
     { name: 'google', icon: `google`, baseurl: 'https://www.google.com/search?q=' },
     { name: 'baidu', icon: `baidu`, baseurl: 'https://baidu.com/s?wd=' },
@@ -12,7 +13,7 @@ export const engine_list = [
     { name: 'haici', icon: `haici`, baseurl: 'https://corp.dict.cn/search?q=' },
     { name: 'iciba', icon: `iciba`, baseurl: 'https://www.iciba.com/word?w=' },
 
-
 ]
 
+// 默认引擎
 export const default_engine = { name: 'google', icon: `google`, baseurl: 'https://www.google.com/search?q=' }

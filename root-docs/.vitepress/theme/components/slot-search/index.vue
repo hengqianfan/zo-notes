@@ -121,7 +121,8 @@ $search_max_width: 150px;
     // 保证出现在最顶层
     z-index: 1;
     border: 1px solid aliceblue;
-    margin-left: 100px;
+    // 距离左侧的位置
+    margin-left: 50px;
     background-color: aliceblue;
     display: flex;
     position: relative;

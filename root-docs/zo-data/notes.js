@@ -104,6 +104,14 @@ export const notesList = [
         link: '/zo-repo/vscode/00 简述',
         cover: 'vscodecover',
         class: '软件'
+    },
+    {
+        title: 'python',
+        intro: '',
+        icon: 'python',
+        link: '/zo-repo/python/00 简述',
+        cover: 'pythoncover',
+        class: '编程'
     }
 
 

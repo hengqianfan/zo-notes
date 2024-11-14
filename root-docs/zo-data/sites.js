@@ -10,7 +10,7 @@ export const sites_data = [
                         value: 'bilibili',
                         link: 'https://www.bilibili.com/',
                         icon: 'bilibili3',
-                        intro: '买课与买课',
+                        intro: '国内著名的长视频社区',
                         classone: '常用',
                         classtwo: '最近常用',
                     },

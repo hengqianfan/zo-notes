@@ -4,16 +4,24 @@
 
         <div class="ps-nav">
 
+
+
+
             <el-button size="default" @click="get_sites(item)" class="ps-nav-item" v-for="item in level_1_classlist">{{
                 item }}</el-button>
+
+
+            <div class="ps-search">
+
+                <el-cascader placeholder="搜索" size="small" :options="sites" filterable :props="props" clearable
+                    v-model="searchkey" @change="get_sites2(searchkey)" />
+
+            </div>
 
             <!-- <div class="ps-nav-item" v-for="item in level_1_classlist" @click="get_sites(item)">{{ item }}</div> -->
         </div>
 
-        <div class="ps-search">
-            <el-cascader placeholder="选择网址" size="small" :options="sites" filterable :props="props" clearable
-                v-model="searchkey" @change="get_sites2(searchkey)" />
-        </div>
+
 
 
         <div class="ps-content">
