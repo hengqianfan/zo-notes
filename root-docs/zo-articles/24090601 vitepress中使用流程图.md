@@ -2,6 +2,7 @@
 aside: left
 tags: ['vitepress','mermaid']
 icon: 'vitepress'
+cover: '/cover/vitepresscover.png'
 
 ---
  

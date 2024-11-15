@@ -2,6 +2,8 @@
 aside: left
 tags: ['修改中','vitepress']
 icon: 'vitepress'
+cover: '/cover/vitepresscover.png'
+
 ---
  
 ###### 24101001

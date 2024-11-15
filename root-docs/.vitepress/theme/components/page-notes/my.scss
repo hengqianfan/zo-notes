@@ -39,11 +39,22 @@
             background-color: white;
             box-shadow: 1px 1px 1px rgb(229, 227, 227);
 
+            transition: all 0.5s;
+
             .pn-cover {
                 border-radius: 10px 10px 0 0;
                 width: 320px;
                 height: 180px;
                 background-size: 100%;
+
+
+
+                .pn-cover-img {
+                    width: 100%;
+                    height: 100%;
+
+
+                }
 
             }
 
@@ -76,9 +87,12 @@
         .pn-card:hover {
             transform: scale(0.9);
 
+
             .pn-cover {
 
                 border-radius: 10px 10px 0 0;
+
+
             }
 
             .pn-title {

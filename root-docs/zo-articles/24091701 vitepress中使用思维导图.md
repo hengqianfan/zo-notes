@@ -2,6 +2,8 @@
 aside: left
 tags: ['vitepress','xmind','思维导图','G6','可视化']
 icon: 'vitepress'
+cover: '/cover/vitepresscover.png'
+
 ---
  
 ###### 24091701

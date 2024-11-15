@@ -1,13 +1,13 @@
 export const myNav = [
-    { text: '网址导航', link: '/zo-pages/all-sites' },
+    { text: '导航', link: '/zo-pages/all-sites' },
 
 
-    { text: '文章聚合', link: '/zo-pages/all-articles' },
+    { text: '文章', link: '/zo-pages/all-articles' },
 
-    { text: '笔记聚合', link: '/zo-pages/notes' },
+    { text: '笔记', link: '/zo-pages/notes' },
 
     {
-        text: '全栈知识', items: [
+        text: '全栈', items: [
 
             {
                 text: '【基础部分】', items: [
@@ -47,14 +47,14 @@ export const myNav = [
 
 
     {
-        text: '专题区', items: [
+        text: '专题', items: [
             { text: '前端生态圈', link: '/zo-pages/topic-web-design' },
             { text: '建站专题', link: '/zo-repo/build-site/00 简述' }
         ]
     },
 
     {
-        text: '其他杂项', items: [
+        text: '更多', items: [
             { text: '关于本站 🎁', link: '/zo-pages/about' },
             { text: '更新日志 📝', link: '/zo-pages/history-updated#momo' },
             { text: '游戏世界 🎮', link: '/zo-repo/game/00 简述' },

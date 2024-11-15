@@ -153,14 +153,14 @@
         .pa-content {
             display: flex;
             flex-direction: row;
-            min-height: 50vh;
+            min-height: 40vh;
             width: 100%;
             padding-left: 10px;
 
             position: relative;
 
             .list {
-                height: 80vh;
+                height: 75vh;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -170,140 +170,141 @@
 
 
                 .pa-article-card {
-                    margin: 5px;
+
+                    border-radius: 10px;
+                    margin: 15px;
                     display: flex;
                     flex-direction: column;
-                    width: 280px;
-                    height: 190px;
-                    // border: 2px dashed #3b72a3;
-                    border: 2px dashed #889bac;
+                    width: 320px;
+                    height: 260px;
+                    background-color: rgb(211, 216, 220);
+                    box-shadow: 1px 1px 1px rgb(229, 227, 227);
 
-                    // border: 1px solid #dddfe0;
-
-                    background-color: aliceblue;
 
 
 
                     .pa-article-card-cover {
-                        width: 276px;
-                        height: 155.25px;
-                        background-color: transparent;
-                        // 设置默认封面
-
-                        background-image: url("../../../../public/articlesPic/momo3.png");
-                        background-size: 100%;
-                        display: flex;
-
-                        position: relative;
-                        border-bottom: 1px solid #b9c8d5;
-
-
-
-                        .pa-article-card-cover-id {
-                            position: absolute;
-                            background-color: aliceblue;
-                            background-color: #75d7ef;
-                            color: white;
-                            height: 20px;
-                            width: 100px;
-                            border-radius: 0 0 10px 0;
-                            top: 0;
-                            left: 0;
-                            // display: none;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            font-size: 12px;
-
-
-
-
-
-                        }
+                        width: 320px;
+                        height: 180px;
+                        overflow: hidden;
+                        border-radius: 10px 10px 0 0;
 
                         .pa-article-card-cover-img {
-                            max-height: 178px;
-                            // background-image: url('../../../../public/gallery/24082801.png');
-
+                            width: 100%;
+                            height: 100%;
+                            transition: all 0.8s;
 
                         }
 
 
-                        .pa-article-card-tags {
-                            position: absolute;
-                            display: none;
-                            flex-direction: row;
-                            flex-wrap: wrap;
-                            width: 280px;
-                            bottom: 0;
-
-
-
-                            .pa-article-card-tags-tag {
-                                margin: 5px;
-                                padding: 3px;
-                                min-width: 50px;
-                                height: 20px;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                border-radius: 10px;
-                                background-color: #1d1d45;
-                                background-color: #75d7ef;
-                                background-color: #192357;
-                                color: white;
-                                font-size: 10px;
-
-
-                            }
-                        }
 
 
                     }
+
+
 
 
 
 
                     .pa-article-card-title {
-                        height: 30px;
+                        height: 40px;
                         font-size: 18px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         background-color: white;
+
                         text-align: center;
                         // background-color: rebeccapurple;
                         font-family: '剑豪体';
                         color: rgb(87, 84, 84);
+                        transition: all 0.8s;
+
 
 
                     }
+
+                    .pa-article-card-info {
+
+                        height: 40px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: flex-start;
+                        background-color: white;
+
+
+                        .pa-article-card-time {
+                            margin-left: 10px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 5px;
+                            height: 20px;
+                            color: #828e98;
+                            // background-color: #afbdc8;
+                            font-size: 10px;
+                            border-radius: 5px;
+                            margin-right: 20px;
+                        }
+
+                        .pa-article-card-tags {
+                            margin-left: 10px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 5px;
+                            height: 20px;
+                            color: #828e98;
+                            background-color: #e6e9eb;
+                            font-size: 10px;
+                            border-radius: 5px;
+                        }
+                    }
+
 
 
                 }
 
                 .pa-article-card:hover {
-                    border: 2px dashed red;
 
-                    .pa-article-card-cover-id {
-                        display: flex;
+
+                    .pa-article-card-cover {
+
+
+                        .pa-article-card-cover-img {
+                            transform: scale(1.2);
+
+                        }
+
                     }
 
 
-                    .pa-article-card-tags {
+
+                    .pa-article-card-title {
+
+                        color: #624eb5;
+
+
+                    }
+
+                    .pa-article-card-info {
+
                         display: flex;
 
 
-                        .pa-article-card-tags-tag:hover {
-                            background-color: #e4af52;
+
+                        .pa-article-card-time {
+                            margin-left: 10px;
+
+                        }
+
+                        .pa-article-card-tags {
+
+                            display: flex;
+
                         }
                     }
-
-                    .pa-article-card-title:hover {
-                        color: rgb(113, 150, 205);
-                    }
-
-
 
 
 
@@ -314,6 +315,10 @@
 
         }
 
+        .pa-pagination {
+            display: flex;
+            justify-content: center;
+        }
 
 
 

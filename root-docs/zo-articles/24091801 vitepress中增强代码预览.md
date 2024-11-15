@@ -2,6 +2,7 @@
 aside: left
 tags: ['vitepress']
 icon: 'vitepress'
+cover: '/cover/vitepresscover.png'
 ---
  
 ###### 24091801

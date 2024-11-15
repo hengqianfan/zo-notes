@@ -7,7 +7,10 @@
 
         <div class="pn-content">
             <div class="pn-card" v-for="item in showedNotes">
-                <img :src="withBase(getImgSrc(item.cover))" alt="" class="pn-cover">
+                <div class="pn-cover">
+                    <img :src="withBase(getImgSrc(item.cover))" alt="" class="pn-cover-img">
+
+                </div>
                 <a class="pn-title" :href="withBase(item.link)">{{ item.title }}</a>
             </div>
 
@@ -56,7 +59,7 @@ const sortNotes = (momo) => {
 
 const getImgSrc = (momo) => {
 
-    return `/notesCover/${momo}.png`
+    return `/cover/${momo}.png`
 }
 
 

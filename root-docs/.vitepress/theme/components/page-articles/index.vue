@@ -77,19 +77,23 @@
                         <div class="pa-article-card" v-for="(item, key) in showData">
 
                             <div class="pa-article-card-cover">
-                                <div class="pa-article-card-cover-id"> {{ item.frontmatter.id }}</div>
-                                <img :src="withBase(getImgSrc(item.frontmatter.id))" class="pa-article-card-cover-img">
-                                <div class="pa-article-card-tags">
-
-                                    <div class="pa-article-card-tags-tag" v-for="item in item.frontmatter.tags"
-                                        @click="findX(item)">{{
-                                            item
-                                        }}</div>
-                                </div>
+                                <img :src="withBase(getImgSrc(item.frontmatter.id, item.frontmatter.cover))"
+                                    class="pa-article-card-cover-img"
+                                    onerror="this.onerror=null;this.src='https://zocv.github.io/zo-notes/articlesPic/momo.png'">
                             </div>
+
+
+
 
                             <a class="pa-article-card-title" :href="withBase(item.url)">{{
                                 getTitle(item.frontmatter.title) }}</a>
+
+                            <div class="pa-article-card-info">
+                                <div class="pa-article-card-time">{{ formatDate(item.frontmatter.id) }}</div>
+                                <div class="pa-article-card-tags" @click="findX(xitem, `autoClose`)"
+                                    v-for="xitem in item.frontmatter.tags.slice(0, 3)">{{
+                                        xitem }}</div>
+                            </div>
 
 
                         </div>
@@ -108,8 +112,12 @@
 
             </div>
 
-            <el-pagination :default-page-size="pageSize" layout="total, prev, pager, next, jumper"
-                :total="sortedData.length" @current-change="handleCurrentChange" class="pa-pagination" />
+            <div class="pa-pagination">
+                <el-pagination :default-page-size="pageSize" layout="total, prev, pager, next, jumper"
+                    :total="sortedData.length" @current-change="handleCurrentChange" />
+            </div>
+
+
 
         </div>
 
@@ -124,9 +132,13 @@ import { withBase, useData } from 'vitepress'
 import { data } from '/zo-data/articles.data.js'
 import { Hide, View } from '@element-plus/icons-vue'
 
-const pageSize = 15
+const pageSize = 8
 
-const getImgSrc = (momo) => {
+const getImgSrc = (momo, cover) => {
+    // 如果存在特定封面，特定封面优先
+    if (cover) {
+        return cover
+    }
 
     return `/articlesPic/${momo}.png`
 }
@@ -236,7 +248,7 @@ const toPage = (momo) => {
 
 const findX = (momo, autoClose) => {
     if (autoClose) {
-        show_tabs.value = !show_tabs.value
+        show_tabs.value = false
     }
 
     now_tag.value = momo
@@ -290,6 +302,20 @@ const handleCurrentChange = (momo) => {
     showData.value = sortedData.value.slice(start, end)
 }
 
+const formatDate = (momo) => {
+    let year = momo.slice(0, 2)
+    let month = momo.slice(2, 4)
+    let day = momo.slice(4, 6)
+    return `⏰20${year}年${month}月${day}日`
+}
+
+
+
+const openWeb = (url) => {
+    // console.log(url);
+
+    // window.open("https://www.baidu.com", '_blank')
+}
 
 </script>
 
