@@ -14,6 +14,7 @@
     .ps-nav {
         // 此处必须设置最小高度，否则加入 overflow 属性会消失（原因不明）
         min-height: 3.125rem;
+        width: 100%;
         margin-top: 2px;
         display: flex;
         flex-direction: row;
@@ -22,8 +23,9 @@
 
         overflow-x: scroll;
 
-        // border: 2px dashed rgb(182, 182, 232);
         border-bottom: 2px dashed rgb(228, 228, 246);
+
+
 
 
         .ps-search {
@@ -52,14 +54,36 @@
             // 边距加高度必须等于外部容器的高，不然会出现异常
             margin: .625rem;
             border-radius: .25rem;
-
             display: flex;
             justify-content: center;
             align-items: center;
 
-            // font-family: '剑豪体';
+
+
+            // 自定义
+            // margin: 10px;
+            // width: 80px;
+            // border-radius: 8px;
+            // padding: 5px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // color: #5a5555;
+            // font-size: 14px;
+            // border: 1px solid #ebeef0;
+            // border: 1px solid #d2d7da;
+
+
+
 
         }
+
+        // .ps-nav-item:hover {
+        //     color: rgb(132, 157, 233);
+
+        //     background-color: #ebeef0;
+
+        // }
 
         // .ps-nav-item {
 
@@ -148,7 +172,7 @@
 
                 // 网站卡片
                 .site-card {
-                    background-color: rgb(235, 238, 240);
+                    background-color: #ebeef0;
 
                     // 防止悬浮时特效异常
                     border: .125rem aliceblue dotted;

@@ -27,18 +27,20 @@ export const themeConfig = {
         ['/zo-repo/uniapp', 1],
         ['/zo-repo/docker', 1],
         ['/zo-repo/express', 1],
-        ['/zo-repo/vitepress', 1],
+        ['/zo-repo/vitepress', 0],
         ['/zo-repo/github', 1],
         ['/zo-repo/vscode', 1],
         ['/zo-repo/python', 1],
         ['/zo-repo/cocos-creator', 1],
         ['/zo-repo/game', 1],
         ['/zo-repo/component-library', 1],
-        ['/me-repo/records', 1]
+        ['/me-repo/records', 1],
+        ['/me-repo/workbench', 1]
+
 
     ]),
 
-    // outline: [1, 6],
+
     outline: {
         label: "页面目录",
         // 因为要占用h1做网页副标题

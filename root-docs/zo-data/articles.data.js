@@ -83,7 +83,7 @@ export default createContentLoader('zo-articles/*.md', {
             }
 
         }
-
-        return rawData
+        // 将数据倒序后返回，保证最新的文章在前
+        return rawData.reverse()
     }
 })

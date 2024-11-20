@@ -12,12 +12,168 @@
         }
 
         .pa-content {
-            //  app 特别调整的样式，保证两个卡片并行 
-            padding-left: 1.25rem !important;
+            display: flex;
+            flex-direction: row;
+            min-height: 40vh;
+            width: 100%;
+            padding-left: 10px;
+
+            position: relative;
+
+            .list {
+                height: 75vh;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                overflow-x: scroll;
 
 
 
-            // 文章卡片悬浮的时候
+
+                .pa-article-card {
+
+                    border-radius: 10px;
+                    margin: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    width: 320px;
+                    height: 260px;
+                    background-color: rgb(211, 216, 220);
+                    box-shadow: 1px 1px 1px rgb(229, 227, 227);
+
+
+
+
+                    .pa-article-card-cover {
+                        width: 320px;
+                        height: 180px;
+                        overflow: hidden;
+                        border-radius: 10px 10px 0 0;
+
+
+                        .pa-article-card-cover-img {
+                            width: 100%;
+                            height: 100%;
+                            transition: all 0.8s;
+
+                        }
+
+
+
+
+                    }
+
+
+
+
+
+
+                    .pa-article-card-title {
+                        height: 40px;
+                        font-size: 18px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: white;
+
+                        text-align: center;
+                        // background-color: rebeccapurple;
+                        font-family: '剑豪体';
+                        color: rgb(87, 84, 84);
+                        transition: all 0.8s;
+
+
+
+                    }
+
+                    .pa-article-card-info {
+
+                        height: 40px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: flex-start;
+                        background-color: white;
+
+
+                        .pa-article-card-time {
+                            margin-left: 10px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 5px;
+                            height: 20px;
+                            color: #828e98;
+                            // background-color: #afbdc8;
+                            font-size: 10px;
+                            border-radius: 5px;
+                            margin-right: 20px;
+                        }
+
+                        .pa-article-card-tags {
+                            margin-left: 10px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 5px;
+                            height: 20px;
+                            color: #828e98;
+                            background-color: #e6e9eb;
+                            font-size: 10px;
+                            border-radius: 5px;
+                        }
+                    }
+
+
+
+                }
+
+                .pa-article-card:hover {
+
+
+                    .pa-article-card-cover {
+
+
+                        .pa-article-card-cover-img {
+                            transform: scale(1.2);
+
+                        }
+
+                    }
+
+
+
+                    .pa-article-card-title {
+
+                        color: #624eb5;
+
+
+                    }
+
+                    .pa-article-card-info {
+
+                        display: flex;
+
+
+
+                        .pa-article-card-time {
+                            margin-left: 10px;
+
+                        }
+
+                        .pa-article-card-tags {
+
+                            display: flex;
+
+                        }
+                    }
+
+
+
+                }
+
+            }
+
 
         }
     }

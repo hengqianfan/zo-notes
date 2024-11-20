@@ -16,13 +16,9 @@
 
 
 // medium-zoom 的样式
-.medium-zoom-overlay {
-    z-index: 20;
-}
+@import url(./medium-zoom.scss);
 
-.medium-zoom-image {
-    z-index: 21;
-}
+
 
 ::-webkit-scrollbar {
     display: none;

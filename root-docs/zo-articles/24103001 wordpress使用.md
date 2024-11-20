@@ -1,6 +1,6 @@
 ---
 aside: left
-tags: ['wordpress','建站']
+tags: ['wordpress','web']
 icon: 'wordpress'
 ---
  

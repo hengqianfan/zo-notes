@@ -79,7 +79,7 @@
                             <div class="pa-article-card-cover">
                                 <img :src="withBase(getImgSrc(item.frontmatter.id, item.frontmatter.cover))"
                                     class="pa-article-card-cover-img"
-                                    onerror="this.onerror=null;this.src='https://zocv.github.io/zo-notes/articlesPic/momo.png'">
+                                    onerror="this.onerror=null; this.src='https://zocv.github.io/zo-notes/articlesPic/momo.png'">
                             </div>
 
 
@@ -143,9 +143,12 @@ const getImgSrc = (momo, cover) => {
     return `/articlesPic/${momo}.png`
 }
 
+
+
+
 let sortedData = ref(data)
 
-
+// 展示的数据
 let showData = ref(sortedData.value.slice(0, pageSize))
 
 
@@ -280,7 +283,7 @@ const re_arr = (arr) => {
 }
 
 
-let newList = data.reverse().slice(0, 11)
+
 
 
 

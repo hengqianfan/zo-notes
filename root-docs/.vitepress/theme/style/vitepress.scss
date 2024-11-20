@@ -42,26 +42,30 @@
         .title {
             color: white;
             color: black;
+            font-weight: 1000;
+
         }
     }
 
     // 导航菜单的字体设置
     .VPNavBarMenuLink {
-        font-family: '胡晓波男神体';
-        color: black;
+        // font-family: '胡晓波男神体';
+        // color: black;
     }
 
     .VPNavBarMenuLink:hover {
-        color: $my_bg_color_07;
+        // color: $my_bg_color_07;
     }
 
     .VPNavBarMenuLink.active {
-        color: white;
+        // color: white;
+        // color: #2328ae;
     }
 
     // 导航菜单中可展开的菜单项目 ⭐
     .VPFlyout {
-        font-family: '胡晓波男神体';
+        // font-family: '胡晓波男神体';
+        // font-weight: 1000;
 
         .text {
             color: black;

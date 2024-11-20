@@ -1,0 +1,49 @@
+.medium-zoom-overlay {
+    // 默认请勿修改
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .3s;
+    will-change: opacity;
+    z-index: 20;
+    // 个性化
+    // border: 2px dotted rgb(28, 44, 44);
+}
+
+.medium-zoom--opened .medium-zoom-overlay {
+    cursor: pointer;
+    cursor: zoom-out;
+    opacity: 1
+}
+
+.medium-zoom-image {
+    cursor: pointer;
+    cursor: zoom-in;
+    transition: transform .3s cubic-bezier(.2, 0, .2, 1) !important;
+    z-index: 21;
+    // 个性化
+    border: 2px solid #dae5e4;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #e5e3e3;
+
+}
+
+// 图片放大时，隐藏自定义的图片边框
+.medium-zoom--opened .medium-zoom-image {
+    border: none;
+
+}
+
+.medium-zoom-image--hidden {
+    visibility: hidden
+}
+
+.medium-zoom-image--opened {
+    position: relative;
+    cursor: pointer;
+    cursor: zoom-out;
+    will-change: transform
+}

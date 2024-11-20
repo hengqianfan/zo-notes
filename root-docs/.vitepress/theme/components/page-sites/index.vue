@@ -4,7 +4,7 @@
 
         <div class="ps-nav">
 
-
+            <!-- <div class="ps-nav-item" v-for="item in level_1_classlist" @click="get_sites(item)">{{ item }}</div> -->
 
 
             <el-button size="default" @click="get_sites(item)" class="ps-nav-item" v-for="item in level_1_classlist">{{
@@ -18,7 +18,7 @@
 
             </div>
 
-            <!-- <div class="ps-nav-item" v-for="item in level_1_classlist" @click="get_sites(item)">{{ item }}</div> -->
+
         </div>
 
 

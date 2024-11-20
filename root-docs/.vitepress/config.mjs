@@ -53,6 +53,13 @@ export default defineConfig({
     ],
     ssr: {
       noExternal: ["@antv/g2plot"]
+    },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern-compiler', // or 'modern'
+        },
+      },
     }
   }
 })
