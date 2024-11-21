@@ -286,9 +286,9 @@ const findX = (momo, autoClose) => {
 
     let res = []
     if (momo == '全部文章') {
-        res = sortedData
+        res = sortedData.value
     } else {
-        res = sortedData.value.filter((item, index) => {
+        res = allData.filter((item, index) => {
             if (item.frontmatter.tags) {
                 if (item.frontmatter.tags.includes(momo)) {
                     return item
