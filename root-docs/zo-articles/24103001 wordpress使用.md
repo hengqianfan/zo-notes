@@ -2,6 +2,8 @@
 aside: left
 tags: ['wordpress','web']
 icon: 'wordpress'
+open: false
+
 ---
  
 ###### 24103001

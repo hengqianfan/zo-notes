@@ -1,6 +1,8 @@
 ---
 tags: ['数据库','修改中']
 cover: '/cover/sequelizeCover.png'
+open: false
+
 ---
 
 ###### 24082602

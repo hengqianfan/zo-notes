@@ -12,7 +12,7 @@
 
 
 
-                    <el-badge :value="data.length" class="item" type="primary" @click="findX(`全部文章`)">
+                    <el-badge :value="allData.length" class="item" type="primary" @click="findX(`全部文章`)">
                         <el-button>全部文章</el-button>
                     </el-badge>
 
@@ -143,10 +143,36 @@ const getImgSrc = (momo, cover) => {
     return `/articlesPic/${momo}.png`
 }
 
+// 是否开放所有文章
+
+const isOpen = ref(false)
 
 
+// 判断是否是管理员
+const isAdmin = () => {
+    let res = localStorage.getItem('admin')
+    if (res == 1) {
+        isOpen.value = true
+    }
+}
 
-let sortedData = ref(data)
+isAdmin()
+
+// 设置过滤，将不公开文章排除
+const removeData = (data) => {
+    let outdata = []
+    for (let i = 0; i < data.length; i++) {
+
+        if (data[i].frontmatter.open !== false) {
+            outdata.push(data[i])
+        }
+    }
+    return outdata
+}
+
+const allData = isOpen.value ? data : removeData(data)
+
+let sortedData = ref(allData)
 
 // 展示的数据
 let showData = ref(sortedData.value.slice(0, pageSize))
@@ -170,6 +196,8 @@ const getALLTags = (data) => {
     let temp_arr = []
     // 遍历原始数据，把所有 tag 添加到 临时数组中
     for (let i = 0; i < data.length; i++) {
+
+
 
         // 先判断是否存在 信息中是否存在 tag ⭐
         if (data[i].frontmatter.tags) {
@@ -227,7 +255,7 @@ const getALLTags = (data) => {
 
 }
 
-getALLTags(data)
+getALLTags(allData)
 
 const getIcon = (momo) => {
     if (momo) {
@@ -258,9 +286,9 @@ const findX = (momo, autoClose) => {
 
     let res = []
     if (momo == '全部文章') {
-        res = data
+        res = sortedData
     } else {
-        res = data.filter((item, index) => {
+        res = sortedData.value.filter((item, index) => {
             if (item.frontmatter.tags) {
                 if (item.frontmatter.tags.includes(momo)) {
                     return item

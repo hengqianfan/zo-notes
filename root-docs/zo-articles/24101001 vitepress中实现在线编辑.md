@@ -3,6 +3,7 @@ aside: left
 tags: ['修改中','vitepress']
 icon: 'vitepress'
 cover: '/cover/vitepresscover.png'
+open: false
 
 ---
  

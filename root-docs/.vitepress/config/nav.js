@@ -59,6 +59,7 @@ export const myNav = [
             { text: '更新日志 📝', link: '/zo-pages/history-updated#momo' },
             { text: '游戏世界 🎮', link: '/zo-repo/game/00 简述' },
             { text: '法律笔记 📓', link: 'https://zocv.github.io/mo-notes-for-law/' },
+            { text: 'zo-start', link: 'https://zocv.github.io/zo-start/' },
             {
                 text: '暂未开放', items: [
                     { text: '实验', link: '/zo-pages/test' },
