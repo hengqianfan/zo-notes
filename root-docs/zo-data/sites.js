@@ -48,6 +48,12 @@ export const sites_data = [
                         icon: 'wechat',
                         intro: "老牌自媒体平台",
                         link: 'https://mp.weixin.qq.com/'
+                    },
+                    {
+                        value: '小黑盒',
+                        link: 'https://www.xiaoheihe.cn',
+                        icon: 'xiaoheihe',
+                        intro: "玩家社区"
                     }
                 ]
             }

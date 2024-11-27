@@ -26,12 +26,14 @@
 <script setup>
 import { ref, watch, onMounted } from 'vue';
 import { useData, withBase } from 'vitepress';
-const { frontmatter, page, site } = useData()
 import { data as articlesData } from '/zo-data/articles.data.js'
 import { reckonReadTime } from '../../../myscript/reckonReadTime';
 
-console.log(page);
 
+
+const { frontmatter, page, site } = useData()
+
+const filePath = page.value.filePath
 
 const drawer = ref(false)
 
