@@ -2,7 +2,6 @@ import fs from 'node:fs'
 
 import { createContentLoader } from 'vitepress'
 
-
 import { reckonReadTime } from '../.vitepress/myscript/setArticleDatabase'
 
 
@@ -14,7 +13,6 @@ const getArticleTime = (id) => {
     let month = `${arr[2]}` + `${arr[3]}`
     let day = `${arr[4]}` + `${arr[5]}`
     const res = new Date(`${year}-${month}-${day} 00:00:00`).getTime()
-
     return res
 }
 
@@ -55,7 +53,7 @@ export default createContentLoader('zo-articles/*.md', {
             // 文章标题
             rawData[i].frontmatter.title = filename.split(' ')[1]
             // 文章ID
-            rawData[i].frontmatter.id = filename.split(' ')[0]
+            rawData[i].frontmatter.zoid = filename.split(' ')[0]
             // 文章的时间戳
             rawData[i].frontmatter.time = getArticleTime(filename.split(' ')[0])
             // 判断是否为本月文章
@@ -69,7 +67,6 @@ export default createContentLoader('zo-articles/*.md', {
                 arr.push('本月文章')
                 rawData[i].frontmatter.tags = arr
             }
-
             // 判断是否为本周文章
             rawData[i].frontmatter.isWeekly = judgeIsWeekly(rawData[i].frontmatter.time)
             // 追加本周文章的标签

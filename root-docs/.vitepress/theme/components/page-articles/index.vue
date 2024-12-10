@@ -65,19 +65,15 @@
             <div class="pa-content">
 
 
-
-
-
                 <div class="list">
 
                     <transition-group name="list">
 
 
-
                         <div class="pa-article-card" v-for="(item, key) in showData">
 
                             <div class="pa-article-card-cover">
-                                <img :src="withBase(getImgSrc(item.frontmatter.id, item.frontmatter.cover))"
+                                <img :src="withBase(getImgSrc(item.frontmatter.zoid, item.frontmatter.cover))"
                                     class="pa-article-card-cover-img"
                                     onerror="this.onerror=null; this.src='https://zocv.github.io/zo-notes/articlesPic/momo.png'">
                             </div>
@@ -89,7 +85,7 @@
                                 getTitle(item.frontmatter.title) }}</a>
 
                             <div class="pa-article-card-info">
-                                <div class="pa-article-card-time">{{ formatDate(item.frontmatter.id) }}</div>
+                                <div class="pa-article-card-time">{{ formatDate(item.frontmatter.zoid) }}</div>
                                 <div class="pa-article-card-tags" @click="findX(xitem, `autoClose`)"
                                     v-for="xitem in item.frontmatter.tags.slice(0, 3)">{{
                                         xitem }}</div>

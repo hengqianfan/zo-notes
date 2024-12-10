@@ -61,7 +61,7 @@ export const sites_data = [
 
     },
     {
-        value: '网络云盘',
+        value: '云服务类',
         children: [
             {
                 value: '云盘存储',
@@ -132,37 +132,9 @@ export const sites_data = [
                     },
                 ]
             },
-            {
-                value: '下载与网络',
-                children: [
-                    {
-                        value: 'v2',
-                        link: 'https://github.com/2dust/v2rayN',
-                        icon: 'v2',
-                        intro: 'Github加速器'
-                    },
-                    {
-                        value: '顶级',
-                        link: 'https://xn--mes358a9urctx.com/#/dashboard',
-                        icon: 'proxy',
-                        intro: '🚀'
-                    },
-                    {
-                        value: '稳连云',
-                        link: 'https://xn--kbt152elqdgyu.com/',
-                        icon: 'proxy',
-                        intro: '🚀'
-                    }
-                ]
-            }
-        ]
 
-    },
-    {
-        value: '服务器商',
-        children: [
             {
-                value: '国内厂商',
+                value: '服务器',
                 children: [
                     {
                         value: '华为云',
@@ -188,6 +160,13 @@ export const sites_data = [
                         icon: 'qiniu',
                         intro: '云服务器商家'
                     },
+                    {
+                        value: 'vercel',
+                        link: 'https://vercel.com/',
+                        icon: 'vercel',
+                        intro: '可以同步 Github Page 的平台'
+
+                    }
                     // {
                     //     value: '稳连云',
                     //     link: 'https://xn--9kqq77hqun.me/#/dashboard',
@@ -198,20 +177,34 @@ export const sites_data = [
                 ]
             },
             {
-                value: '国外厂商',
+                value: '下载与网络',
                 children: [
                     {
-                        value: 'vercel',
-                        link: 'https://vercel.com/',
-                        icon: 'vercel',
-                        intro: '可以同步 Github Page 的平台'
-
+                        value: 'v2',
+                        link: 'https://github.com/2dust/v2rayN',
+                        icon: 'v2',
+                        intro: 'Github加速器'
+                    },
+                    {
+                        value: '顶级',
+                        link: 'https://xn--mes358a9urctx.com/#/dashboard',
+                        icon: 'proxy',
+                        intro: '🚀'
+                    },
+                    {
+                        value: '稳连云',
+                        link: 'https://xn--kbt152elqdgyu.com/',
+                        icon: 'proxy',
+                        intro: '🚀'
                     }
                 ]
             }
+
+
         ]
 
     },
+
     {
         value: '工具软件',
         children: [
@@ -273,35 +266,18 @@ export const sites_data = [
                         link: 'https://github.com/Molunerfinn/PicGo/releases/',
                         icon: 'picgo',
                         intro: '图床工具'
+                    },
+                    {
+                        value: 'obsidian',
+                        link: 'https://obsidian.md/',
+                        icon: 'obsidian',
+                        intro: 'Markdown编辑器'
                     }
 
                 ]
             },
 
-            {
-                value: '普通工具网站',
-                children: [
-                    {
-                        value: '格式转换',
-                        // link: 'https://convertio.co/zh/',
-                        link: 'https://www.aconvert.com/cn/image/png-to-svg/',
-                        icon: 'convert',
-                        intro: 'PNG-SVG'
-                    },
-                    {
-                        value: '格式转换',
-                        link: 'https://convertio.co/zh/',
-                        icon: 'convert',
-                        intro: '字体格式转换'
-                    },
-                    {
-                        value: 'GPT',
-                        link: 'https://chatgpt.com/',
-                        icon: 'gpt',
-                        intro: '强大的AI大模型'
-                    },
-                ]
-            },
+
             {
                 value: '编程工具软件',
                 children: [
@@ -353,8 +329,61 @@ export const sites_data = [
                     },
                 ]
             },
+
             {
-                value: '编程工具网站',
+                value: '手机软件',
+                children: [
+                    {
+                        value: 'gkd',
+                        link: 'https://github.com/gkd-kit/gkd',
+                        icon: 'tool',
+                        intro: '跳过手机广告'
+                    },
+                    {
+                        value: 'gkd-订阅',
+                        link: "https://github.com/AIsouler/GKD_subscription",
+                        icon: 'tool',
+                        intro: 'gkd的订阅规则'
+                    }
+                ]
+            }
+
+
+        ]
+
+    },
+
+    {
+        value: '工具网站',
+        children: [
+            {
+                value: '导航聚合',
+                children: [
+                    {
+                        value: '未知'
+                    }
+                ]
+            },
+            {
+                value: '格式转换',
+                children: [
+                    {
+                        value: '格式转换',
+                        // link: 'https://convertio.co/zh/',
+                        link: 'https://www.aconvert.com/cn/image/png-to-svg/',
+                        icon: 'convert',
+                        intro: 'PNG-SVG'
+                    },
+                    {
+                        value: '格式转换',
+                        link: 'https://convertio.co/zh/',
+                        icon: 'convert2',
+                        intro: '字体格式转换'
+                    },
+                ]
+            },
+            {
+                value: '生成器',
                 children: [
                     {
                         value: 'shields',
@@ -402,37 +431,24 @@ export const sites_data = [
                         icon: 'tool',
                         intro: '拟态风CSS快速生成'
                     },
-
-                ]
-            },
-            {
-                value: '手机软件',
-                children: [
-                    {
-                        value: 'gkd',
-                        link: 'https://github.com/gkd-kit/gkd',
-                        icon: 'tool',
-                        intro: '跳过手机广告'
-                    },
-                    {
-                        value: 'gkd-订阅',
-                        link: "https://github.com/AIsouler/GKD_subscription",
-                        icon: 'tool',
-                        intro: 'gkd的订阅规则'
-                    }
                 ]
             }
-
-
         ]
-
     },
+
+
     {
         value: '社区资讯',
         children: [
             {
                 value: '社交论坛',
                 children: [
+                    {
+                        value: 'Bilibili',
+                        link: 'https://www.bilibili.com/',
+                        icon: 'bilibili',
+                        intro: '长视频社区'
+                    },
                     {
                         value: '知乎',
                         link: 'https://www.zhihu.com/',
@@ -499,137 +515,11 @@ export const sites_data = [
             }
         ]
     },
-    {
-        value: '视频网站',
-        children: [
-            {
-                value: '国内',
-                children: [
-                    {
-                        value: 'Bilibili',
-                        link: 'https://www.bilibili.com/',
-                        icon: 'bilibili',
-                        intro: '水分越来越大的视频平台'
-                    },
-                    {
-                        value: '腾讯视频',
-                        link: 'https://v.qq.com/',
-                        icon: 'txsp',
-                        intro: '腾讯帝国'
-                    },
-                    {
-                        value: '嗷呜动漫',
-                        link: 'https://www.moedm.net/',
-                        icon: 'video',
-                        intro: '动漫资源网站'
-
-                    }
-                ]
-            },
-            {
-                value: '国际',
-                children: [
-                    {
-                        value: 'youtube',
-                        link: 'https://www.youtube.com/',
-                        icon: 'youtube',
-                        intro: '世界上最大的视频分享平台'
-                    },
-                    {
-                        value: '小白网',
-                        link: 'https://m.xb84w.net/',
-                        icon: 'xiaobai',
-                        intro: '视频资源平台'
-                    }
-                ]
-            },
 
 
-        ]
-    },
-    {
-        value: '图标图片',
-        children: [
-            {
-                value: '图标类',
-                children: [
-                    {
-                        value: 'iconfont',
-                        link: 'https://www.iconfont.cn/',
-                        icon: 'iconfont',
-                        intro: '阿里旗下的图标库'
-                    },
-                    {
-                        value: 'Emoji表情',
-                        link: 'https://www.emojiall.com/zh-hans',
-                        icon: 'emoji',
-                        intro: 'emoji表情库'
-                    },
-                    {
-                        value: 'shields',
-                        link: 'https://www.shields.io/badges',
-                        icon: 'shields',
-                        intro: '徽章制作'
-                    },
-                    {
-                        value: 'worldLogo',
-                        link: 'https://worldvectorlogo.com',
-                        icon: 'worldlogo',
-                        intro: '世界知名的公司与产品标志'
-                    },
-                    {
-                        value: '表情直链',
-                        link: 'https://emotion.xiaokang.me/#/',
-                        icon: 'publiclogo',
-                        intro: '公益提供表情包直链的网站'
-                    },
-                ]
-            },
-
-            {
-                value: '图片',
-                children: [
-                    {
-                        value: '元气壁纸',
-                        link: 'https://bizhi.cheetahfun.com/dn/c2d/',
-                        icon: 'yuanqi',
-                        intro: '壁纸网站'
-                    },
-
-                    {
-                        value: '搜图神器',
-                        link: 'https://www.soutushenqi.com/home',
-                        icon: 'stsq',
-                        intro: '高清壁纸网站'
-                    },
-                    {
-                        value: '逗比拯救世界',
-                        link: 'https://www.dbbqb.com/',
-                        icon: 'img',
-                        intro: '表情包网站'
-                    }
-                ]
-            },
-
-            {
-                value: 'AI 绘画',
-                children: [
-                    {
-                        value: 'playground',
-                        link: 'https://playground.com/create',
-                        icon: 'AI'
-                    }
-                ]
-            }
-
-
-
-        ]
-
-    },
 
     {
-        value: '编程文档',
+        value: '编程技术',
         children: [
             {
                 value: 'JS生态',
@@ -742,21 +632,176 @@ export const sites_data = [
         ]
     },
     {
+        value: '人工智能',
+        children: [
+            {
+                value: '语言大模型',
+                children: [
+                    {
+                        value: 'GPT',
+                        link: 'https://chatgpt.com/',
+                        icon: 'gpt',
+                        intro: '划时代的AI大模型'
+                    },
+                    {
+                        value: 'Gemini',
+                        link: 'https://gemini.google.com/',
+                        icon: 'gemini',
+                        intro: '谷歌旗下的大模型'
+                    },
+
+                    {
+                        value: '通义',
+                        link: 'https://tongyi.aliyun.com/',
+                        icon: 'tongyi',
+                        intro: '阿里巴巴旗下的语言大模型'
+                    },
+
+                    {
+                        value: '豆包',
+                        link: 'https://www.doubao.com/chat/',
+                        icon: 'doubao',
+                        intro: '字动跳节旗下的语言大模型'
+                    },
+
+                    {
+                        value: '文心一言',
+                        link: 'https://yiyan.baidu.com/',
+                        icon: 'yiyan',
+                        intro: '百度旗下的语言大模型'
+                    },
+
+                ]
+
+            },
+            {
+                value: 'AI绘画与视频',
+                children: [
+                    {
+                        value: 'playground',
+                        link: 'https://playground.com/create',
+                        icon: 'AI',
+                        intro: '一个AI绘图网站'
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
         value: '资源网站',
         children: [
             {
-                value: '影视资源',
+                value: '图标图片',
                 children: [
+                    {
+                        value: 'iconfont',
+                        link: 'https://www.iconfont.cn/',
+                        icon: 'iconfont',
+                        intro: '阿里旗下的图标库'
+                    },
+                    {
+                        value: 'Emoji表情',
+                        link: 'https://www.emojiall.com/zh-hans',
+                        icon: 'emoji',
+                        intro: 'emoji表情库'
+                    },
+                    {
+                        value: 'shields',
+                        link: 'https://www.shields.io/badges',
+                        icon: 'shields',
+                        intro: '徽章制作'
+                    },
+                    {
+                        value: 'worldLogo',
+                        link: 'https://worldvectorlogo.com',
+                        icon: 'worldlogo',
+                        intro: '世界知名的公司与产品标志'
+                    },
+                    {
+                        value: '表情直链',
+                        link: 'https://emotion.xiaokang.me/#/',
+                        icon: 'publiclogo',
+                        intro: '公益提供表情包直链的网站'
+                    },
+                    {
+                        value: '元气壁纸',
+                        link: 'https://bizhi.cheetahfun.com/dn/c2d/',
+                        icon: 'yuanqi',
+                        intro: '壁纸网站'
+                    },
+
+                    {
+                        value: '搜图神器',
+                        link: 'https://www.soutushenqi.com/home',
+                        icon: 'stsq',
+                        intro: '高清壁纸网站'
+                    },
+                    {
+                        value: '逗比拯救世界',
+                        link: 'https://www.dbbqb.com/',
+                        icon: 'img',
+                        intro: '表情包网站'
+                    },
+
+
+
+
+
+
+
+                ]
+
+            },
+            {
+                value: '视频资源',
+                children: [
+
+                    {
+                        value: 'Bilibili',
+                        link: 'https://www.bilibili.com/',
+                        icon: 'bilibili',
+                        intro: '水分越来越大的视频平台'
+                    },
+                    {
+                        value: '腾讯视频',
+                        link: 'https://v.qq.com/',
+                        icon: 'txsp',
+                        intro: '腾讯帝国'
+                    },
+                    {
+                        value: '嗷呜动漫',
+                        link: 'https://www.moedm.net/',
+                        icon: 'video',
+                        intro: '动漫资源网站'
+
+                    },
+
+                    {
+                        value: 'youtube',
+                        link: 'https://www.youtube.com/',
+                        icon: 'youtube',
+                        intro: '世界上最大的视频分享平台'
+                    },
+                    {
+                        value: '小白网',
+                        link: 'https://m.xb84w.net/',
+                        icon: 'xiaobai',
+                        intro: '视频资源平台'
+                    },
                     {
                         value: '猫狸盘搜',
                         link: 'https://www.alipansou.com/',
                         icon: 'maoli',
                         intro: '阿里云盘资源'
                     },
+
+
+
                 ]
             },
             {
-                value: '动漫资源',
+                value: '漫画与动漫',
                 children: [
                     {
                         value: '动漫啦',
@@ -764,7 +809,6 @@ export const sites_data = [
                         icon: 'dongman',
                         intro: '漫画资源'
                     },
-
                     {
                         value: 'AGE',
                         link: 'https://www.agedm.org/',
@@ -780,6 +824,8 @@ export const sites_data = [
                     }
                 ]
             },
+
+
             {
                 value: '小说',
                 children: [{

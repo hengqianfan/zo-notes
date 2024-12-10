@@ -128,6 +128,8 @@ export const createArticleDatabase = (Dir_selected = 'zo-articles') => {
 
     fs.writeFileSync(inforepo, JSON.stringify(arr))
 
+
+
 }
 
 

@@ -5,7 +5,8 @@ icon: ''
 id: 24110501
 ---
  
-###### 24110501
+######  {{ $frontmatter.id? $frontmatter.id : $frontmatter.zoid }}
+
  
 <br/>
  

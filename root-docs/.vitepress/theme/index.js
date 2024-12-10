@@ -18,6 +18,8 @@ import slotSearch from './components/slot-search/index.vue'
 // 引入文章前的信息组件
 import myArticleInfo from './components/slot-articleInfo/index.vue'
 
+import backtop from './components/slot-backtop/index.vue'
+
 import notFound from './components/not-found/index.vue'
 import ZoEditor from './components/zo-editor/index.vue'
 
@@ -47,8 +49,8 @@ export default {
       // 'nav-bar-content-after': () => h(visitor),
 
       'not-found': () => h(notFound),
-      'doc-before': () => h(myArticleInfo)
-      // 'doc-before': () => h(ZoEditor)
+      'doc-before': () => h(myArticleInfo),
+      'aside-ads-after': () => h(backtop)
     })
   },
   // 启用自定义布局
