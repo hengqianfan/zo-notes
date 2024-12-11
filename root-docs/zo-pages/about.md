@@ -27,11 +27,11 @@ outline: [2,4]
 - 假若，你用于自己的博客网站，对于本站的文章、笔记的转载，只要附上本站的原文链接，不商用就行。
 
 - 假若，你将本站内容发布在第三方平台（包括不限于：Bilibili、抖音、小红书、百度、今日头条、知乎、小黑盒、CSDN等），**请在对应平台关注站长**，**并在文章末尾或评论区@站长的账号**。
-
+<!-- 
 |平台|账号名称|平台ID|链接地址|
 |---|---|---|---|
 |Bilibili|数码猿猴|3546729108474211|[enter](https://space.bilibili.com/3546729108474211/ )|
-|小黑盒|冰刀快和飞|51427625|[enter](https://web.xiaoheihe.cn/bbs/user_profile_share?user_id=51427625&h_src=writer) |
+|小黑盒|冰刀快和飞|51427625|[enter](https://web.xiaoheihe.cn/bbs/user_profile_share?user_id=51427625&h_src=writer) | -->
 
 
 ### 3.2 争议解决

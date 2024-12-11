@@ -155,6 +155,13 @@ export const sites_data = [
                         intro: '企鹅的域名还是蛮便宜的'
                     },
                     {
+                        value: 'cloudflare',
+                        link: 'https://dash.cloudflare.com/',
+                        icon: 'cloudflare',
+                        intro: '国际知名的服务器商家'
+                    },
+
+                    {
                         value: '七牛云',
                         link: 'https://qmall.qiniu.com/',
                         icon: 'qiniu',
@@ -185,18 +192,18 @@ export const sites_data = [
                         icon: 'v2',
                         intro: 'Github加速器'
                     },
-                    {
-                        value: '顶级',
-                        link: 'https://xn--mes358a9urctx.com/#/dashboard',
-                        icon: 'proxy',
-                        intro: '🚀'
-                    },
-                    {
-                        value: '稳连云',
-                        link: 'https://xn--kbt152elqdgyu.com/',
-                        icon: 'proxy',
-                        intro: '🚀'
-                    }
+                    // {
+                    //     value: '顶级',
+                    //     link: 'https://xn--mes358a9urctx.com/#/dashboard',
+                    //     icon: 'proxy',
+                    //     intro: '🚀'
+                    // },
+                    // {
+                    //     value: '稳连云',
+                    //     link: 'https://xn--kbt152elqdgyu.com/',
+                    //     icon: 'proxy',
+                    //     intro: '🚀'
+                    // }
                 ]
             }
 
@@ -411,6 +418,14 @@ export const sites_data = [
                         intro: '快速生成表格'
 
                     },
+                    {
+                        value: '人物生成器',
+                        link: 'https://www.fakepersongenerator.com/',
+                        icon: 'person',
+                        intro: '快速生成虚拟的海外身份数据'
+
+                    },
+
                     {
                         value: 'CSS工具网',
                         link: 'https://css.bqrdh.com/safety-color',

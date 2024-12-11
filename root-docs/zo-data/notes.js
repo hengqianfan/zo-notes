@@ -25,6 +25,14 @@ export const notesList = [
         class: '编程'
     },
     {
+        title: 'Vue笔记',
+        intro: 'vue笔记',
+        icon: 'vue',
+        link: '/zo-repo/vue/00 简述',
+        cover: 'vuecover',
+        class: '编程'
+    },
+    {
         title: 'Nodejs',
         intro: '',
         icon: 'nodejs',
