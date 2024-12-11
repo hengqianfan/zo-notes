@@ -282,7 +282,11 @@ const findX = (momo, autoClose) => {
 
     let res = []
     if (momo == '全部文章') {
+        console.log(sortedData);
+
         res = sortedData.value
+        console.log(res);
+
     } else {
         res = allData.filter((item, index) => {
             if (item.frontmatter.tags) {
@@ -292,10 +296,7 @@ const findX = (momo, autoClose) => {
             }
         })
     }
-
-    sortedData.value = res
-
-    showData.value = sortedData.value.slice(0, pageSize)
+    showData.value = res.slice(0, pageSize)
 
 
 }

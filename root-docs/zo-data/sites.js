@@ -699,6 +699,26 @@ export const sites_data = [
                         intro: '一个AI绘图网站'
                     }
                 ]
+            },
+            {
+                value: 'AI相关网站',
+                children: [
+                    {
+
+                        value: 'AI研究站',
+                        link: 'https://www.aiyjs.com/',
+                        icon: 'AI',
+                        intro: '集合AI项目的网站'
+                    },
+
+                    {
+
+                        value: 'AI导航网',
+                        link: 'https://idaohang.cn/',
+                        icon: 'AI',
+                        intro: '集合AI项目的网站'
+                    },
+                ]
             }
         ]
     },
@@ -725,7 +745,7 @@ export const sites_data = [
                         value: 'shields',
                         link: 'https://www.shields.io/badges',
                         icon: 'shields',
-                        intro: '徽章制作'
+                        intro: '图片徽章制作'
                     },
                     {
                         value: 'worldLogo',
