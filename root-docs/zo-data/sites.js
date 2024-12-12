@@ -363,14 +363,14 @@ export const sites_data = [
     {
         value: '工具网站',
         children: [
-            {
-                value: '导航聚合',
-                children: [
-                    {
-                        value: '未知'
-                    }
-                ]
-            },
+            // {
+            //     value: '导航聚合',
+            //     children: [
+            //         {
+            //             value: '未知'
+            //         }
+            //     ]
+            // },
             {
                 value: '格式转换',
                 children: [
@@ -666,6 +666,12 @@ export const sites_data = [
                     },
 
                     {
+                        value: 'claude',
+                        link: 'https://claude.ai/',
+                        icon: 'claude',
+                        intro: '由Anthropic开发的AI模型'
+                    },
+                    {
                         value: '通义',
                         link: 'https://tongyi.aliyun.com/',
                         icon: 'tongyi',
@@ -686,12 +692,40 @@ export const sites_data = [
                         intro: '百度旗下的语言大模型'
                     },
 
+                    {
+                        value: '星火AI',
+                        link: 'https://xinghuo.xfyun.cn/',
+                        icon: 'xinghuo',
+                        intro: '讯飞旗下的语言大模型'
+                    },
+
+                    {
+                        value: '混元',
+                        link: 'https://hunyuan.tencent.com/',
+                        icon: 'hunyuan',
+                        intro: '腾讯旗下，蛮无语的，强迫下APP'
+                    },
+
                 ]
 
             },
             {
                 value: 'AI绘画与视频',
                 children: [
+
+                    {
+                        value: '可灵AI',
+                        link: 'https://klingai.kuaishou.com/',
+                        icon: 'klingai',
+                        intro: '快手旗下的AI绘图与AI视频网站'
+                    },
+
+                    {
+                        value: 'SORA',
+                        link: 'https://sora.com/',
+                        icon: 'openai',
+                        intro: 'openAI旗下的AI视频网站'
+                    },
                     {
                         value: 'playground',
                         link: 'https://playground.com/create',

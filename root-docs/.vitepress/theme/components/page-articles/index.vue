@@ -282,9 +282,11 @@ const findX = (momo, autoClose) => {
 
     let res = []
     if (momo == '全部文章') {
-        console.log(sortedData);
 
-        res = sortedData.value
+
+        res = allData
+
+
         console.log(res);
 
     } else {
@@ -296,6 +298,9 @@ const findX = (momo, autoClose) => {
             }
         })
     }
+
+    sortedData.value = res
+
     showData.value = res.slice(0, pageSize)
 
 

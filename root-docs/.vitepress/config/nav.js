@@ -62,9 +62,8 @@ export const myNav = [
             { text: 'zo-start', link: 'https://zocv.github.io/zo-start/' },
             {
                 text: '暂未开放', items: [
-                    { text: '实验', link: '/zo-pages/test' },
 
-                    { text: '我的任务', link: '/zo-pages/task' },
+
                     { text: '我的备忘录', link: '/me-repo/records/00 简述' },
                     { text: '工作台', link: '/me-repo/workbench/00 简述' },
 
