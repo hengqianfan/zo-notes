@@ -240,17 +240,18 @@ export const sites_data = [
                         intro: '虚拟机'
                     },
                     {
-                        value: 'snipaste',
-                        link: 'https://zh.snipaste.com/',
-                        icon: 'snipaste',
-                        intro: '好用的截图神器'
-                    },
-                    {
                         value: 'WPS',
                         link: 'https://www.wps.cn/',
                         icon: 'wps',
                         intro: '国产办公软件'
                     },
+                    {
+                        value: 'snipaste',
+                        link: 'https://zh.snipaste.com/',
+                        icon: 'snipaste',
+                        intro: '好用的截图神器'
+                    },
+
 
 
                     {
@@ -258,6 +259,14 @@ export const sites_data = [
                         link: 'https://github.com/hiroi-sora/Umi-OCR/releases',
                         icon: 'github',
                         intro: '截图、OCR工具'
+                    },
+
+
+                    {
+                        value: 'pixpin',
+                        link: 'https://pixpinapp.com/',
+                        icon: 'pixpin',
+                        intro: '截图、OCR工具（未开源）'
                     },
 
                     {
@@ -279,6 +288,19 @@ export const sites_data = [
                         link: 'https://obsidian.md/',
                         icon: 'obsidian',
                         intro: 'Markdown编辑器'
+                    },
+                    {
+
+                        value: 'notion',
+                        link: 'https://www.notion.so/',
+                        icon: 'notion',
+                        intro: '热门的笔记软件'
+                    },
+                    {
+                        value: '语雀',
+                        link: 'https://www.yuque.com/',
+                        icon: 'yuque',
+                        intro: '出名的知识库搭建平台'
                     }
 
                 ]
@@ -524,6 +546,13 @@ export const sites_data = [
                         link: 'https://www.xiaoheihe.cn',
                         icon: 'xiaoheihe',
                         intro: "玩家社区"
+                    },
+                    {
+                        value: '游民星空',
+                        link: 'https://www.gamersky.com/',
+                        icon: 'gamersky',
+                        intro: "资源网站转型的玩家社区"
+
                     }
 
                 ]
@@ -985,7 +1014,14 @@ export const sites_data = [
                         link: 'https://zh.humblebundle.com/',
                         icon: 'humblebundle',
                         intro: '慈善游戏月包平台'
-                    }
+                    },
+
+                    {
+                        value: '育碧',
+                        link: 'https://zh-cn.ubisoft.com/',
+                        icon: 'ubisoft',
+                        intro: '骨折3A大户'
+                    },
                 ]
             },
 
@@ -1067,6 +1103,13 @@ export const sites_data = [
                         link: 'https://www.xiaoheihe.cn/community/user/post_list',
                         icon: 'xiaoheihe',
                         intro: "玩家社区"
+                    },
+                    {
+                        value: '游民星空',
+                        link: 'https://www.gamersky.com/',
+                        icon: 'gamersky',
+                        intro: "资源网站转型的玩家社区"
+
                     },
                     {
                         value: '挂刀行情网',
@@ -1219,6 +1262,13 @@ export const sites_data = [
             {
                 value: '服务',
                 children: [
+
+                    // {
+                    //     value: '贵州图书馆',
+                    //     link: 'https://www.gzlib.com.cn/',
+                    //     icon: 'gzlib2',
+                    //     intro: '24小时自习室'
+                    // },
                     {
                         value: '广州图书馆',
                         link: 'https://www.gzlib.org.cn/',
@@ -1232,6 +1282,12 @@ export const sites_data = [
                         intro: '收录了以往与现行的法律法规，是权威性的官方网站。'
                     },
 
+                    {
+                        value: '中国农业银行',
+                        link: 'https://www.abchina.com/cn/',
+                        icon: 'abchina',
+                        intro: '学校绑定银行卡'
+                    },
                     {
                         value: '国家开发银行',
                         link: 'https://sls.cdb.com.cn/',

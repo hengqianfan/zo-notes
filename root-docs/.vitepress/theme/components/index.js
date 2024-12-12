@@ -13,6 +13,9 @@ import PageSites from './page-sites/index.vue'
 
 import PageTask from './page-task/index.vue'
 
+import PageSetting from './page-setting/index.vue'
+
+
 
 import ZoNav from './zo-nav/index.vue'
 
@@ -48,7 +51,10 @@ import ZoTest from './zo-test/index.vue'
 
 
 const allGlobalComponents = {
-    PageSites, MySearch, MyArticleInfo, PageTopic, PageNotes, PageArticles, ZoImg,
+    PageSites, MySearch, MyArticleInfo, PageTopic, PageNotes,
+    PageArticles,
+    PageSetting,
+    ZoImg,
 
 
     ZoNav,

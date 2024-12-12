@@ -127,6 +127,8 @@ import { ref, watch } from 'vue'
 import { withBase, useData } from 'vitepress'
 import { data } from '/zo-data/articles.data.js'
 import { Hide, View } from '@element-plus/icons-vue'
+import { admin_key } from '../../../../zo-data/key';
+
 
 const pageSize = 8
 
@@ -147,7 +149,7 @@ const isOpen = ref(false)
 // 判断是否是管理员
 const isAdmin = () => {
     let res = localStorage.getItem('admin')
-    if (res == 1) {
+    if (res == admin_key) {
         isOpen.value = true
     }
 }
