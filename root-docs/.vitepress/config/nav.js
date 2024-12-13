@@ -48,7 +48,7 @@ export const myNav = [
 
     {
         text: '专题区', items: [
-            { text: '前端生态圈', link: '/zo-pages/topic-web-design' },
+            // { text: '前端生态圈', link: '/zo-pages/topic-web-design' },
             { text: '建站专题', link: '/zo-repo/build-site/00 简述' }
         ]
     },
@@ -64,12 +64,12 @@ export const myNav = [
                 text: '暂未开放', items: [
 
 
-                    { text: '我的备忘录', link: '/me-repo/records/00 简述' },
-                    { text: '工作台', link: '/me-repo/workbench/00 简述' },
+                    { text: '备忘录 📑', link: '/me-repo/records/00 简述' },
+                    { text: '工作台 🛠', link: '/me-repo/workbench/00 简述' },
 
-                    { text: '本站仓库镜像', link: 'https://zocv.github.io/zo-notes/' },
+                    { text: '本站·仓库镜像', link: 'https://zocv.github.io/zo-notes/' },
 
-                    { text: '本站本地地址', link: 'http://localhost:8081/zo-notes/' },
+                    { text: '本站·本地地址', link: 'http://localhost:8081/zo-notes/' },
 
                 ]
             }

@@ -4,11 +4,6 @@
 
         <div class="ps-nav">
 
-            <!-- <div class="ps-nav-item" v-for="item in level_1_classlist" @click="get_sites(item)">{{ item }}</div> -->
-
-
-            <el-button size="default" @click="get_sites(item)" class="ps-nav-item" v-for="item in level_1_classlist">{{
-                item }}</el-button>
 
 
             <div class="ps-search">
@@ -17,6 +12,14 @@
                     v-model="searchkey" @change="get_sites2(searchkey)" />
 
             </div>
+
+            <!-- <div class="ps-nav-item" v-for="item in level_1_classlist" @click="get_sites(item)">{{ item }}</div> -->
+
+
+            <el-button size="default" @click="get_sites(item)" class="ps-nav-item" v-for="item in level_1_classlist">{{
+                item }}</el-button>
+
+
 
 
         </div>
