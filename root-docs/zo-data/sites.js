@@ -968,7 +968,8 @@ export const sites_data = [
                     },
                     {
                         value: '软件管家',
-                        link: 'https://mp.weixin.qq.com/s/VfWKQ4WC2gsDGqdTC-wUkQ',
+                        // link: 'https://mp.weixin.qq.com/s/VfWKQ4WC2gsDGqdTC-wUkQ',
+                        link: 'https://mp.weixin.qq.com/s/JmJdGcTduqmzxSdC-wokwA',
                         icon: 'wechat',
                         intro: '提供各种学习版软件'
                     },

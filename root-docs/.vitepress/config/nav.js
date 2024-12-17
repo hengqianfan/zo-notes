@@ -56,7 +56,10 @@ export const myNav = [
     {
         text: '更多', items: [
             { text: '关于本站 🎁', link: '/zo-pages/about' },
-            { text: '更新日志 📝', link: '/zo-pages/history-updated#momo' },
+            // 带锚点示范
+            // { text: '更新日志 📝', link: '/zo-pages/history-updated#momo' },
+            { text: '更新日志 📝', link: '/zo-pages/history-updated' },
+
             { text: '游戏世界 🎮', link: '/zo-repo/game/00 简述' },
             // { text: '法律笔记 📓', link: 'https://zocv.github.io/mo-notes-for-law/' },
             { text: 'zo-start', link: 'https://zocv.github.io/zo-start/' },

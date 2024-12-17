@@ -40,7 +40,6 @@ export const themeConfig = {
 
     ]),
 
-
     outline: {
         label: "页面目录",
         // 因为要占用h1做网页副标题
@@ -97,11 +96,8 @@ export const themeConfig = {
 
     },
 
-
     editLink: {
         pattern: 'https://github.com/zocv/zo-notes/edit/main/root-docs/:path'
-
     }
-
 
 }
