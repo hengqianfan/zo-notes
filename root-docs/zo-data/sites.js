@@ -26,6 +26,13 @@ export const sites_data = [
                         icon: 'gmail',
                         intro: '谷歌邮箱'
                     },
+
+                    {
+                        value: 'QQ邮箱',
+                        link: 'https://mail.qq.com/',
+                        icon: 'qqmail',
+                        intro: '啾啾邮箱'
+                    },
                     {
                         value: 'PP直连',
                         link: 'https://www.ppzhilian.com/',
@@ -49,6 +56,13 @@ export const sites_data = [
                         intro: "老牌自媒体平台",
                         link: 'https://mp.weixin.qq.com/'
                     },
+                    {
+                        value: '小红书',
+                        icon: 'xiaohongshu',
+                        intro: "老牌自媒体平台",
+                        link: 'https://www.xiaohongshu.com/explore'
+                    },
+
                     {
                         value: '小黑盒',
                         link: 'https://www.xiaoheihe.cn',
@@ -707,6 +721,12 @@ export const sites_data = [
                         intro: '阿里巴巴旗下的语言大模型'
                     },
 
+                    {
+                        value: '智普清言',
+                        link: 'https://chatglm.cn/',
+                        icon: 'chatglm',
+                        intro: '清华团队的语言大模型'
+                    },
                     {
                         value: '豆包',
                         link: 'https://www.doubao.com/chat/',
