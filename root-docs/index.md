@@ -10,7 +10,7 @@ hero:
     alt: zonotes
   actions:
     - text: 💡 start
-      link: https://zocv.github.io/zo-start/
+      link: https://hengqianfan.github.io/zo-start/
     - text: 更新日志
       link: /zo-pages/history-updated#momo
       theme: alt
@@ -26,7 +26,7 @@ features:
   - icon: 🛫
     title: Start
     details:  离开笔记库，前往阿牛宇宙的导航页 <br/> 其涵盖阿牛的所有开源项目与网址
-    link: https://zocv.github.io/zo-start/
+    link: https://hengqianfan.github.io/zo-start/
     linkText: 前往
 
   - icon: 💡
