@@ -47,6 +47,7 @@ export default defineConfig({
 
     Math: true
   },
+  // 给公告插件预留的
   vite: {
     plugins: [
       groupIconVitePlugin()

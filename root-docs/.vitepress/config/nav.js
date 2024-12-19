@@ -62,7 +62,7 @@ export const myNav = [
 
             { text: '游戏世界 🎮', link: '/zo-repo/game/00 简述' },
             // { text: '法律笔记 📓', link: 'https://zocv.github.io/mo-notes-for-law/' },
-            { text: 'zo-start', link: 'https://zocv.github.io/zo-start/' },
+            { text: 'zo-start', link: 'https://hengqianfan.github.io/zo-start/' },
             {
                 text: '暂未开放', items: [
 
@@ -70,7 +70,7 @@ export const myNav = [
                     { text: '备忘录 📑', link: '/me-repo/records/00 简述' },
                     { text: '工作台 🛠', link: '/me-repo/workbench/00 简述' },
 
-                    { text: '本站·仓库镜像', link: 'https://zocv.github.io/zo-notes/' },
+                    { text: '本站·仓库镜像', link: 'https://hengqianfan.github.io/zo-notes/' },
 
                     { text: '本站·本地地址', link: 'http://localhost:8081/zo-notes/' },
 

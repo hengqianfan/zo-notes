@@ -13,7 +13,9 @@ yum install nginx
 ```shell
 service nginx start
 ```
-
+```shell
+service nginx restart
+```
 
 ## 2. 在Ubuntu配置Nginx
 
@@ -32,4 +34,5 @@ sudo apt-get install nginx
 # 浏览器输入服务器IP即可查看初始页面
 ```
 
-
+http://aniu.website/  
+https://aniu.website/
