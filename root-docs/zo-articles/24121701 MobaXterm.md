@@ -13,4 +13,6 @@ id: 24121701
 
 ## 1.下载
 
+https://mobaxterm.mobatek.net/
+
 ## 2. 链接远程服务器

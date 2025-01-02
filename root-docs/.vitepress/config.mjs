@@ -7,6 +7,7 @@ import { themeConfig } from './config/theme'
 
 // markdown 插件
 import markdownItFootnote from 'markdown-it-footnote'
+// import markdownItTaskLists from 'markdown-it-task-lists'
 import mermaidPlugin from './myscript/myMermaid';
 
 // 代码预览插件
@@ -35,7 +36,11 @@ export default defineConfig({
   themeConfig: themeConfig,
   markdown: {
     config: (md) => {
+      // 增加脚注语法的支持
       md.use(markdownItFootnote)
+      // 增加任务列表语法的支持
+      // md.use(markdownItTaskLists)
+      // 增加mermaid语法的支持
       md.use(mermaidPlugin)
       // 代码预览插件
       const docRoot = fileURLToPath(new URL('../', import.meta.url))

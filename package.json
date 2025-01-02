@@ -23,6 +23,7 @@
     "express": "^4.21.1",
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-mermaid": "^0.2.5",
+    "markdown-it-task-lists": "^2.1.1",
     "md-editor-v3": "^4.20.4",
     "medium-zoom": "^1.1.0",
     "mermaid": "^11.1.1",

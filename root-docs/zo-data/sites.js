@@ -1,3 +1,5 @@
+import { iconPropType } from "element-plus/es/utils/index.mjs";
+
 // 网址导航页面的网址数据
 export const sites_data = [
     {
@@ -265,7 +267,12 @@ export const sites_data = [
                         icon: 'snipaste',
                         intro: '好用的截图神器'
                     },
-
+                    {
+                        value: 'sharex',
+                        link: 'https://getsharex.com/',
+                        icon: 'sharex',
+                        intro: '开源的截图软件'
+                    },
 
 
                     {
@@ -721,6 +728,7 @@ export const sites_data = [
                         intro: '阿里巴巴旗下的语言大模型'
                     },
 
+
                     {
                         value: '智普清言',
                         link: 'https://chatglm.cn/',
@@ -754,6 +762,13 @@ export const sites_data = [
                         icon: 'hunyuan',
                         intro: '腾讯旗下，蛮无语的，强迫下APP'
                     },
+                    {
+                        value: 'deepseek',
+                        link: 'https://www.deepseek.com/',
+                        icon: 'deepseek',
+                        intro: '宣传方面，有些用力过猛'
+                    },
+
 
                 ]
 

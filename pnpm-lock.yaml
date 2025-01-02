@@ -38,6 +38,9 @@ importers:
       markdown-it-mermaid:
         specifier: ^0.2.5
         version: 0.2.5
+      markdown-it-task-lists:
+        specifier: ^2.1.1
+        version: 2.1.1
       md-editor-v3:
         specifier: ^4.20.4
         version: 4.20.4(@codemirror/view@6.34.1)(@lezer/common@1.2.2)(vue@3.5.6)
@@ -1704,6 +1707,9 @@ packages:
 
   markdown-it-sup@2.0.0:
     resolution: {integrity: sha512-5VgmdKlkBd8sgXuoDoxMpiU+BiEt3I49GItBzzw7Mxq9CxvnhE/k09HFli09zgfFDRixDQDfDxi0mgBCXtaTvA==}
+
+  markdown-it-task-lists@2.1.1:
+    resolution: {integrity: sha512-TxFAc76Jnhb2OUu+n3yz9RMu4CwGfaT788br6HhEDlvWfdeJcLUsxk1Hgw2yJio0OXsxv7pyIPmvECY7bMbluA==}
 
   markdown-it@13.0.2:
     resolution: {integrity: sha512-FtwnEuuK+2yVU7goGn/MJ0WBZMM9ZPgU9spqlFs7/A/pDIUNSOQZhUgOqYCficIuR2QaFnrt8LHqBWsbTAoI5w==}
@@ -4367,6 +4373,8 @@ snapshots:
   markdown-it-sub@2.0.0: {}
 
   markdown-it-sup@2.0.0: {}
+
+  markdown-it-task-lists@2.1.1: {}
 
   markdown-it@13.0.2:
     dependencies:
