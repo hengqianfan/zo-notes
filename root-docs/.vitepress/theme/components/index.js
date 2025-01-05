@@ -1,5 +1,5 @@
 
-import MySearch from './slot-search/index.vue'
+import MySearch from './slot-search-2.0/index.vue'
 
 import MyArticleInfo from './slot-articleInfo/index.vue'
 

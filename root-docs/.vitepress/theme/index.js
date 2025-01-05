@@ -14,7 +14,7 @@ import gloalComponemnts from './components/index.js'
 // 游客徽章
 import visitor from './components/slot-visitor/index.vue'
 // 引入自定义搜索框（应用于导航栏）
-import slotSearch from './components/slot-search/index.vue'
+import slotSearch from './components/slot-search-2.0/index.vue'
 // 引入文章前的信息组件
 import myArticleInfo from './components/slot-articleInfo/index.vue'
 
