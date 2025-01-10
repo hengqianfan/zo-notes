@@ -1,11 +1,11 @@
 ## 警告：请勿使用 💣
 
 
-本知识库暂未分离出viteprss博客主题，目前正在开发中，变动极大，且并不是成熟的开源项目，代码的逻辑比较随意，也未刻意遵守任何命名规范。
+本知识库暂未分离出 `viteprss` 博客主题，目前正在开发中，变动极大，且并不是成熟的开源项目，代码的逻辑比较随意，也未刻意遵守任何命名规范。
 
 ## 侵权提示
 
-- 项目中源代码生成的网站文章的内容或许具有参考价值，具体的说明，请阅览 [enter](https://zocv.github.io/zo-notes/zo-pages/about.html#_3-%E7%89%88%E6%9D%83%E4%B8%8E%E5%BC%95%E7%94%A8%E8%AF%B4%E6%98%8E)  
+- 项目中源代码生成的网站文章的内容或许具有参考价值，具体的说明，请阅览 [enter](https://hengqianfan.github.io/zo-notes/zo-pages/about.html#_3-1-%E6%9C%AC%E7%AB%99%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E4%BF%9D%E6%8A%A4)  
 
 
 

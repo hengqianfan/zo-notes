@@ -14,7 +14,7 @@ outline: [2,4]
 
 🔘 **从高中开始，我便想要一个属于自己的网站**，但是这条路是曲折的。刚上大学时的我，终于拥有了属于自己的电脑，但它对于我来说更像是一个大屏手机，我的电脑知识储备为 `0` 。  
 
-🔘 建站早期，我曾经多次碰壁与放弃，而建站商家铺天盖地的广告，**曾让我以为建站的成本是我负担不起的费用**，后来渐渐知道，有免费的`wordpress`，但是看上去，还是有QQ空间的既视感，为了建设一个从 `0` 开始的网站，我逐渐开始学习前端知识，没想到我一个纯文科专业的人，竟然也学的津津有味。  
+🔘 建站早期，我曾经多次碰壁与放弃，而建站商家铺天盖地的广告，**曾让我以为建站的成本是我负担不起的费用**，后来渐渐知道，有免费的`wordpress`，但是看上去，还是有QQ空间的既视感，为了建设一个从 `0` 开始的网站，我逐渐开始学习编程知识，没想到我一个纯文科专业的人，竟然也学的津津有味。  
 
 🔘 最后，慢慢接触到了 `vitepress` ，**在我看来，对于文档类网站，它的确是最好的建站方式，我十分喜欢这种自由度，像是上帝版的编辑与排版权限，这是任何笔记软件无法给予我的。**  
 
@@ -32,7 +32,7 @@ outline: [2,4]
 
 <br/>
 
-<Badge type='danger'>国际版</Badge>：https://zocv.github.io/zo-start/  
+<Badge type='danger'>国际版</Badge>：https://hengqianfan.github.io/zo-start/  
 
 :::
 
@@ -207,7 +207,7 @@ readTime: false
 
 <Badge type='danger'>下列都是Github仓库地址，请准备霍格沃兹环境！</Badge>
 
-- [`茂茂物语`](https://github.com/ATQQ/sugar-blog){target="_blank"}
+- [`茂茂物语`](https://github.com/maomao1996/mm-notes){target="_blank"}
 
 - [`粥里有勺糖`](https://github.com/ATQQ/sugar-blog){target="_blank"}
 

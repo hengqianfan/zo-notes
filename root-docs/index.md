@@ -23,11 +23,11 @@ hero:
 
 
 features:
-  - icon: 🛫
-    title: Start
-    details:  离开笔记库，前往阿牛宇宙的导航页 <br/> 其涵盖阿牛的所有开源项目与网址
-    link: https://hengqianfan.github.io/zo-start/
-    linkText: 前往
+  # - icon: 🛫
+  #   title: Start
+  #   details:  离开笔记库，前往阿牛宇宙的导航页 <br/> 其涵盖阿牛的所有开源项目与网址
+  #   link: https://hengqianfan.github.io/zo-start/
+  #   linkText: 前往
 
   - icon: 💡
     title: 本站提示

@@ -1255,7 +1255,7 @@ export const sites_data = [
                     },
                     {
                         value: '茂茂物语',
-                        link: 'https://notes.fe-mm.com/',
+                        link: 'https://github.com/maomao1996/mm-notes',
                         icon: 'vitepress',
                         intro: 'vitepress前端博客'
                     },
