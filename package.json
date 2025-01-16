@@ -21,6 +21,7 @@
     "body-parser": "^1.20.3",
     "element-plus": "^2.8.0",
     "express": "^4.21.1",
+    "fans-tools-for-vitepress": "^0.0.4",
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-mermaid": "^0.2.5",
     "markdown-it-task-lists": "^2.1.1",

@@ -1,5 +1,6 @@
 // 自动生成侧边栏的脚本文件
 import { setAllSidebars } from '../myscript/autoSidebar'
+// import { setAllSidebars } from 'fans-tools-for-vitepress'
 
 import { myNav } from './nav'
 
