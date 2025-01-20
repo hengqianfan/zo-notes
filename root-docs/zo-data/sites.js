@@ -46,6 +46,12 @@ export const sites_data = [
                         link: 'https://www.kdocs.cn/latest',
                         icon: 'wps',
                         intro: '在线文档编辑'
+                    },
+                    {
+                        value: 'myfreemp3',
+                        link: 'https://tool.liumingye.cn/music/#/',
+                        icon: 'music',
+                        intro: '在线音乐播放'
                     }
                 ]
             },

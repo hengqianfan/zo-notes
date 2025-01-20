@@ -112,40 +112,8 @@ outline: [2,4]
 
 📣 **本站使用的字体皆为开源的免费字体**
 
-```css
+<<< @/.vitepress/theme/style/font.scss
 
-@font-face {
-    font-family: "金刚体";
-    src: url("/font/ChuangKeTieJinGangTi-2.otf");
-}
-
-@font-face {
-    font-family: "剑豪体";
-    src: url("/font/AaJianHaoTi-2.ttf");
-}
-
-@font-face {
-    font-family: "zqk英文";
-    src: url("/font/ZQKfreefont.ttf");
-}
-
-@font-face {
-    font-family: '馒头黑体';
-    src: url('/font/MantouSans-Regular.ttf');
-}
-
-@font-face {
-    font-family: "站酷高端黑";
-    src: url('/font/站酷高端黑.ttf');
-}
-
-
-@font-face {
-    font-family: '胡晓波男神体';
-    src: url('/font/HuXiaoBoNanShenTi-2.otf');
-}
-
-```
 ### 4.3 嵌入的字体图标
 
 **本站集成的阿里巴巴旗下的 `iconfont`字体图标库**  
