@@ -1104,7 +1104,7 @@ export const sites_data = [
                     },
                     {
                         value: 'PCL2',
-                        link: 'https://afdian.net/a/LTCat',
+                        link: 'https://afdian.com/a/LTCat',
                         icon: 'pcl2',
                         intro: '我的世界启动器'
                     },

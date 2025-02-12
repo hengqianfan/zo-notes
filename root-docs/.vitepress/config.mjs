@@ -15,6 +15,12 @@ import { demoPreviewPlugin } from '@vitepress-code-preview/plugin'
 
 // 代码组-增加图标
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
+// @ts-ignore
+// import { onlyTest } from 'fans-tools-for-vitepress';
+
+
+
+// console.log(onlyTest)
 
 
 
