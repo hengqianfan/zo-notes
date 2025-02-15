@@ -189,4 +189,4 @@ mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' })
 :::
 
 
-![](/gallery/24082801.png)
+![](/others/24082801.png)

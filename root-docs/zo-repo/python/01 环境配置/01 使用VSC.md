@@ -14,11 +14,11 @@
 
 - 官网 ：[enter](https://www.python.org/downloads/){target="_blank"}
 
-![](/notesPic/202402271419.png)  
+![](/image/202402271419.png)  
 
-![](/notesPic/202402271426.png)  
+![](/image/202402271426.png)  
 
-![](/notesPic/202402271436.png)
+![](/image/202402271436.png)
 
 - 环境变量解释
 

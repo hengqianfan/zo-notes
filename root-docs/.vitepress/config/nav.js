@@ -22,7 +22,7 @@ export const myNav = [
             {
                 text: '【进阶知识】', items: [
                     { text: 'Node.js', link: '/zo-repo/nodejs/00 简述', icon: 'nodejs' },
-                    { text: 'TypeScript', link: '/zo-repo/typescript/01 基础内容/01 介绍与安装', icon: 'typescript' },
+                    { text: 'TypeScript', link: '/zo-repo/typescript/00 简述', icon: 'typescript' },
                     { text: 'React', link: '/zo-repo/react/00 简述', icon: 'react' },
                     { text: 'Vue', link: '/zo-repo/vue/00 简述', icon: 'vue' },
                     { text: 'Componement', link: '/zo-repo/component-library/00 简述', icon: 'note' }

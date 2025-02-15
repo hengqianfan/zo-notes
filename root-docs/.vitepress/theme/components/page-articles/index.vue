@@ -137,7 +137,7 @@ const getImgSrc = (momo, cover) => {
     if (cover) {
         return cover
     }
-    return `/articlesPic/${momo}.png`
+    return `/cover/${momo}.png`
 }
 
 // 是否开放所有文章

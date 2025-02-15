@@ -8,14 +8,14 @@ https://docs.docker.com/desktop/install/windows-install/
 - 在任务栏选择启用或关闭功能
 
 
-<zo-img momo='/notesPic/202408260541.png'></zo-img>
+<zo-img momo='/image/202408260541.png'></zo-img>
 
 
 - 勾选 子系统 和 虚拟机
 
 
 
-<zo-img momo='/notesPic/202408260544.png'></zo-img>
+<zo-img momo='/image/202408260544.png'></zo-img>
 
 
 ## 2. 配置镜像设置

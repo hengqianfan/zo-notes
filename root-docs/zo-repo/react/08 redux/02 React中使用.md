@@ -14,4 +14,4 @@ npm i @reduxjs/toolkit react-redux
 
 > 
 
-![img](/notesPic/202402141811.png)
+![img](/image/202402141811.png)

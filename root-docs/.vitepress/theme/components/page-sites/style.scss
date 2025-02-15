@@ -143,8 +143,10 @@
             flex-direction: column;
 
             border-radius: 1.25rem;
-            box-shadow: 0.1875rem 0.1875rem .25rem $my_bg_color_02_a inset,
-                -0.1875rem -0.1875rem .25rem $my_bg_color_02_b inset;
+            box-shadow: 0.1875rem 0.1875rem .125rem rgb(240, 240, 240) inset,
+                -0.1875rem -0.1875rem .125rem rgb(250, 245, 245) inset;
+
+
 
 
 

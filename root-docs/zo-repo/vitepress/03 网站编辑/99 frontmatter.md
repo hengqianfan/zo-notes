@@ -28,7 +28,7 @@ layout: page
 
 > <Badge type='warning'>防呆演示</Badge>  
 
-![img](/notesPic/202401201959.png)
+![img](/image/202401201959.png)
 
 ---
 aside: false

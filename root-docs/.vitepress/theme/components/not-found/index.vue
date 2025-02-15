@@ -87,7 +87,7 @@
 
 .nf-all::after {
     content: "";
-    background-image: url('/gallery/ai-海浪背景.png');
+    background-image: url('/others/ai-海浪背景.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;

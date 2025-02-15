@@ -171,6 +171,7 @@ $search_max_width: 150px;
             border-radius: 10px;
             padding-left: 10px;
             color: gray;
+
         }
 
         .search_keyword:hover {

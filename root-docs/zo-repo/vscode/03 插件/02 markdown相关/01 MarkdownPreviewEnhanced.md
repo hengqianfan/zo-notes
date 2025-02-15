@@ -13,7 +13,7 @@
 
 ::: info  <Badge type='info'>安装后，点击图示位置，可预览目前打开的md文件</Badge>
 
-![img](/notesPic/202402022126.png)
+![img](/image/202402022126.png)
 
 :::
 
