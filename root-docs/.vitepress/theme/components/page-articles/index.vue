@@ -75,7 +75,7 @@
                             <div class="pa-article-card-cover">
                                 <img :src="withBase(getImgSrc(item.frontmatter.zoid, item.frontmatter.cover))"
                                     class="pa-article-card-cover-img"
-                                    onerror="this.onerror=null; this.src='https://zocv.github.io/zo-notes/articlesPic/momo.png'">
+                                    onerror="this.onerror=null; this.src='https://hengqianfan.github.io/zo-notes/cover/momo.png' ">
                             </div>
 
 
@@ -167,6 +167,7 @@ const removeData = (data) => {
     return outdata
 }
 
+// 在具备管理权限时，不过滤文章！
 const allData = isOpen.value ? data : removeData(data)
 
 let sortedData = ref(allData)

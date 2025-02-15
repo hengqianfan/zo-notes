@@ -2,7 +2,8 @@
     <div class="page-notes-all">
 
         <div class="pn-nav">
-            <div class="pn-nav-item" v-for="item in noteClass" @click="sortNotes(item)">{{ item }}</div>
+            <div :class="['pn-nav-item', { 'active': nowActiveIndex === index }]" v-for=" (item, index) in noteClass"
+                @click="sortNotes(item, index)">{{ item }}</div>
         </div>
 
         <div class="pn-content">
@@ -34,6 +35,8 @@ const pageSize = 8
 
 const noteClass = ['全部', '编程', '电脑', '软件', '网站', '其它']
 
+const nowActiveIndex = ref(0)
+
 let sortedNotes = ref(notesList)
 
 let showedNotes = ref(sortedNotes.value.slice(0, pageSize))
@@ -42,7 +45,11 @@ let showedNotes = ref(sortedNotes.value.slice(0, pageSize))
 
 
 
-const sortNotes = (momo) => {
+const sortNotes = (momo, nono) => {
+
+    // 把当前选中标签更新
+
+    nowActiveIndex.value = nono
 
     let arr = []
     for (let i = 0; i < notesList.length; i++) {

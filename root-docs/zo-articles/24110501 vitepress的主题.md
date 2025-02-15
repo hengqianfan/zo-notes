@@ -7,10 +7,17 @@ id: 24110501
  
 ######  {{ $frontmatter.id? $frontmatter.id : $frontmatter.zoid }}
 
- 
+# vitepress 主题
+
+::: warning <Badge type='danger'>tip</Badge>
+
+目前 `vitepress` 的主题生态较为匮乏，多为小打小闹的简约风主题，缺少类似于`vuepress的hope主题`这种优秀且功能丰富的主题，目前，我发现的，比较实用的 vitepress 的主题是 sugarat。
+
+:::
+
 <br/>
  
-# vitepress-sugarat 主题
+##  1. vitepress-sugarat 主题
 
 ::: info <Badge type='info'>介绍</Badge>
 
@@ -37,15 +44,15 @@ id: 24110501
 
 
 
-## 1. 创建项目
+### 1.1 创建项目
 
-### 1.1 初始化
+#### 1.1.1 初始化
 
 ```shell
 pnpm create @sugarat/theme
 ```
 
-### 1.2 安装依赖
+#### 1.1.2 安装依赖
 
 ::: danger <Badge type='warning'>提示</Badge>
 - 先进入项目文件夹

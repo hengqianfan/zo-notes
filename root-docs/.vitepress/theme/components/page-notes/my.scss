@@ -15,9 +15,15 @@
         height: 40px;
         line-height: 40px;
         font-size: 18px;
-        font-family: '优设';
+        font-family: '优设标题黑';
 
         justify-content: space-around;
+
+        //  被激活时，固定悬浮特效
+        .active {
+            color: blueviolet;
+            border-bottom: 1px solid blue;
+        }
 
     }
 
