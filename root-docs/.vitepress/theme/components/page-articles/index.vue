@@ -137,7 +137,6 @@ const getImgSrc = (momo, cover) => {
     if (cover) {
         return cover
     }
-
     return `/articlesPic/${momo}.png`
 }
 
