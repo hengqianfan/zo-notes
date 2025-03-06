@@ -2,12 +2,15 @@
     <div class="page-notes-all">
 
         <div class="pn-nav">
-            <div :class="['pn-nav-item', { 'active': nowActiveIndex === index }]" v-for=" (item, index) in noteClass"
+            <div :class="['pn-nav-item', { 'active': nowActiveIndex === index }]" v-for="(item, index) in noteClass"
                 @click="sortNotes(item, index)">{{ item }}</div>
         </div>
 
         <div class="pn-content">
+
             <div class="pn-card" v-for="item in showedNotes">
+
+
                 <div class="pn-cover">
                     <img :src="withBase(getImgSrc(item.cover))" alt="" class="pn-cover-img">
 
@@ -17,6 +20,8 @@
 
 
         </div>
+
+
         <el-pagination :default-page-size="pageSize" layout="total, prev, pager, next, jumper"
             :total="sortedNotes.length" @current-change="handleCurrentChange" />
 

@@ -893,6 +893,12 @@ export const sites_data = [
 
             },
             {
+                value: '音乐音频',
+                children: [
+                    {}
+                ]
+            },
+            {
                 value: '视频资源',
                 children: [
 

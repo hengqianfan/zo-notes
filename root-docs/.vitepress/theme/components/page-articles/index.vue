@@ -2,11 +2,8 @@
     <div class="page-articles-all">
 
         <div class="pa-main">
+
             <div class="pa-navbar">
-                <!-- 
-                <el-switch v-model="show_editing" class="ml-2" inline-prompt
-                    style="--el-switch-on-color: #13ce66; --el-switch-off-color: #ff4949" active-text="完整展示所有文章"
-                    inactive-text="不显示编辑中的文章" @change="updateShowData()" /> -->
 
                 <div class="pa-navbar-info">
 
