@@ -1,0 +1,240 @@
+// PC 布局
+.pa-all {
+    margin-top: 20px;
+    // background-color: red;
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .pa-sidebar {
+
+        background-color: rgb(245, 249, 252);
+        padding-bottom: 10px;
+        min-height: 20vh;
+        max-width: 70vh;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border-radius: 10px;
+
+
+
+
+        background-image: linear-gradient(to right, rgba(60, 10, 30, 0.04) 1px, transparent 0),
+            linear-gradient(to bottom, rgba(60, 10, 30, 0.04) 1px, transparent 0);
+        background-size: 20px 20px;
+
+
+
+        .pa-sidebar-search {
+            margin-top: 20px;
+
+            height: 30px;
+            width: 160px;
+            text-align: center;
+        }
+
+        .pa-sidebar-tags {
+            margin-top: 20px;
+
+            width: 90%;
+            min-height: 80%;
+            max-height: 90%;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            overflow: scroll;
+
+
+            .pa-sidebar-tags-tag {
+                background-color: white;
+                margin: 5px;
+                min-width: 50px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                padding: 0 5px;
+                border-radius: 8px;
+                box-shadow: 1px 1px 0.5px rgb(229, 227, 227);
+
+            }
+
+
+            .pa-sidebar-tags-tag {
+                margin: 5px;
+                min-width: 50px;
+                padding: 0 8px;
+                border-radius: 8px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                transition: all 0.8s ease;
+
+                .pa-sidebar-tags-tag-text {
+                    font-weight: 500;
+                    font-size: 15px;
+                    color: #828e98;
+                }
+
+                .pa-sidebar-tags-tag-num {
+                    margin-left: 6px;
+                    width: 13px;
+                    height: 13px;
+                    background-color: #84cae6;
+                    border-radius: 6.5px;
+                    line-height: 14px;
+                    text-align: center;
+                    color: white;
+                    font-size: 8px;
+                }
+            }
+
+            .pa-sidebar-tags-tag:hover {
+                .pa-sidebar-tags-tag-text {
+                    font-weight: 500;
+
+                    color: black;
+                }
+
+                .pa-sidebar-tags-tag-num {
+                    background-color: red;
+                }
+            }
+        }
+
+    }
+
+    .pa-main {
+        margin-left: 50px;
+        // background-color: yellow;
+        width: 60%;
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+
+
+        .pa-main-nav {
+            margin: 8px 0;
+            // background-color: #1a2025;
+            height: 40px;
+
+            display: flex;
+            flex-direction: row;
+
+            align-items: center;
+
+            .pa-main-nav-item {
+                margin-right: 25px;
+                background-color: #f5f6f7;
+                width: 100px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                font-size: 14px;
+                font-family: '优设标题黑';
+                border-radius: 10px;
+                color: #445b70;
+            }
+        }
+
+        .pa-main-content {
+            position: relative;
+
+            width: 90%;
+            height: 78vh;
+            overflow: scroll;
+            // 给分页栏预留的
+            padding-bottom: 30px;
+
+            .pa-main-article {
+                margin-top: 10px;
+                background-color: #f5f6f7;
+                min-width: 200px;
+                max-width: 700px;
+                height: 50px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border-radius: 10px;
+                box-shadow: 1px 1px 0.5px rgb(229, 227, 227);
+
+                .pa-main-article-time {
+                    margin-left: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5px;
+                    height: 20px;
+                    color: #828e98;
+                    // background-color: #afbdc8;
+                    font-size: 10px;
+                    border-radius: 5px;
+                    margin-right: 20px;
+                }
+
+                .pa-main-article-title {
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: white;
+                    padding: 0 10px;
+                    border-radius: 10px;
+
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: 800;
+
+
+                    font-family: '剑豪体';
+                    // font-family: '优设标题黑';
+                    color: rgb(87, 84, 84);
+
+                }
+
+                .pa-main-article-title:hover {
+
+                    background: linear-gradient(45deg, #ef9393, #7e7e21, #ffff00, #b74b4b, #72a472, #646493);
+                    background: linear-gradient(45deg, #1d7e76, #6eb0ca, #5464b3, #3a2d8a, #432768, #b0339d);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
+                    transition: background 0.5s;
+
+                }
+
+
+                .pa-main-article-tags {
+                    margin-left: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5px;
+                    height: 20px;
+                    color: #828e98;
+                    background-color: #e6e9eb;
+                    font-size: 10px;
+                    border-radius: 5px;
+                }
+
+            }
+
+
+            .pa-pagination {
+                position: absolute;
+                left: 0;
+                bottom: 0px;
+            }
+        }
+
+
+    }
+}

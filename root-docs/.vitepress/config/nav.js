@@ -4,7 +4,9 @@ export const myNav = [
 
     { text: '文章集', link: '/zo-pages/all-articles' },
 
+
     { text: '笔记集', link: '/zo-pages/notes' },
+
 
     {
         text: '全栈', items: [

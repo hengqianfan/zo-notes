@@ -1,4 +1,5 @@
-
+import { PageArticlesVistion } from '../../../zo-data/key';
+// 启用 2.0 版本
 import MySearch from './slot-search-2.0/index.vue'
 
 import MyArticleInfo from './slot-articleInfo/index.vue'
@@ -7,7 +8,11 @@ import PageTopic from './page-of-topic/index.vue'
 
 import PageNotes from './page-notes/index.vue'
 
-import PageArticles from './page-articles/index.vue'
+// 启用 1.0 版本
+import PageArticles1 from './page-articles/index.vue'
+
+// 启用 2.0 版本
+import PageArticles2 from './page-articles-2.0/index.vue'
 
 import PageSites from './page-sites/index.vue'
 
@@ -47,6 +52,19 @@ import Mermaid from './zo-mermaid/index.vue'
 
 
 import ZoTest from './zo-test/index.vue'
+
+
+
+
+const isPageArticlesVistion = (PageArticlesVistion) => {
+    if (PageArticlesVistion == 1) {
+        return PageArticles1
+    } else {
+        return PageArticles2
+    }
+}
+
+const PageArticles = isPageArticlesVistion(PageArticlesVistion)
 
 
 

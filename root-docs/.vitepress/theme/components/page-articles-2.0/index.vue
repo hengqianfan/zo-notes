@@ -1,103 +1,84 @@
 <template>
-    <div class="page-articles-all">
-
-        <div class="pa-main">
-
-            <div class="pa-navbar">
-
-                <div class="pa-navbar-info">
+    <div class="pa-all">
+        <div class="pa-sidebar">
 
 
-
-                    <el-badge :value="allData.length" class="item" type="primary" @click="findX(`全部文章`)">
-                        <el-button>全部文章</el-button>
-                    </el-badge>
-
-                    <el-badge :value="findArticlesNum(`本月文章`) || 0" class="item" type="primary" @click="findX(`本月文章`)">
-                        <el-button>本月文章</el-button>
-                    </el-badge>
-
-                    <el-badge :value="findArticlesNum(`本周文章`) || 0" class="item" type="primary" @click="findX(`本周文章`)">
-                        <el-button>本周文章</el-button>
-                    </el-badge>
-
-                    <el-button @click="re_arr(showData)">随机排序</el-button>
+            <div class="pa-sidebar-search">
 
 
+                <el-select v-model="now_tag" filterable placeholder=" 标签搜索" clearable @change="findX(now_tag)">
 
-                </div>
+                    <el-option v-for="(value, key) in all_tags" :key="key" :label="`${key}`" :value="key" />
 
-
-                <div class="pa-navbar-search">
-                    <el-select v-model="now_tag" filterable placeholder="搜索标签" style="width: 120px" clearable
-                        @change="findX(now_tag)">
-                        <el-option v-for="(value, key) in all_tags" :key="key" :label="`${key}`" :value="key" />
-                    </el-select>
-                </div>
-
-                <el-switch v-model="show_tabs" :active-action-icon="View" :inactive-action-icon="Hide"
-                    inactive-text="标签分类" />
-
+                </el-select>
 
             </div>
 
 
+            <div class="pa-sidebar-tags">
 
-            <transition name="test1">
-                <div class="pa-tabbar" v-if="show_tabs">
-                    <el-button class=" pa-navbar-tabbar-item" v-for="(value, key) in all_tags"
-                        @click="findX(key, `autoClose`)">
-                        <div class="pa-navbar-tabbar-item-text">{{ key }}</div>
-                        <div class="pa-navbar-tabbar-item-num">{{ value }}</div>
-                    </el-button>
+                <div class="pa-sidebar-tags-tag" v-for="(value, key) in all_tags" @click="findX(key, `autoClose`)">
+                    <div class="pa-sidebar-tags-tag-text">
+                        {{ key }}
+                    </div>
+                    <div class="pa-sidebar-tags-tag-num">
+                        {{ value }}
+                    </div>
                 </div>
-            </transition>
+
+            </div>
 
 
-
-            <div class="pa-content">
-
-
-                <div class="list">
-
-                    <transition-group name="list">
+        </div>
 
 
-                        <div class="pa-article-card" v-for="(item, key) in showData">
+        <div class="pa-main">
 
-                            <div class="pa-article-card-cover">
-                                <img :src="withBase(getImgSrc(item.frontmatter.zoid, item.frontmatter.cover))"
-                                    class="pa-article-card-cover-img"
-                                    onerror="this.onerror=null; this.src='https://hengqianfan.github.io/zo-notes/cover/momo.png' ">
-                            </div>
+            <div class="pa-main-nav">
 
+                <div class="pa-main-nav-item" @click="findX(`全部文章`)">
+                    全部文章
+                </div>
 
+                <div class="pa-main-nav-item" @click="re_arr_by_random(sortedData)">
+                    随机排序
+                </div>
 
+                <div class="pa-main-nav-item" @click="re_arr_by_time(sortedData)">
+                    按最新排序
+                </div>
 
-                            <a class="pa-article-card-title" :href="withBase(item.url)">{{
-                                getTitle(item.frontmatter.title) }}</a>
-
-                            <div class="pa-article-card-info">
-                                <div class="pa-article-card-time">{{ formatDate(item.frontmatter.zoid) }}</div>
-                                <div class="pa-article-card-tags" @click="findX(xitem, `autoClose`)"
-                                    v-for="xitem in item.frontmatter.tags.slice(0, 3)">{{
-                                        xitem }}</div>
-                            </div>
-
-
-                        </div>
-
-                        <!-- <el-pagination layout="prev, pager, next" :total="data.length" /> -->
-
-
-                    </transition-group>
-
-
-
+                <div class="pa-main-nav-item" @click="re_arr_by_name(sortedData)">
+                    按名称排序
                 </div>
 
 
 
+
+
+            </div>
+
+            <div class="pa-main-content">
+
+
+
+                <div class="pa-main-article" v-for="(item, key) in showData">
+
+                    <div class="pa-main-article-time">
+                        {{ formatDate(item.frontmatter.zoid) }}
+                    </div>
+
+                    <a class="pa-main-article-title" :href="withBase(item.url)">
+                        {{ item.frontmatter.title }}
+                    </a>
+
+                    <div class=" pa-main-article-tags" v-for="xitem in item.frontmatter.tags.slice(0, 5)"
+                        @click="findX(xitem, `autoClose`)">
+                        {{ xitem }}
+
+                    </div>
+
+                </div>
 
             </div>
 
@@ -106,12 +87,10 @@
                     :total="sortedData.length" @current-change="handleCurrentChange" />
             </div>
 
-
-
         </div>
 
-
     </div>
+
 </template>
 
 <script setup>
@@ -123,7 +102,7 @@ import { Hide, View } from '@element-plus/icons-vue'
 import { admin_key } from '../../../../zo-data/key';
 
 
-const pageSize = 8
+const pageSize = 12
 
 const getImgSrc = (momo, cover) => {
     // 如果存在特定封面，特定封面优先
@@ -167,6 +146,7 @@ let sortedData = ref(allData)
 
 // 展示的数据
 let showData = ref(sortedData.value.slice(0, pageSize))
+// let showData = sortedData.value
 
 
 const show_tabs = ref(false)
@@ -175,7 +155,7 @@ const show_tabs = ref(false)
 // 定义 tag 对象
 let all_tags = ref([])
 // 定义当前的 tag
-let now_tag = ref('全部')
+let now_tag = ref('全部文章')
 
 // 从数据中提取所有的 tag 放入 tag 数组中
 const getALLTags = (data) => {
@@ -303,10 +283,40 @@ const findX = (momo, autoClose) => {
 
 
 // 随机排列
-const re_arr = (arr) => {
-    showData.value = arr.sort(() => Math.random() - 0.5);
+const re_arr_by_random = (arr) => {
+    sortedData.value = arr.sort(() => Math.random() - 0.5);
+    showData.value = sortedData.value.slice(0, pageSize)
 }
 
+// 按时间排序
+
+const re_arr_by_time = (arr) => {
+    sortedData.value = arr.sort((a, b) => b.frontmatter.time - a.frontmatter.time)
+
+    showData.value = sortedData.value.slice(0, pageSize)
+}
+
+// 根据名称排序
+const re_arr_by_name = (arr) => {
+    // 根据 name 排序
+    sortedData.value = arr.sort((x, y) => {
+        let reg = /[a-zA-Z0-9]/
+        if (reg.test(x.frontmatter.title) || reg.test(y.frontmatter.title)) {
+            if (x.frontmatter.title > y.frontmatter.title) {
+                return 1
+            } else if (x.frontmatter.title < y.frontmatter.title) {
+                return -1
+            } else {
+                return 0
+            }
+        } else {
+            return x.frontmatter.title.localeCompare(y.frontmatter.title)
+        }
+    })
+
+    showData.value = sortedData.value.slice(0, pageSize)
+
+}
 
 
 
@@ -348,22 +358,6 @@ const openWeb = (url) => {
 </script>
 
 <style lang="scss" scoped>
-@import './app.scss';
 @import '../../style/vars.scss';
 @import './my.scss';
-
-.list-enter-active,
-.list-leave-active {
-    transition: all 0.8s ease;
-
-
-}
-
-.list-enter-from,
-.list-leave-to {
-
-
-    opacity: 0;
-    transform: translateX(30px);
-}
 </style>

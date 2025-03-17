@@ -47,12 +47,7 @@ export const sites_data = [
                         icon: 'wps',
                         intro: '在线文档编辑'
                     },
-                    {
-                        value: 'myfreemp3',
-                        link: 'https://tool.liumingye.cn/music/#/',
-                        icon: 'music',
-                        intro: '在线音乐播放'
-                    }
+
                 ]
             },
             {
@@ -181,6 +176,12 @@ export const sites_data = [
                         link: 'https://dash.cloudflare.com/',
                         icon: 'cloudflare',
                         intro: '国际知名的服务器商家'
+                    },
+                    {
+                        value: '火山引擎',
+                        link: 'https://www.volcengine.com/',
+                        icon: 'volcengine',
+                        intro: '字节跳动旗下服务器产商'
                     },
 
                     {
@@ -412,14 +413,17 @@ export const sites_data = [
     {
         value: '工具网站',
         children: [
-            // {
-            //     value: '导航聚合',
-            //     children: [
-            //         {
-            //             value: '未知'
-            //         }
-            //     ]
-            // },
+            {
+                value: '聚合工具',
+                children: [
+                    {
+                        value: '刘明野的工具箱',
+                        link: 'https://tool.liumingye.cn/music/#/',
+                        icon: 'tool',
+                        intro: '个人工具网站'
+                    }
+                ]
+            },
             {
                 value: '格式转换',
                 children: [
@@ -895,7 +899,18 @@ export const sites_data = [
             {
                 value: '音乐音频',
                 children: [
-                    {}
+                    {
+                        value: '种子音乐',
+                        link: 'https://zz123.com/',
+                        icon: 'music',
+                        intro: '音乐资源'
+                    },
+                    {
+                        value: 'myfreemp3',
+                        link: 'https://tool.liumingye.cn/music/#/',
+                        icon: 'music',
+                        intro: '在线音乐播放（已停运）'
+                    }
                 ]
             },
             {
@@ -941,7 +956,12 @@ export const sites_data = [
                         intro: '阿里云盘资源'
                     },
 
-
+                    {
+                        value: '盘他',
+                        link: 'https://www.91panta.cn/',
+                        icon: 'video',
+                        intro: '中国移动云盘资源'
+                    },
 
                 ]
             },

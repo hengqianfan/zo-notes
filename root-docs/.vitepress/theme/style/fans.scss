@@ -22,3 +22,19 @@
     transform: translate(-50%, -50%) rotate(666turn);
     transition: transform 59s 0.5s cubic-bezier(0.3, 0, 0.8, 1);
 }
+
+
+// .vp-external-link-icon {
+//     mask-image: none;
+//     -webkit-mask-image: none;
+//     // --icon: none !important;
+//     // -webkit-mask-image: none !important;
+//     // mask-image: none !important;
+//     // display: none !important;
+// }
+
+
+
+:is(.vp-external-link-icon, .vp-doc a[href*='://'], .vp-doc a[target='_blank']):not(.no-icon)::after {
+    display: none;
+}
