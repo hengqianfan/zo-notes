@@ -1,12 +1,16 @@
 <template>
 
-  <zo-nav></zo-nav>
+  <!-- <MouseTrail /> -->
 
-  <not-found v-if="page.isNotFound"></not-found>
+
+
+  <not-found v-if="page.isNotFound">
+
+  </not-found>
 
   <zo-home v-if="frontmatter.layout === 'home'" />
 
-  <zo-doc v-if="frontmatter.layout === 'doc'" />
+  <!-- <zo-doc v-if="frontmatter.layout === 'doc'" /> -->
 
 
 

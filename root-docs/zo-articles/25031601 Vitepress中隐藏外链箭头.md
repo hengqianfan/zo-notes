@@ -1,6 +1,6 @@
 ---
 aside: left
-tags: ['vitepress']
+tags: ['vitepress','vue']
 icon: ''
 open: true
 id: 25031601

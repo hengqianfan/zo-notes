@@ -4,11 +4,29 @@ aside: left
 
 # 更新日志  📝
 
+
+::: info <Badge type='info'>提示</Badge>
+
+**目前还未分离出主题样式**
+
+:::
+
 ## 更新任务
+
+<Badge type='tip'>新增</Badge>  
+
+<Badge type='warning'>优化</Badge>  
+
+<Badge type='tip'>重构</Badge>  
+
+<Badge type='danger'>修复</Badge>  
+
 
 
 
 ### 待优化
+
+
 
 
 - `25021202` : 文章区-界面切换特效
@@ -48,11 +66,18 @@ aside: left
 
 ## 更新历史
 
-### 250:beta-0.0.7   
+### 250318:beta-0.0.7   
 
 ::: info 详情
 
 - 网站内容知识更新...
+
+- `25031702` : 通过具体文章页面的头部信息栏的 `tag` 可以直接跳转到文章合集页面,并筛选出符合 `tag` 的文章  <Badge type='tip'>新增</Badge>  
+
+- `25031703` : 新增 `主题设置` 页面 , 后期将会逐步添加各种个性化设置 <Badge type='tip'>新增</Badge>  
+
+- `25031704` : 优化了文章合集页面的样式 <Badge type='warning'>优化</Badge>  
+
 
 
 :::

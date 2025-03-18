@@ -1,6 +1,6 @@
 ---
 aside: left
-tags: ['vitepress','xmind','思维导图','G6','可视化']
+tags: ['xmind','思维导图','G6','可视化','mermaid','vue','vitepress']
 icon: 'vitepress'
 cover: '/cover/vitepresscover.png'
 

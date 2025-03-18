@@ -8,11 +8,11 @@ import PageTopic from './page-of-topic/index.vue'
 
 import PageNotes from './page-notes/index.vue'
 
-// 启用 1.0 版本
-import PageArticles1 from './page-articles/index.vue'
 
-// 启用 2.0 版本
-import PageArticles2 from './page-articles-2.0/index.vue'
+import PageArticles from './page-articles/index.vue'
+
+
+// import PageArticles2 from './page-articles-2.0/index.vue'
 
 import PageSites from './page-sites/index.vue'
 
@@ -54,17 +54,22 @@ import Mermaid from './zo-mermaid/index.vue'
 import ZoTest from './zo-test/index.vue'
 
 
+// import MouseTrail from './zo-mouseTrail/index.vue'
 
 
-const isPageArticlesVistion = (PageArticlesVistion) => {
-    if (PageArticlesVistion == 1) {
-        return PageArticles1
-    } else {
-        return PageArticles2
-    }
-}
 
-const PageArticles = isPageArticlesVistion(PageArticlesVistion)
+// const isPageArticlesVistion = (PageArticlesVistion) => {
+
+//     let res = localStorage.getItem('ArticleShow')
+
+//     if (PageArticlesVistion == res) {
+//         return PageArticles1
+//     } else {
+//         return PageArticles2
+//     }
+// }
+
+// const PageArticles = isPageArticlesVistion(PageArticlesVistion)
 
 
 
@@ -94,6 +99,8 @@ const allGlobalComponents = {
     PageTask,
     Mermaid,
     ZoTest,
+
+    // MouseTrail
 }
 
 export default {

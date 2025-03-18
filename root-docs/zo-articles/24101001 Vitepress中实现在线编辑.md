@@ -1,6 +1,6 @@
 ---
 aside: left
-tags: ['修改中','vitepress']
+tags: ['修改中','vitepress','vue']
 icon: 'vitepress'
 cover: '/cover/vitepresscover.png'
 open: false

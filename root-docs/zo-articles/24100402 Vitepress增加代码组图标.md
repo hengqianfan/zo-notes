@@ -1,6 +1,6 @@
 ---
 aside: left
-tags: ['vitepress']
+tags: ['vitepress','vue']
 icon: 'vitepress'
 cover: '/cover/vitepresscover.png'
 

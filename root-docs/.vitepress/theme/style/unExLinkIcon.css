@@ -1,0 +1,5 @@
+/* 外链样式优化 */
+
+:is(.vp-external-link-icon, .vp-doc a[href*='://'], .vp-doc a[target='_blank']):not(.no-icon)::after {
+    display: none;
+}
