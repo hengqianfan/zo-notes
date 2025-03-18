@@ -36,8 +36,9 @@ import ZoIframe from './zo-iframe/index.vue'
 
 import ZoMindmap from './zo-mindmap/index.vue'
 
-
 import ZoEditor from './zo-editor/index.vue'
+
+import ZoComment from './zo-comment/index.vue'
 
 import CardNote from './card-note/index.vue'
 
@@ -87,6 +88,7 @@ const allGlobalComponents = {
     ZoIframe,
     ZoMindmap,
     ZoEditor,
+    ZoComment,
 
 
     CardNote,

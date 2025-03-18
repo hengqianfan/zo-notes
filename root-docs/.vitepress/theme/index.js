@@ -41,6 +41,9 @@ import '@vitepress-code-preview/container/dist/style.css'
 import 'virtual:group-icons.css'
 
 
+// 评论区组件
+
+import ZoComment from './components/zo-comment/index.vue'
 
 
 
@@ -56,7 +59,9 @@ export default {
 
       'not-found': () => h(notFound),
       'doc-before': () => h(myArticleInfo),
+      'doc-after': () => h(ZoComment),
       'aside-ads-after': () => h(backtop),
+
 
 
 

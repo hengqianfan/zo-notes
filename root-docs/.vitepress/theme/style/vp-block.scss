@@ -64,6 +64,8 @@
 
 
 
+
+
     .custom-block.danger {
         //  这里只能改颜色
         --vp-custom-block-danger-border: red;
@@ -72,7 +74,31 @@
         --vp-custom-block-danger-text: var(--vp-c-text-1);
         --vp-custom-block-danger-bg: #fbe2e5;
         --vp-custom-block-danger-code-bg: var(--vp-c-danger-soft);
+
         transition: 1s ease;
+    }
+
+    .custom-block.danger:hover {
+        //  这里只能改颜色
+        --vp-custom-block-danger-border: red;
+        //  所以自己重写一个覆盖
+        // --vp-custom-block-danger-text: white;
+        --vp-custom-block-danger-bg: white;
+
+        // background: linear-gradient(45deg, #d6542d, #d4cc7e, #6d134a, #8b2469, #ddd39b, #8b0909);
+        // -webkit-background-clip: text;
+        // background-clip: text;
+        // color: transparent;
+        // transition: background 0.5s;
+        transition: 1s ease;
+    }
+
+    .custom-block.danger:hover code {
+        // color: white;
+    }
+
+    .custom-block.danger:hover a {
+        color: #e76d26;
     }
 
 

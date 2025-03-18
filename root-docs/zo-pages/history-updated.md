@@ -66,6 +66,20 @@ aside: left
 
 ## 更新历史
 
+### 250319:beta-0.0.8   
+
+::: info 详情
+
+- 网站内容知识更新...
+
+- `25031801` : 优化了自定义代码块的CSS样式  <Badge type='warning'>优化</Badge>  
+
+- `25031802` : 集成 giscus ，新增评论区  <Badge type='tip'>新增</Badge>  
+
+
+:::
+
+
 ### 250318:beta-0.0.7   
 
 ::: info 详情
@@ -77,7 +91,6 @@ aside: left
 - `25031703` : 新增 `主题设置` 页面 , 后期将会逐步添加各种个性化设置 <Badge type='tip'>新增</Badge>  
 
 - `25031704` : 优化了文章合集页面的样式 <Badge type='warning'>优化</Badge>  
-
 
 
 :::
