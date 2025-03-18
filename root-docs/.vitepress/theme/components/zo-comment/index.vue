@@ -5,9 +5,9 @@ import Giscus from '@giscus/vue';
 <template>
     <div class="comment-container">
         <ClientOnly>
-            <Giscus repo="hengqianfan/zo-notes" repoId="R_kgDOMySUhw" category="General"
-                categoryId="DIC_kwDOMySUh84CoL58" mapping="pathname" reactionsEnabled="1" emitMetadata="0"
-                theme="preferred_color_scheme" />
+            <Giscus repo="hengqianfan/zo-notes" repoId="R_kgDOMySUhw" category="General" input-position="top"
+                loading="lazy" categoryId="DIC_kwDOMySUh84CoL58" mapping="pathname" reactionsEnabled="1"
+                emitMetadata="0" theme="preferred_color_scheme" />
         </ClientOnly>
     </div>
 </template>

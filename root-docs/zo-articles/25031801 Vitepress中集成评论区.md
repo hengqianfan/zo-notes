@@ -2,7 +2,7 @@
 aside: left
 tags: ['vitepress','vue']
 icon: ''
-open: false
+open: true
 id: 25031801
 ---
  
@@ -51,19 +51,35 @@ id: 25031801
 
 ### 1.4 创建评论区组件
 
+- 获取相关参数
+
+
+- 根据实际情况将参数
+
 ```vue
 <script setup>
-import Giscus from '@giscus/vue';
+import { Giscus } from '@giscus/vue';
+// 如果报错，把括号去掉
+// import Giscus  from '@giscus/vue';
 </script>
 
 <template>
-    <div class="comment-container">
-        <ClientOnly>
-            <Giscus repo="hengqianfan/zo-notes" repoId="R_kgDOMySUhw" category="General"
-                categoryId="DIC_kwDOMySUh84CoL58" mapping="pathname" reactionsEnabled="1" emitMetadata="0"
-                theme="preferred_color_scheme" />
-        </ClientOnly>
-    </div>
+  <div class="comment-container">
+    <ClientOnly>
+        <!-- 根据实际生成的数据填写 -->
+      <Giscus
+        repo="your-github/repo"
+        repoId="your_repo_id"
+        category="General"
+        categoryId="your_category_id"
+        mapping="pathname"
+        input-position="top"
+        reactionsEnabled="1"
+        emitMetadata="0"
+        theme="preferred_color_scheme"
+      />
+    </ClientOnly>
+  </div>
 </template>
 ```
 
