@@ -17,7 +17,8 @@ import gloalComponemnts from './components/index.js'
 // 游客徽章
 import visitor from './components/slot-visitor/index.vue'
 // 引入自定义搜索框（应用于导航栏）
-import slotSearch from './components/slot-search-2.0/index.vue'
+
+import Search from './components/zo-search/index.vue'
 // 引入文章前的信息组件
 import myArticleInfo from './components/slot-articleInfo/index.vue'
 
@@ -40,6 +41,10 @@ import '@vitepress-code-preview/container/dist/style.css'
 // 代码组图标扩展
 import 'virtual:group-icons.css'
 
+// pinia
+import { createPinia } from 'pinia'
+// pinia 持久化
+import { createPersistedState } from 'pinia-plugin-persistedstate'
 
 // 评论区组件
 
@@ -54,33 +59,44 @@ export default {
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       'nav-bar-title-after': () => h(visitor),
-      'nav-bar-content-before': () => h(slotSearch),
+      'nav-bar-content-before': () => h(Search),
       // 'nav-bar-content-after': () => h(visitor),
 
       'not-found': () => h(notFound),
       'doc-before': () => h(myArticleInfo),
       'doc-after': () => h(ZoComment),
       'aside-ads-after': () => h(backtop),
-
-
-
-
     })
   },
   // 启用自定义布局
   // Layout: MyLayout,
   enhanceApp: async ({ app, router, siteData }) => {
 
+    // 全局组件的注册
     for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
       app.component(key, component)
 
     }
-    // 全局组件的注册
     app.use(gloalComponemnts)
+
     // ElementPlus
     app.use(ElementPlus)
+
     // 代码预览插件
     useComponents(app, DemoPreview)
+
+    // pinia
+    const pinia = createPinia()
+    // 配置持久化插件
+    pinia.use(createPersistedState({
+      auto: true, // 自动持久化所有 store
+      storage: {
+        getItem: (key) => process.client ? localStorage.getItem(key) : null,
+        setItem: (key, value) => process.client && localStorage.setItem(key, value),
+        removeItem: (key) => process.client && localStorage.removeItem(key)
+      }
+    }))
+    app.use(pinia)
 
   },
 

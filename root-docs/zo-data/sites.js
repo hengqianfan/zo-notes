@@ -47,6 +47,14 @@ export const sites_data = [
                         icon: 'wps',
                         intro: '在线文档编辑'
                     },
+                    {
+                        value: 'unicloud',
+                        link: 'https://unicloud.dcloud.net.cn/',
+                        icon: 'unicloud',
+                        intro: 'uniapp的云后台'
+                    },
+
+
 
                 ]
             },
@@ -635,11 +643,12 @@ export const sites_data = [
                         icon: 'vue',
                         intro: '知名的前端框架'
                     },
+
                     {
-                        value: 'naive-ui',
-                        link: 'https://www.naiveui.com/zh-CN/light',
-                        icon: 'naiveui',
-                        intro: 'UI组件库'
+                        value: 'pinia',
+                        link: 'https://pinia.vuejs.org/zh/',
+                        icon: 'pinia',
+                        intro: '状态管理工具'
                     },
                     {
                         value: 'element-plus',

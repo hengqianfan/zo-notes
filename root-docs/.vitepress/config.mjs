@@ -20,7 +20,6 @@ import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-i
 
 
 
-// console.log(onlyTest)
 
 
 

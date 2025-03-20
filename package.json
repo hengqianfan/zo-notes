@@ -29,6 +29,8 @@
     "md-editor-v3": "^4.20.4",
     "medium-zoom": "^1.1.0",
     "mermaid": "^11.1.1",
+    "pinia": "^3.0.1",
+    "pinia-plugin-persistedstate": "^4.2.0",
     "uuid": "^10.0.0"
   }
 }

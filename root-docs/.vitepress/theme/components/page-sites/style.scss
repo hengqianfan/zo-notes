@@ -18,11 +18,10 @@
         margin-top: 2px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        // justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
-
         overflow-x: scroll;
-
         border-bottom: 2px dashed rgb(228, 228, 246);
 
 

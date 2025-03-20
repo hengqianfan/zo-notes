@@ -2,8 +2,6 @@
 
     <div class="ps-all">
 
-
-
         <el-card style="min-width: 600px">
             <template #header>
                 <div class="card-header">
@@ -16,29 +14,49 @@
 
                 <br>
 
-
-
-
                 <div class="option">
 
                     (该功能维护中)
-                    <!-- 
-                    <el-radio-group v-model="ArticleShow">
 
-                        <el-radio :value="1" @click="setArticleShow(1)">卡片模式</el-radio>
-                        <el-radio :value="2" @click="setArticleShow(2)">列表模式</el-radio>
-
-                    </el-radio-group> -->
                 </div>
-
 
             </div>
 
             <div class="intro">默认情形下 , 菜单栏的外链会携带↗图标</div>
 
+            <div class="row">
+                <div class="name">评论区:</div>
 
+                <br>
+                <div class="option">
 
+                    <el-radio-group v-model="CommentKind">
 
+                        <el-radio :value="1">Giscus</el-radio>
+
+                    </el-radio-group>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="name">站外搜索框:</div>
+                <br>
+                <div class="option">
+
+                    <el-radio-group v-model="SearchVersion">
+
+                        <el-radio :value="1" @click="theme.changeSearchVersion(1)">彩色风格</el-radio>
+
+                        <el-radio :value="2" @click="theme.changeSearchVersion(2)">黑色风格</el-radio>
+                    </el-radio-group>
+
+                </div>
+
+            </div>
+
+            <div class="intro">彩色风格是废案，建议使用黑色风格</div>
 
         </el-card>
 
@@ -83,9 +101,34 @@
                 </div>
             </template>
 
-            管理员模式
-            <el-switch v-model="isAdministrator" class="ml-2"
-                style="--el-switch-on-color: #13ce66; --el-switch-off-color: #ff4949" />
+            <div class="row">
+                <div class="name">管理员模式:</div>
+
+                <div class="option">
+
+                    <el-switch v-model="isAdministrator" class="ml-2"
+                        style="--el-switch-on-color: #13ce66; --el-switch-off-color: #ff4949" />
+                </div>
+            </div>
+
+
+            <hr class="hr-gray">
+
+
+
+            <div class="row">
+                <div class="name">开启测试页面:</div>
+
+                <div class="option">
+
+                    <el-button round size="small" @click="toTestPage()">开启</el-button>
+
+
+
+                </div>
+            </div>
+
+
 
         </el-card>
 
@@ -98,11 +141,19 @@
 <script setup>
 import { ref, watch, reactive, onMounted } from 'vue'
 import { admin_key } from '../../../../zo-data/key';
+import { useRouter } from 'vitepress'
+import { useThemeStore } from '../../../stores/router'
+
+const theme = useThemeStore()
+
+const SearchVersion = localStorage.getItem('searchVersion') ? ref(Number(localStorage.getItem('searchVersion'))) : ref(theme.searchVersion)
+
 
 const ArticleShow = ref(2)
 
 
 onMounted(() => {
+
     if (localStorage.getItem('ArticleShow')) {
         ArticleShow.value = Number(localStorage.getItem('ArticleShow'))
     }
@@ -112,7 +163,9 @@ const setArticleShow = (num) => {
     localStorage.setItem('ArticleShow', num)
 }
 
+const CommentKind = ref(1)
 
+const SearchKind = ref(1)
 
 // 默认管理员状态
 let isAdministrator = ref(false)
@@ -137,10 +190,11 @@ watch(isAdministrator, (newValue, oldValue) => {
 })
 
 
+const router = useRouter()
 
-
-
-
+const toTestPage = () => {
+    router.go('/zo-notes/zo-pages/test')
+}
 
 
 

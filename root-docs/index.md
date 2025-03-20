@@ -1,5 +1,6 @@
 ---
-layout: home
+# layout: home
+layout: PageHome
 
 # hero:
 #   name: ZONOTES

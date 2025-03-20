@@ -1,12 +1,27 @@
 // PC 布局
 .pa-all {
-    margin-top: 20px;
+    padding: 20px;
     // background-color: red;
     height: 88vh;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    background-color: #ffffff;
+    $lineColor: #f5f0f0;
+    /* 背景底色 */
+    background-image:
+        linear-gradient($lineColor 1px, transparent 1px),
+        /* 水平线 */
+        linear-gradient(to right, $lineColor 1px, transparent 1px);
+    /* 垂直线 */
+    background-size: 100% 10px, 10px 100%;
+    /* 网格间距10px */
+    background-position: 0 0;
+    /* 对齐起点 */
+
+
 
     .pa-sidebar {
 
@@ -20,8 +35,6 @@
         align-items: center;
 
         border-radius: 10px;
-
-
 
 
         background-image: linear-gradient(to right, rgba(60, 10, 30, 0.04) 1px, transparent 0),
@@ -89,6 +102,7 @@
                     width: 13px;
                     height: 13px;
                     background-color: #84cae6;
+                    // background-color: #84cae6;
                     border-radius: 6.5px;
                     line-height: 14px;
                     text-align: center;
@@ -98,14 +112,19 @@
             }
 
             .pa-sidebar-tags-tag:hover {
+                transition: all 0.8s ease;
+
                 .pa-sidebar-tags-tag-text {
                     font-weight: 500;
-
                     color: black;
+                    transition: all 0.8s ease;
+
                 }
 
                 .pa-sidebar-tags-tag-num {
                     background-color: red;
+
+
                 }
             }
         }
@@ -143,6 +162,16 @@
                 border-radius: 10px;
                 color: #445b70;
             }
+
+            .pa-main-nav-item:hover {
+                background-color: #84cae6;
+                text-align: center;
+                color: white;
+                transition: all 0.4s ease;
+            }
+
+
+
         }
 
         .pa-main-content {

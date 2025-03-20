@@ -4,15 +4,17 @@
 
             <div class="sa-edit" @click="drawer = !drawer">✒</div>
 
-            <div class="sa-readTime"> ⏱ 预计 {{ readTime }} min</div>
+            <div class="sa-readTime"> ⏱ 阅读预计 {{ readTime }} min</div>
             |
             <div class="sa-tags" v-for="item in frontmatter.tags" @click="toTagPage(item)">{{ item }}</div>
         </div>
 
 
 
+        <hr class="hr-gray">
 
-        <hr class="hr-twill">
+
+        <!-- <hr class="hr-twill"> -->
 
         <br />
 
@@ -136,7 +138,7 @@ const toTagPage = (tag) => {
 
         .sa-readTime {
             margin: 0 10px;
-            min-width: 100px;
+            min-width: 110px;
             height: 20px;
             line-height: 20px;
             border-radius: 5px;

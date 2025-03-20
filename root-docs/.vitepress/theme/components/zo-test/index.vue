@@ -1,15 +1,21 @@
 <script setup>
-import { data as posts } from '/zo-data/articles.data.js'
-
-
+import { useCounterStore } from '../../../stores/router'
+const counter = useCounterStore()
 </script>
 
 <template>
-    <h1>All Blog Posts</h1>
-    <!-- <ul>
-        <li v-for="post of posts">
-            <a :href="post.url">{{ post.frontmatter.title }}</a>
-            <span>by {{ post.frontmatter.author }}</span>
-        </li>
-    </ul> -->
+    <div class="test-all">
+        <p>Count: {{ counter.count }}</p>
+        <button @click="counter.increment()">+1</button>
+    </div>
+
 </template>
+
+
+<style>
+.test-all {
+    height: 100vh;
+    width: 100%;
+    /* background-color: blue; */
+}
+</style>

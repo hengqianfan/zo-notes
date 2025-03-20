@@ -66,14 +66,29 @@ aside: left
 
 ## 更新历史
 
-
-### 2503:beta-0.0.9   
+### 2503:beta-0.1.0   
 
 ::: info 详情
 
 - 网站内容知识更新...
 
+:::
 
+### 250320:beta-0.0.9   
+
+::: info 详情
+
+- 网站内容知识更新...
+
+- `25031901` : 优化了【文章集】css样式  <Badge type='warning'>优化</Badge>  
+
+- `25031902` : 优化了【网址导航】css样式  <Badge type='warning'>优化</Badge>  
+
+- `25031903` : **集成了 `pinia` 提供状态管理** ⭐ <Badge type='tip'>新增</Badge>  
+
+- `25031904` : 主题 - 可选搜索框样式  <Badge type='tip'>新增</Badge>  
+
+- `25032001` : 优化了网站的默认背景样式  <Badge type='warning'>优化</Badge>  
 
 :::
 
@@ -85,7 +100,7 @@ aside: left
 
 - `25031801` : 优化了自定义代码块的CSS样式  <Badge type='warning'>优化</Badge>  
 
-- `25031802` : 集成 giscus ，新增评论区  <Badge type='tip'>新增</Badge>  
+- `25031802` : **集成 `giscus` ，新增评论区** ⭐  <Badge type='tip'>新增</Badge>  
 
 
 :::

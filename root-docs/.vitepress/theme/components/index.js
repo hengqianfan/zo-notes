@@ -1,8 +1,9 @@
-import { PageArticlesVistion } from '../../../zo-data/key';
-// 启用 2.0 版本
-import MySearch from './slot-search-2.0/index.vue'
+
+
 
 import MyArticleInfo from './slot-articleInfo/index.vue'
+
+import PageHome from './page-home/index.vue'
 
 import PageTopic from './page-of-topic/index.vue'
 
@@ -40,6 +41,9 @@ import ZoEditor from './zo-editor/index.vue'
 
 import ZoComment from './zo-comment/index.vue'
 
+import ZoClock from './zo-clock/index.vue'
+
+
 import CardNote from './card-note/index.vue'
 
 import CardSite from './card-site/index.vue'
@@ -55,31 +59,16 @@ import Mermaid from './zo-mermaid/index.vue'
 import ZoTest from './zo-test/index.vue'
 
 
-// import MouseTrail from './zo-mouseTrail/index.vue'
-
-
-
-// const isPageArticlesVistion = (PageArticlesVistion) => {
-
-//     let res = localStorage.getItem('ArticleShow')
-
-//     if (PageArticlesVistion == res) {
-//         return PageArticles1
-//     } else {
-//         return PageArticles2
-//     }
-// }
-
-// const PageArticles = isPageArticlesVistion(PageArticlesVistion)
 
 
 
 const allGlobalComponents = {
-    PageSites, MySearch, MyArticleInfo, PageTopic, PageNotes,
+    PageSites, MyArticleInfo, PageTopic, PageNotes,
     PageArticles,
     PageSetting,
+    PageHome,
     ZoImg,
-
+    ZoClock,
 
     ZoNav,
     ZoDoc,
