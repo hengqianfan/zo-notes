@@ -1,7 +1,7 @@
 ---
 aside: left
 tags: ['vitepress','vue','Giscus']
-icon: ''
+icon: 'vitepress'
 open: true
 id: 25031801
 ---

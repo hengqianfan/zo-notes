@@ -1,7 +1,7 @@
 ---
 aside: left
 tags: ['修改中','Navidrome','音乐']
-icon: ''
+icon: 'navidrome'
 open: false
 id: 25031903
 --- 
@@ -12,7 +12,7 @@ id: 25031903
  
 # Navidrome自建音乐服务器
 
-官网： 
+官网： https://www.navidrome.org/
 
 ## 1. 安装 docker 
 

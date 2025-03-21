@@ -1,7 +1,7 @@
 ---
 aside: left
 tags: ['vitepress','博客','vue']
-icon: ''
+icon: 'vitepress'
 id: 24110501
 ---
  

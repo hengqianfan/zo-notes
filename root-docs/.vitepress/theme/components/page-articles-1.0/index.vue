@@ -68,7 +68,7 @@
                         <div class="pa-article-card-cover">
                             <img :src="withBase(getImgSrc(item.frontmatter.zoid, item.frontmatter.cover))"
                                 class="pa-article-card-cover-img"
-                                onerror="this.onerror=null; this.src='https://hengqianfan.github.io/zo-notes/cover/momo.png' ">
+                                onerror="this.onerror=null; this.src=`https://hengqianfan.github.io/zo-notes/cover/momo.png` ">
                         </div>
 
 
@@ -120,6 +120,8 @@ import { withBase, useData } from 'vitepress'
 import { data } from '/zo-data/articles.data.js'
 import { Hide, View } from '@element-plus/icons-vue'
 import { admin_key } from '../../../../zo-data/key';
+import { getALLTags } from '../../../myscript/getAllTags';
+import { formatDate } from '../../../myscript/formatDate';
 
 
 onMounted(() => {
@@ -136,9 +138,6 @@ onUpdated(() => {
     // 在重置数据 , 避免非文章中的正常跳转还保留上次标签的内容
     localStorage.setItem('now_tag', JSON.stringify({ token: '全部文章' }))
 })
-
-
-
 
 const pageSize = 10
 
@@ -194,76 +193,8 @@ let all_tags = ref([])
 // 定义当前的 tag
 let now_tag = ref('全部')
 
-// 从数据中提取所有的 tag 放入 tag 数组中
-const getALLTags = (data) => {
-    // 先清空数据
-    all_tags.value = []
 
-
-    // 临时存放数据的数组
-    let temp_arr = []
-    // 遍历原始数据，把所有 tag 添加到 临时数组中
-    for (let i = 0; i < data.length; i++) {
-
-
-
-        // 先判断是否存在 信息中是否存在 tag ⭐
-        if (data[i].frontmatter.tags) {
-            // 获取当前文章的 tag 数组
-            let now_tagarr = data[i].frontmatter.tags
-            // 解构数组后，再添加到临时数组中
-            temp_arr.push(...now_tagarr)
-        }
-
-    }
-
-
-    // 数组去重并统计数量
-    let obj = {}
-    for (let i = 0; i < temp_arr.length; i++) {
-        if (temp_arr[i] in obj) {
-            obj[temp_arr[i]] = obj[temp_arr[i]] + 1;
-        } else {
-            obj[temp_arr[i]] = 1;
-        }
-    }
-
-    // 补充一个总数
-    // 暂时这样写，有更好的写法再说
-    obj.全部文章 = data.length
-
-
-
-    // 根据属性值排序
-
-    const sortObj = (obj) => {
-        // 降序排序value值
-        let sortValue = Object.values(obj).sort((a, b) => {
-            return b - a;
-        })
-        // 创建结果数组
-        let res = {}
-        // keys数组
-        let keys = Object.keys(obj);
-        // 给value值赋值相应keys值
-        for (let i in sortValue) {
-            // console.log(i);
-            keys.forEach((item) => {
-                if (sortValue[i] === obj[item]) {
-                    res[item] = sortValue[i];
-                }
-            })
-        }
-        return res;
-    }
-
-
-    // 最后，把数据赋值给外部对象
-    all_tags.value = sortObj(obj)
-
-}
-
-getALLTags(allData)
+all_tags.value = getALLTags(allData)
 
 const getIcon = (momo) => {
     if (momo) {
@@ -326,9 +257,6 @@ const re_arr = (arr) => {
 
 
 
-
-
-
 const findArticlesNum = (momo) => {
     if (momo == `本月文章`) {
         return all_tags.value[`本月文章`]
@@ -347,12 +275,7 @@ const handleCurrentChange = (momo) => {
     showData.value = sortedData.value.slice(start, end)
 }
 
-const formatDate = (momo) => {
-    let year = momo.slice(0, 2)
-    let month = momo.slice(2, 4)
-    let day = momo.slice(4, 6)
-    return `⏰20${year}年${month}月${day}日`
-}
+
 
 
 

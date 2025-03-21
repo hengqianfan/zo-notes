@@ -6,7 +6,7 @@
 
             <div class="sa-readTime"> ⏱ 阅读预计 {{ readTime }} min</div>
             |
-            <div class="sa-tags" v-for="item in frontmatter.tags" @click="toTagPage(item)">{{ item }}</div>
+            <div class="sa-tags" v-for="item in frontmatter.tags" @click="toPageWithTag(item)">{{ item }}</div>
         </div>
 
 
@@ -30,11 +30,16 @@ import { ref, watch, onMounted } from 'vue';
 import { useData, withBase } from 'vitepress';
 import { data as articlesData } from '/zo-data/articles.data.js'
 import { reckonReadTime } from '../../../myscript/reckonReadTime';
+
+// import { toPageWithTag } from '../../../myscript/toPage'
+
 import { useRouter } from 'vitepress'
+const router = useRouter()
+const toPageWithTag = (tag) => {
 
-
-
-
+    localStorage.setItem('now_tag', JSON.stringify({ token: tag }))
+    router.go(`/zo-notes/zo-pages/all-articles?tag=${tag}`)
+}
 
 
 const { frontmatter, page, site } = useData()
@@ -98,14 +103,8 @@ watch(
     { immediate: true }
 )
 
-const router = useRouter()
 
-const toTagPage = (tag) => {
 
-    localStorage.setItem('now_tag', JSON.stringify({ token: tag }))
-    router.go(`/zo-notes/zo-pages/all-articles?tag=${tag}`)
-
-}
 
 
 

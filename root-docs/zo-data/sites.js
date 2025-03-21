@@ -812,7 +812,7 @@ export const sites_data = [
                     {
                         value: 'playground',
                         link: 'https://playground.com/create',
-                        icon: 'AI',
+                        icon: 'ai',
                         intro: '一个AI绘图网站'
                     }
                 ]
@@ -824,7 +824,7 @@ export const sites_data = [
 
                         value: 'AI研究站',
                         link: 'https://www.aiyjs.com/',
-                        icon: 'AI',
+                        icon: 'ai',
                         intro: '集合AI项目的网站'
                     },
 
@@ -832,7 +832,7 @@ export const sites_data = [
 
                         value: 'AI导航网',
                         link: 'https://idaohang.cn/',
-                        icon: 'AI',
+                        icon: 'ai',
                         intro: '集合AI项目的网站'
                     },
                 ]

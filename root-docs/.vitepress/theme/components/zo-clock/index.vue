@@ -53,14 +53,21 @@ function getToday() {
 <style lang="scss" scoped>
 .zc-all {
     width: 200px;
-    height: 50px;
+    height: 45px;
     background-color: white;
     font-size: 20px;
+    font-family: '优设标题黑';
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    box-shadow: 0.1875rem 0.1875rem .125rem rgb(240, 240, 240),
-        -0.1875rem -0.1875rem .125rem rgb(250, 245, 245);
+    box-shadow: 0.1875rem 0.1875rem .125rem #f0f0f0 inset,
+        -0.1875rem -0.1875rem .125rem #faf8f8 inset;
+}
+
+.zc-all:hover {
+
+    color: rebeccapurple;
+
 }
 </style>

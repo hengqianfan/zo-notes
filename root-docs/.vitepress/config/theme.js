@@ -79,9 +79,9 @@ export const themeConfig = {
         next: '下一篇'
     },
 
-    socialLinks: [
-        { icon: 'github', link: 'https://github.com/hengqianfan/zo-notes' }
-    ],
+    // socialLinks: [
+    //     { icon: 'github', link: 'https://github.com/hengqianfan/zo-notes' }
+    // ],
     backToTop: {
         text: "返回顶部",
     },

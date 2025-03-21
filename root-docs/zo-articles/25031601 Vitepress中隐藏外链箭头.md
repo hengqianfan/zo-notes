@@ -1,7 +1,7 @@
 ---
 aside: left
 tags: ['vitepress','vue']
-icon: ''
+icon: 'vitepress'
 open: true
 id: 25031601
 cover: '/cover/vitepresscover.png' 

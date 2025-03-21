@@ -1,7 +1,7 @@
 ---
 aside: left
 tags: ['修改中','pinia']
-icon: ''
+icon: 'vitepress'
 open: true
 id: 25031901
 ---

@@ -179,7 +179,7 @@ tags: []
 
 :::
 
-<Badge type='danger'>下列都是Github仓库地址，请准备霍格沃兹环境！</Badge>
+<Badge type='danger'>下列可能存在Github仓库地址，请准备霍格沃兹环境！</Badge>
 
 - [`茂茂物语`](https://github.com/maomao1996/mm-notes){target="_blank"}
 
@@ -188,6 +188,8 @@ tags: []
 - [`查尔斯`](https://github.com/Charles7c/charles7c.github.io){target="_blank"}
 
 - [`罗磊博客`](https://github.com/foru17/luoleiorg){target="_blank"}
+
+- [`韩小韩的博客`](https://github.com/uxiaohan/vhAstro-Theme){target="_blank"}
 
 ## 5. 功能实现 ✅
 

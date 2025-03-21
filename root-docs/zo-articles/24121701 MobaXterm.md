@@ -1,7 +1,7 @@
 ---
 aside: left
 tags: ['软件','web','运维']
-icon: ''
+icon: 'mobaxterm'
 open: false
 id: 24121701
 ---
