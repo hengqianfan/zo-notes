@@ -60,7 +60,7 @@
             <div class="ph-main-timeline">
                 <el-timeline style="max-width: 900px">
                     <el-timeline-item :timestamp="formatDate2(item.frontmatter.zoid)" placement="top"
-                        v-for="item in data.slice(0, 100)">
+                        v-for="item in data.slice(0, 6)">
                         <el-card>
                             <div class="ph-main-timeline-card">
                                 <img :src="withBase(getIconUrl(item.frontmatter.icon))" alt=""
