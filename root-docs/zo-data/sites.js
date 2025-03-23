@@ -129,7 +129,14 @@ export const sites_data = [
                         value: '夸克网盘',
                         link: 'https://pan.quark.cn/list#/list/all',
                         icon: 'quark',
-                        intro: '不太了解'
+                        intro: '用得较少，不太了解'
+                    },
+
+                    {
+                        value: '移动网盘',
+                        link: 'https://yun.139.com/',
+                        icon: 'chinamobile',
+                        intro: '还可以，移动卡免流'
                     },
                     {
                         value: 'PikPak',
@@ -1318,6 +1325,12 @@ export const sites_data = [
                         link: 'https://sugarat.top/',
                         icon: 'vitepress',
                         intro: '目前发现的，功能比较花哨的vitepress博客'
+                    },
+                    {
+                        value: '韩小韩博客',
+                        link: 'https://www.vvhan.com/',
+                        icon: 'astro',
+                        intro: '挺好看的astro博客，博主提供了许多知识与API'
                     }
 
 

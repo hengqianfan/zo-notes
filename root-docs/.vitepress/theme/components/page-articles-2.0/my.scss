@@ -25,7 +25,7 @@
 
     .pa-sidebar {
 
-        background-color: rgb(245, 249, 252);
+        background-color: #f5f9fc;
         padding-bottom: 10px;
         min-height: 20vh;
         max-width: 70vh;
@@ -35,6 +35,9 @@
         align-items: center;
 
         border-radius: 10px;
+
+        box-shadow: 2px 2px 3px #dedede inset,
+            -2px -2px 3px #e8f0f1 inset;
 
 
         background-image: linear-gradient(to right, rgba(60, 10, 30, 0.04) 1px, transparent 0),
@@ -66,25 +69,23 @@
             overflow: scroll;
 
 
+
+
+
             .pa-sidebar-tags-tag {
                 background-color: white;
+
                 margin: 5px;
+                padding: 5px 10px;
                 min-width: 50px;
                 height: 30px;
                 line-height: 30px;
                 text-align: center;
-                padding: 0 5px;
+
                 border-radius: 8px;
                 box-shadow: 1px 1px 0.5px rgb(229, 227, 227);
 
-            }
 
-
-            .pa-sidebar-tags-tag {
-                margin: 5px;
-                min-width: 50px;
-                padding: 0 8px;
-                border-radius: 8px;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
@@ -93,7 +94,7 @@
 
                 .pa-sidebar-tags-tag-text {
                     font-weight: 500;
-                    font-size: 15px;
+                    font-size: 14px;
                     color: #828e98;
                 }
 
@@ -181,7 +182,8 @@
 
             .pa-main-article {
                 margin-top: 15px;
-                background-color: #f5f6f7;
+                // background-color: #f5f6f7;
+                background-color: white;
                 min-width: 200px;
                 max-width: 700px;
                 height: 50px;
@@ -189,7 +191,10 @@
                 flex-direction: row;
                 align-items: center;
                 border-radius: 10px;
-                box-shadow: 1px 1px 0.5px rgb(229, 227, 227);
+
+                box-shadow: 2px 2px 3px #dedede,
+                    -2px -2px 3px #f5f0f0;
+
 
                 .pa-main-article-time {
                     margin-left: 10px;
@@ -222,6 +227,10 @@
                     font-family: '剑豪体';
                     // font-family: '优设标题黑';
                     color: rgb(87, 84, 84);
+
+
+                    box-shadow: 2px 2px 3px #dedede inset,
+                        -2px -2px 3px #f5f0f0 inset;
 
                 }
 
