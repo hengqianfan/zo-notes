@@ -4,6 +4,7 @@ tags: ['修改中','Navidrome','音乐']
 icon: 'navidrome'
 open: false
 id: 25031903
+cover: 'vitepresscover'
 --- 
  
 ######  {{ $frontmatter.id? $frontmatter.id : $frontmatter.zoid }}

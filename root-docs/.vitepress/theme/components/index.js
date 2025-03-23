@@ -9,7 +9,6 @@ import PageTopic from './page-of-topic/index.vue'
 
 import PageNotes from './page-notes/index.vue'
 
-
 import PageArticles from './page-articles/index.vue'
 
 
@@ -20,6 +19,8 @@ import PageSites from './page-sites/index.vue'
 import PageTask from './page-task/index.vue'
 
 import PageSetting from './page-setting/index.vue'
+
+import PageLife from './page-life/index.vue'
 
 
 
@@ -67,6 +68,8 @@ const allGlobalComponents = {
     PageArticles,
     PageSetting,
     PageHome,
+    PageLife,
+
     ZoImg,
     ZoClock,
 

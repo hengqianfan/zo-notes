@@ -61,5 +61,14 @@ export const getALLTags = (data) => {
 
     // 最后，把数据赋值给外部对象
     return sortObj(obj)
+}
+
+
+export const getALLTagsSorted = (momo) => {
+    let res = getALLTags(momo)
+
+    const { 全部文章, 修改中, 本月文章, 本周文章, ...new_res } = res
+
+    return new_res
 
 }

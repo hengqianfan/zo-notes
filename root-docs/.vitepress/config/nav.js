@@ -1,11 +1,15 @@
 export const myNav = [
-    { text: '导航', link: '/zo-pages/all-sites' },
+    { text: '首页', link: '/' },
+
+    { text: '网站', link: '/zo-pages/all-sites' },
 
 
-    { text: '文章集', link: '/zo-pages/all-articles' },
+    { text: '文章', link: '/zo-pages/all-articles' },
 
 
-    { text: '笔记集', link: '/zo-pages/notes' },
+    { text: '笔记', link: '/zo-pages/notes' },
+
+    { text: '生活', link: '/zo-pages/life' },
 
 
     {
@@ -49,7 +53,7 @@ export const myNav = [
 
 
     {
-        text: '专题区', items: [
+        text: '专题', items: [
             // { text: '前端生态圈', link: '/zo-pages/topic-web-design' },
             { text: '建站专题', link: '/zo-repo/build-site/00 简述' }
         ]

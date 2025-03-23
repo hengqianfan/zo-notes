@@ -33,15 +33,11 @@
             height: 60px;
             margin-left: 25px;
 
-            // margin-top: 2px;
-            // min-height: 60px;
             display: flex;
             justify-content: center;
             align-items: center;
 
         }
-
-
 
 
 
@@ -57,63 +53,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
-
-
-            // 自定义
-            // margin: 10px;
-            // width: 80px;
-            // border-radius: 8px;
-            // padding: 5px;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-            // color: #5a5555;
-            // font-size: 14px;
-            // border: 1px solid #ebeef0;
-            // border: 1px solid #d2d7da;
-
-
-
-
         }
-
-        // .ps-nav-item:hover {
-        //     color: rgb(132, 157, 233);
-
-        //     background-color: #ebeef0;
-
-        // }
-
-        // .ps-nav-item {
-
-        //     background-color: $my_bg_color_02_b;
-        //     background-color: aliceblue;
-        //     height: 1.875rem;
-        //     min-width: 5rem;
-        //     // 边距加高度必须等于外部容器的高，不然会出现异常
-        //     margin: .625rem;
-        //     border-radius: .25rem;
-        //     color: rgb(88, 83, 83);
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-
-        //     font-family: '剑豪体';
-        //     box-shadow: 0.125rem 0.125rem .1875rem $my_bg_color_02_a inset,
-        //         -0.125rem -0.125rem .1875rem $my_bg_color_02_b inset;
-        // }
-
-        // .ps-nav-item:hover {
-        //     color: white;
-
-        //     background-color: #194848;
-        //     font-weight: 400;
-        //     box-shadow: none;
-
-        //     border: .125rem white dotted;
-
-        // }
 
 
     }
@@ -192,10 +132,7 @@
 
                     border-radius: .5rem;
 
-
                     transition: all 0.6s linear;
-
-
 
 
                     .site-info {
@@ -247,11 +184,8 @@
                         width: 11.25rem;
                         height: 1.875rem;
                         font-size: .75rem;
-
                         line-height: .9375rem;
-
                         border-radius: .125rem;
-
                         transition: all 0.6s linear;
 
 

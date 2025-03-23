@@ -50,6 +50,8 @@
 
 
 
+
+
         </div>
         <div class="ph-main">
             <el-alert title="此处查看本站使用说明" type="info" :closable="false" @click="toPage()" />
@@ -61,7 +63,7 @@
                 <el-timeline style="max-width: 900px">
                     <el-timeline-item :timestamp="formatDate2(item.frontmatter.zoid)" placement="top"
                         v-for="item in data.slice(0, 6)">
-                        <el-card>
+                        <el-card class="ph-main-timeline-card-container">
                             <div class="ph-main-timeline-card">
                                 <img :src="withBase(getIconUrl(item.frontmatter.icon))" alt=""
                                     class="ph-main-timeline-card-icon">
@@ -82,6 +84,27 @@
             </div>
         </div>
 
+        <div class="ph-sidebar2">
+
+            <!-- <div class="ph-life-title">
+                生活碎片
+            </div> -->
+
+            <div class="ph-life-card">
+                <div class="ph-life-card-title"> 我的日常</div>
+
+                <el-carousel autoplay arrow="always">
+                    <el-carousel-item v-for="item in posts.data" :key="item">
+                        <a :href="withBase(item.url)">
+                            <img :src="withBase(getCoverUrl(item.frontmatter.cover))" alt="" class="ph-life-card-img">
+                        </a>
+                    </el-carousel-item>
+                </el-carousel>
+
+            </div>
+
+        </div>
+
 
 
     </div>
@@ -96,8 +119,18 @@ import { data } from '/zo-data/articles.data.js'
 import { getALLTags } from '../../../myscript/getAllTags';
 import { formatDate2 } from '../../../myscript/formatDate';
 import { withBase } from 'vitepress';
-import { getIconUrl } from '../../../myscript/getURL'
+import { getIconUrl, getCoverUrl } from '../../../myscript/getURL'
 import { getArticleOutline } from '../../../myscript/getArticleInfo'
+import { usePostDataStore } from '../../../stores/router'
+import { useArticlesDataStore } from '../../../stores/router'
+
+
+const posts = usePostDataStore()
+
+const articles = useArticlesDataStore()
+
+
+
 const getSocialLinkIcon = (momo) => {
     return `iconfont icon-${momo}`
 }
@@ -117,6 +150,9 @@ const toPage = () => {
 }
 
 
+
+
+
 </script>
 
 <style lang="scss" scoped>
@@ -129,8 +165,9 @@ const toPage = () => {
 }
 
 .ph-all {
-    $lineColor: #f5f0f0;
 
+
+    $lineColor: #f5f0f0;
     background-image:
         linear-gradient($lineColor 1px, transparent 1px),
 
@@ -184,6 +221,8 @@ const toPage = () => {
                 margin-top: 10px;
                 font-family: '剑豪体';
             }
+
+
 
             .ph-sidebar-card-intro {
                 font-size: 12px;
@@ -252,6 +291,7 @@ const toPage = () => {
     .ph-main {
         display: flex;
         flex-direction: column;
+        margin-left: 50px;
 
         .ph-announcement {
 
@@ -262,6 +302,56 @@ const toPage = () => {
             width: 600px;
             height: 400px;
             margin-bottom: 40px;
+        }
+    }
+
+    .ph-sidebar2 {
+        margin-left: 100px;
+        // background-color: #1d7e76;
+        width: 500px;
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .ph-life-title {
+            width: 400px;
+            height: 50px;
+            box-shadow: 5px 5px 18px #dedede,
+                -5px -5px 18px #f8f8f8;
+            line-height: 50px;
+
+            background-color: white;
+        }
+
+        .ph-life-card {
+            margin-top: 20px;
+            width: 450px;
+            height: 253.125px;
+
+            background-color: rgb(253, 253, 253);
+
+            padding: 0 20px;
+
+            box-shadow: 5px 5px 18px #dedede,
+                -5px -5px 18px #f8f8f8;
+
+            border-radius: 10px;
+
+            // background-color: rebeccapurple;
+            .ph-life-card-title {
+                height: 20px;
+                line-height: 20px;
+                font-size: 13px;
+                font-family: '优设标题黑';
+                text-align: center;
+            }
+
+            .ph-life-card-img {
+                width: 410px;
+                height: 213.125px;
+
+            }
         }
     }
 }
@@ -284,6 +374,43 @@ const toPage = () => {
         margin-left: 20px;
         font-family: '剑豪体';
         font-size: 18px;
+    }
+
+
+}
+
+
+.ph-main-timeline-card-container:hover {
+    // background-color: rgb(247, 247, 247);
+
+    // background: transparent;
+
+    .ph-main-timeline-card {
+        .ph-main-timeline-card-title {
+            background: linear-gradient(45deg, #1d7e76, #6eb0ca, #5464b3, #3a2d8a, #432768, #b0339d);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            transition: background 0.5s;
+            font-weight: 800;
+        }
+    }
+}
+
+
+.tags-container {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // padding: 10px;
+
+    .tag {
+        margin: 10px;
+        min-width: 100px;
+        height: 20px;
+        line-height: 20px;
+        background-color: aliceblue;
     }
 }
 </style>

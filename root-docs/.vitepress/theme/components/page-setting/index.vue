@@ -58,7 +58,35 @@
 
             <div class="intro">彩色风格是废案，建议使用黑色风格</div>
 
+
+
+            <div class="row">
+                <div class="name">网站合集显示模式:</div>
+                <br>
+                <div class="option">
+
+                    <el-radio-group v-model="SitesShowVersion">
+
+                        <el-radio :value="1" @click="theme.changeSitesShowVersion(1)">老风格</el-radio>
+
+                        <el-radio :value="2" @click="theme.changeSitesShowVersion(2)">新风格</el-radio>
+                    </el-radio-group>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
         </el-card>
+
+
+
+
 
         <br>
 
@@ -195,6 +223,8 @@ const router = useRouter()
 const toTestPage = () => {
     router.go('/zo-notes/zo-pages/test')
 }
+
+const SitesShowVersion = localStorage.getItem('SitesShowVersion') ? ref(Number(localStorage.getItem('SitesShowVersion'))) : ref(theme.SitesShowVersion)
 
 
 

@@ -4,6 +4,8 @@ tags: ['vitepress','vue','Giscus']
 icon: 'vitepress'
 open: true
 id: 25031801
+cover: 'vitepresscover'
+
 ---
  
 ######  {{ $frontmatter.id? $frontmatter.id : $frontmatter.zoid }}
