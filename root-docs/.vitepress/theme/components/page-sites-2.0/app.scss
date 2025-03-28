@@ -20,12 +20,13 @@
             flex-direction: row;
             align-items: center !important;
             justify-content: flex-start !important;
+            flex-wrap: wrap;
             overflow-y: scroll;
 
 
             .ps-nav-item {
-                width: 20px !important;
-                height: 80px !important;
+                width: 60px !important;
+                height: 20px !important;
                 line-height: 20px;
                 border-radius: 5px;
                 margin: 5px;
@@ -47,7 +48,7 @@
 
         .ps-content {
             width: 90%;
-            max-height: 80vh;
+            height: 80vh;
             background-color: white;
             margin-top: 20px;
             box-shadow: 2px 2px 3px #dedede inset,
@@ -69,6 +70,7 @@
 
 
                 .ps-sites-card-title {
+                    margin-left: 10px;
                     font-family: '剑豪体';
 
                     margin-bottom: 5px;
