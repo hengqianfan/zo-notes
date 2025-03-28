@@ -21,9 +21,13 @@
 
         </div>
 
+        <div class="pn-pagination">
+            <el-pagination :default-page-size="pageSize" layout="total, prev, pager, next, jumper"
+                :total="sortedNotes.length" @current-change="handleCurrentChange" />
+        </div>
 
-        <el-pagination :default-page-size="pageSize" layout="total, prev, pager, next, jumper"
-            :total="sortedNotes.length" @current-change="handleCurrentChange" />
+
+
 
 
 

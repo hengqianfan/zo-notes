@@ -3,14 +3,15 @@
 @media (min-width: 0) and (max-width: 62.5rem) {
 
     .page-notes-all {
+
         .pn-nav {
             margin-top: 10px;
             display: flex;
             flex-direction: row;
-            width: 100% !important;
+            width: 90% !important;
             height: 40px;
             line-height: 40px;
-            font-size: 18px;
+            font-size: 14px;
             font-family: '优设';
 
             justify-content: space-around;
@@ -19,6 +20,13 @@
 
         .pn-content {
             width: 100% !important;
+
+            display: flex;
+        }
+
+        .pn-pagination {
+            position: relative;
+
         }
     }
 

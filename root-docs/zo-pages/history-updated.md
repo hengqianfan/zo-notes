@@ -68,6 +68,16 @@ aside: left
 
 ## 更新历史
 
+### 2503:beta-0.1.3   
+
+::: info 详情
+
+- 网站内容知识更新...
+
+
+
+:::
+
 ### 250328:beta-0.1.2   
 
 ::: info 详情
@@ -76,6 +86,11 @@ aside: left
 
 - `25032801` : 优化了【首页】的移动端适配效果 <Badge type='warning'>优化</Badge>  
 
+- `25032802` : 优化了【文章集】的移动端适配效果 <Badge type='warning'>优化</Badge>  
+
+- `25032803` : 优化了【笔记集】的移动端适配效果 <Badge type='warning'>优化</Badge>  
+
+- `25032804` : 优化了【网站合集】的移动端适配效果 <Badge type='warning'>优化</Badge>  
 
 :::
 

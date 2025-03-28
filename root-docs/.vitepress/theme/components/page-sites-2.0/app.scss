@@ -4,18 +4,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: flex-start;
         width: 100%;
         height: 92vh;
-
-
-
 
         .ps-nav {
 
             width: 90%;
             max-width: 90%;
-            height: 30px;
-            margin-top: 10px !important;
+            height: 100px !important;
+            margin-top: 0px !important;
             border-radius: 5px;
 
             display: flex;
@@ -26,8 +24,8 @@
 
 
             .ps-nav-item {
-                width: 800px !important;
-                height: 20px;
+                width: 20px !important;
+                height: 80px !important;
                 line-height: 20px;
                 border-radius: 5px;
                 margin: 5px;
@@ -48,8 +46,7 @@
         }
 
         .ps-content {
-            width: 70%;
-
+            width: 90%;
             max-height: 80vh;
             background-color: white;
             margin-top: 20px;
@@ -65,7 +62,7 @@
 
             .ps-sites-card {
                 margin-top: 30px;
-                width: 1240px;
+                width: 350px;
 
                 display: flex;
                 flex-direction: column;
@@ -85,20 +82,19 @@
 
                     .ps-site {
 
-                        margin: 10px;
-                        width: 225px;
-                        height: 100px;
+                        margin: 5px;
+                        width: 160px;
+                        height: 80px;
                         border: 2px white dotted;
 
                         border-radius: 5px;
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-start;
-                        padding: 10px 20px;
+                        padding: 5px 10px;
 
 
-                        box-shadow: 5px 5px 12px #dedede,
-                            -5px -5px 12px #f8f8f8;
+
 
                         .ps-site-info {
                             display: flex;
@@ -106,20 +102,19 @@
 
                             .ps-site-icon {
 
-                                width: 40px;
-                                height: 40px;
+                                width: 30px;
+                                height: 30px;
                                 background-color: white;
                                 border-radius: 5px;
                                 padding: 2px;
-                                box-shadow: 2px 2px 3px #dedede,
-                                    -2px -2px 3px #f7f3f3;
+
                             }
 
                             .ps-site-title {
-                                margin-left: 20px;
-                                height: 40px;
-                                line-height: 40px;
-                                font-size: 15px;
+                                margin-left: 15px;
+                                height: 30px;
+                                line-height: 30px;
+                                font-size: 12px;
                                 font-weight: 600;
                                 font-family: 'zqk英文';
 
@@ -129,10 +124,10 @@
 
                         .ps-site-intro {
                             margin-top: 5px;
-                            height: 30px;
+                            height: 20px;
                             color: rgb(148, 143, 143);
-                            font-size: 12px;
-                            line-height: 15px;
+                            font-size: 10px;
+                            line-height: 10px;
                             display: flex;
                             align-items: center;
                         }
@@ -156,8 +151,8 @@
                             transition: all 0.6s linear;
 
                             .ps-site-icon {
-                                width: 40px;
-                                height: 40px;
+                                width: 30px;
+                                height: 30px;
                                 background-color: white;
                                 border-radius: 5px;
                                 padding: 2px;

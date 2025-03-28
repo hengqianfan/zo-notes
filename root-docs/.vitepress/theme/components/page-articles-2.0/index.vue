@@ -82,7 +82,14 @@
 
 
             <div class="pa-pagination">
-                <el-pagination layout="total, prev, pager, next, jumper, sizes " :total="sortedData.length"
+                <el-pagination layout="total, prev, pager, next, jumper, sizes" :total="sortedData.length"
+                    @current-change="handleCurrentChange" @size-change="handleSizeChange"
+                    v-model:current-page="currentPage" v-model:page-size="pageSize"
+                    :page-sizes="[10, 12, 16, 32, 64]" />
+            </div>
+
+            <div class="pa-pagination-for-app">
+                <el-pagination layout="total, prev, next, jumper" :total="sortedData.length"
                     @current-change="handleCurrentChange" @size-change="handleSizeChange"
                     v-model:current-page="currentPage" v-model:page-size="pageSize"
                     :page-sizes="[10, 12, 16, 32, 64]" />
@@ -386,4 +393,5 @@ const formatDate = (momo) => {
 <style lang="scss" scoped>
 @import '../../style/vars.scss';
 @import './my.scss';
+@import url(./app.scss);
 </style>
