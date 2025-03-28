@@ -18,6 +18,7 @@
             flex-direction: column;
             align-items: center;
             overflow: scroll;
+            display: none !important;
 
 
             .pa-sidebar-search {
@@ -29,6 +30,7 @@
 
             .pa-sidebar-tags {
                 margin-top: 20px !important;
+
 
                 .pa-sidebar-tags-tag {
                     background-color: white;
@@ -67,15 +69,16 @@
             margin-left: 0px !important;
             width: 100% !important;
             min-height: 20vh !important;
-            max-height: 69vh !important;
+            max-height: 90vh !important;
             display: flex;
             flex-direction: column;
 
             .pa-main-nav {
-                margin-top: 10px !important;
+                margin-top: 5px !important;
                 height: 40px !important;
                 width: 100% !important;
                 display: flex;
+
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-around !important;
@@ -151,12 +154,12 @@
                         border-radius: 10px;
 
                         text-align: center;
-                        font-size: 16px;
+                        font-size: 14px !important;
                         font-weight: 800;
 
 
                         font-family: '剑豪体';
-                        // font-family: '优设标题黑';
+
                         color: rgb(87, 84, 84);
 
 
