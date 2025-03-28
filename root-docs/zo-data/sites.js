@@ -79,7 +79,14 @@ export const sites_data = [
                         link: 'https://www.xiaoheihe.cn',
                         icon: 'xiaoheihe',
                         intro: "玩家社区"
+                    },
+                    {
+                        value: '什么值得买',
+                        link: 'https://www.smzdm.com/',
+                        icon: 'smzdm',
+                        intro: "老牌比价平台"
                     }
+
                 ]
             }
         ]
@@ -945,19 +952,28 @@ export const sites_data = [
                         icon: 'txsp',
                         intro: '腾讯帝国'
                     },
+
                     {
-                        value: '嗷呜动漫',
-                        link: 'https://www.moedm.net/',
-                        icon: 'video',
-                        intro: '动漫资源网站'
+                        value: 'Netflix',
+                        link: 'https://www.netflix.com/',
+                        icon: 'netflix',
+                        intro: '知名的视频平台'
 
                     },
+
 
                     {
                         value: 'youtube',
                         link: 'https://www.youtube.com/',
                         icon: 'youtube',
                         intro: '世界上最大的视频分享平台'
+                    },
+
+                    {
+                        value: '人人视频',
+                        link: 'https://m.rrmj.plus/pc',
+                        icon: 'renren',
+                        intro: '看外国的电视剧还是挺方便的'
                     },
                     {
                         value: '小白网',
@@ -979,16 +995,25 @@ export const sites_data = [
                         intro: '中国移动云盘资源'
                     },
 
+
                 ]
             },
             {
                 value: '漫画与动漫',
                 children: [
+
                     {
                         value: '动漫啦',
                         link: 'https://www.dongman.la/',
                         icon: 'dongman',
                         intro: '漫画资源'
+                    },
+                    {
+                        value: '嗷呜动漫',
+                        link: 'https://www.moedm.net/',
+                        icon: 'video',
+                        intro: '动漫资源网站'
+
                     },
                     {
                         value: 'AGE',
@@ -1009,12 +1034,28 @@ export const sites_data = [
 
             {
                 value: '小说',
-                children: [{
-                    value: '天籁小说',
-                    link: 'https://tianlai100.com',
-                    icon: 'book',
-                    intro: '本平台提供的新小说资源均是搜集自各个网络平台.'
-                }]
+
+                children: [
+
+                    {
+                        value: '起点小说',
+                        link: 'https://www.qidian.com/',
+                        icon: 'qidian',
+                        intro: '小说界的龙头老大，大佬云集'
+                    },
+                    {
+                        value: '番茄小说',
+                        link: 'https://fanqienovel.com/',
+                        icon: 'fanqienovel',
+                        intro: '免费小说，但是要看广告，能接受'
+                    },
+                    {
+                        value: '天籁小说',
+                        link: 'https://tianlai100.com',
+                        icon: 'book',
+                        intro: '本平台提供的新小说资源均是搜集自各个网络平台.'
+                    },
+                ]
             },
 
             {

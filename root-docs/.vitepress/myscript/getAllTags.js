@@ -69,6 +69,15 @@ export const getALLTagsSorted = (momo) => {
 
     const { 全部文章, 修改中, 本月文章, 本周文章, ...new_res } = res
 
-    return new_res
+    // 对象转数组
+
+    res = Object.keys(new_res)
+
+    return res
+
+
+
 
 }
+
+

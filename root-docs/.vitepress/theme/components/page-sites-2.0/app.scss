@@ -1,0 +1,198 @@
+// 添加移动端媒体查询
+@media screen and (max-width: 768px) {
+    .ps-all {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 92vh;
+
+
+
+
+        .ps-nav {
+
+            width: 90%;
+            max-width: 90%;
+            height: 30px;
+            margin-top: 10px !important;
+            border-radius: 5px;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center !important;
+            justify-content: flex-start !important;
+            overflow-y: scroll;
+
+
+            .ps-nav-item {
+                width: 800px !important;
+                height: 20px;
+                line-height: 20px;
+                border-radius: 5px;
+                margin: 5px;
+                text-align: center;
+
+                font-size: 12px;
+            }
+
+            .ps-nav-item:hover {
+
+                color: rgb(151, 151, 151);
+                transition: all 0.3s linear;
+
+
+            }
+
+
+        }
+
+        .ps-content {
+            width: 70%;
+
+            max-height: 80vh;
+            background-color: white;
+            margin-top: 20px;
+            box-shadow: 2px 2px 3px #dedede inset,
+                -2px -2px 3px #ffffff inset;
+
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: scroll;
+            padding-bottom: 50px;
+
+            .ps-sites-card {
+                margin-top: 30px;
+                width: 1240px;
+
+                display: flex;
+                flex-direction: column;
+
+
+                .ps-sites-card-title {
+                    font-family: '剑豪体';
+
+                    margin-bottom: 5px;
+
+                }
+
+                .ps-sites {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+
+                    .ps-site {
+
+                        margin: 10px;
+                        width: 225px;
+                        height: 100px;
+                        border: 2px white dotted;
+
+                        border-radius: 5px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        padding: 10px 20px;
+
+
+                        box-shadow: 5px 5px 12px #dedede,
+                            -5px -5px 12px #f8f8f8;
+
+                        .ps-site-info {
+                            display: flex;
+                            flex-direction: row;
+
+                            .ps-site-icon {
+
+                                width: 40px;
+                                height: 40px;
+                                background-color: white;
+                                border-radius: 5px;
+                                padding: 2px;
+                                box-shadow: 2px 2px 3px #dedede,
+                                    -2px -2px 3px #f7f3f3;
+                            }
+
+                            .ps-site-title {
+                                margin-left: 20px;
+                                height: 40px;
+                                line-height: 40px;
+                                font-size: 15px;
+                                font-weight: 600;
+                                font-family: 'zqk英文';
+
+                            }
+
+                        }
+
+                        .ps-site-intro {
+                            margin-top: 5px;
+                            height: 30px;
+                            color: rgb(148, 143, 143);
+                            font-size: 12px;
+                            line-height: 15px;
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+
+                    .ps-site:hover {
+
+                        border: 2px rgb(109, 188, 219) dotted;
+                        background-color: white;
+
+                        transition: all 0.6s linear;
+
+                        box-shadow: none;
+
+                        background-image: none;
+
+
+
+                        .ps-site-info {
+
+                            transition: all 0.6s linear;
+
+                            .ps-site-icon {
+                                width: 40px;
+                                height: 40px;
+                                background-color: white;
+                                border-radius: 5px;
+                                padding: 2px;
+                                transition: all 0.6s linear;
+
+                            }
+
+                            .ps-site-title {
+                                color: rgb(136, 166, 226);
+
+                                transition: all 0.6s linear;
+
+
+                            }
+
+                        }
+
+                        .ps-site-intro {
+                            color: rgb(86, 172, 230);
+
+                            transition: all 0.6s linear;
+
+
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+
+
+        .ps-container {
+            background-color: white;
+        }
+    }
+}

@@ -1,11 +1,14 @@
 <template>
     <div class="myvideo">
         <ClientOnly>
-            <iframe :src="z_src" v-resize="{ log: true }" frameborder="no" scrolling="no" seamless=""
+            <iframe :src="z_src + '&autoplay=0'" v-resize="{ log: true }" frameborder="no" scrolling="no" seamless=""
                 allowfullscreen="allowfullscreen" class="myiframe"></iframe>
         </ClientOnly>
     </div>
 </template>
+
+
+
 
 <script setup>
 import { onMounted } from 'vue';

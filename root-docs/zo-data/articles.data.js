@@ -3,6 +3,8 @@ import fs from 'node:fs'
 import { createContentLoader } from 'vitepress'
 
 import { reckonReadTime } from '../.vitepress/myscript/setArticleDatabase'
+import { getArticleOutline } from '../.vitepress/myscript/getArticleInfo'
+
 
 
 const now_time = new Date().getTime()
@@ -43,8 +45,11 @@ export default createContentLoader('zo-articles/*.md', {
             // 阅读时间
             let readTime = reckonReadTime(rawData[i].src)
             rawData[i].frontmatter.readTimeNum = readTime
-            // 文章属性
-            rawData[i].frontmatter.type = '文章'
+                =
+
+
+                // 文章属性
+                rawData[i].frontmatter.type = '文章'
             // 文件名称
             let filename = rawData[i].url
             filename = filename.split('les/')[1]
