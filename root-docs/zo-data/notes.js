@@ -120,7 +120,16 @@ export const notesList = [
         link: '/zo-repo/python/00 简述',
         cover: 'pythoncover',
         class: '编程'
+    },
+    {
+        title: 'nginx',
+        intro: '',
+        icon: 'nginx',
+        link: '/zo-repo/nginx/00 简述',
+        cover: 'nginxcover',
+        class: '编程'
     }
+
 
 
 

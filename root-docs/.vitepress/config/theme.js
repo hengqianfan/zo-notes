@@ -35,6 +35,7 @@ export const themeConfig = {
         ['/zo-repo/cocos-creator', 1],
         ['/zo-repo/game', 1],
         ['/zo-repo/component-library', 1],
+        ['/zo-repo/nginx', 1],
         ['/me-repo/records', 1],
         ['/me-repo/workbench', 1]
 

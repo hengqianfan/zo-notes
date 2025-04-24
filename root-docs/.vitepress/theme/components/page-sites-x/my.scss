@@ -7,37 +7,36 @@
 
 .ps-all {
 
-    $lineColor: #f5f0f0;
-    background-image:
-        linear-gradient($lineColor 1px, transparent 1px),
 
-        linear-gradient(to right, $lineColor 1px, transparent 1px);
-
-    background-size: 100% 10px, 10px 100%;
-    background-position: 0 0;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+
     width: 100%;
-    height: 92vh;
+    height: 75vh;
+    padding: 10px;
+
+
+    box-shadow: 2px 2px 3px #dedede inset,
+        -2px -2px 3px #ffffff inset;
+
+    border-radius: 10px;
+
 
 
     .ps-nav {
         min-width: 70%;
         height: 60px;
-        margin-top: 30px;
+
         background-color: #ffffff;
 
-        box-shadow: 2px 2px 3px #dedede inset,
-            -2px -2px 3px #ffffff inset;
 
         border-radius: 10px;
 
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        // justify-content: center;
         padding: 0 10px;
 
         .ps-nav-item {
@@ -73,11 +72,10 @@
     .ps-content {
         min-width: 70%;
         background-color: #ffffff;
-        max-height: 80vh;
+        height: 80vh;
 
-        margin-top: 20px;
-        box-shadow: 2px 2px 3px #dedede inset,
-            -2px -2px 3px #ffffff inset;
+        margin-top: 10px;
+
 
         border-radius: 10px;
         display: flex;
@@ -87,7 +85,7 @@
         padding-bottom: 50px;
 
         .ps-sites-card {
-            margin-top: 30px;
+            margin-top: 10px;
             width: 1240px;
 
             display: flex;
@@ -95,9 +93,9 @@
 
 
             .ps-sites-card-title {
+                margin: 10px 0 0 20px;
                 font-family: '剑豪体';
 
-                margin-bottom: 5px;
 
             }
 

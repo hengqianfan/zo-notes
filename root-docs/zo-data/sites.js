@@ -982,6 +982,13 @@ export const sites_data = [
                         intro: '视频资源平台'
                     },
                     {
+                        value: '可可影视',
+                        link: 'https://www.keke13.com/',
+                        icon: 'keke',
+                        intro: '在线视频资源平台'
+                    },
+
+                    {
                         value: '猫狸盘搜',
                         link: 'https://www.alipansou.com/',
                         icon: 'maoli',
@@ -1271,11 +1278,18 @@ export const sites_data = [
                 value: '游戏开发',
                 children: [
                     {
+                        value: '虚幻引擎',
+                        link: 'https://www.unrealengine.com',
+                        icon: 'unrealengine',
+                        intro: 'C++语言开发游戏'
+                    },
+                    {
                         value: 'Cocos Creator',
                         link: 'https://www.cocos.com/creator',
                         icon: 'cocoscreator',
                         intro: 'ts语言开发游戏'
                     },
+
                 ]
             }
 
@@ -1372,7 +1386,15 @@ export const sites_data = [
                         link: 'https://www.vvhan.com/',
                         icon: 'astro',
                         intro: '挺好看的astro博客，博主提供了许多知识与API'
+                    },
+
+                    {
+                        value: 'curve博客',
+                        link: 'https://github.com/imsyy/vitepress-theme-curve',
+                        icon: 'vitepress',
+                        intro: '基于vitepress开发的主题'
                     }
+
 
 
                 ]

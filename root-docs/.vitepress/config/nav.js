@@ -76,7 +76,7 @@ export const myNav = [
             {
                 text: '暂未开放', items: [
 
-                    { text: '工作台 🛠', link: '/me-repo/workbench/00 简述' },
+                    // { text: '工作台 🛠', link: '/me-repo/workbench/00 简述' },
 
                     { text: '本站·仓库镜像', link: 'https://hengqianfan.github.io/zo-notes/' },
 

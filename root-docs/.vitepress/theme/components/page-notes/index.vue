@@ -73,7 +73,11 @@ const sortNotes = (momo, nono) => {
     showedNotes.value = sortedNotes.value.slice(0, pageSize)
 }
 
+
+
+
 const getImgSrc = (momo) => {
+
 
     return `/cover/${momo}.png`
 }

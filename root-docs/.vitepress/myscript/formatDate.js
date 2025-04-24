@@ -1,4 +1,6 @@
 export const formatDate = (momo) => {
+
+
     let year = momo.slice(0, 2)
     let month = momo.slice(2, 4)
     let day = momo.slice(4, 6)

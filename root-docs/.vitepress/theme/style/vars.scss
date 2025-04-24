@@ -25,9 +25,6 @@ $my_bg_color_02_c: white;
 
 
 
-
-
-
 $my_bg_color_03: #194848;
 
 $my_bg_color_03_a: #174242;
@@ -49,3 +46,8 @@ $my_bg_color_08: #d7dee4;
 $my_bg_color_08_a: #bfc6cb;
 
 $my_bg_color_08_b: #eff6fd;
+
+
+:root {
+    --MVP-nav-height: 70px;
+}

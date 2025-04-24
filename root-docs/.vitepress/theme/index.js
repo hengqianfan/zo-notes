@@ -75,10 +75,8 @@ export default {
     // 全局组件的注册
     for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
       app.component(key, component)
-
     }
     app.use(gloalComponemnts)
-
     // ElementPlus
     app.use(ElementPlus)
 

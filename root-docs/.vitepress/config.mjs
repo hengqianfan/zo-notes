@@ -19,7 +19,7 @@ import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-i
 // import { onlyTest } from 'fans-tools-for-vitepress';
 
 
-
+import { base } from '../zo-data/key';
 
 
 
@@ -27,8 +27,8 @@ export default defineConfig({
   lang: 'cn',
   title: "ZONOTES",
   description: "A VitePress Site",
-
-  base: '/zo-notes/',
+  // srcExclude: ['**/', '**/TODO.md'],
+  base: base,
   // 标签页的LOGO
   head: [
     ['link', { rel: 'icon', href: './icon/png/logo.png' }]

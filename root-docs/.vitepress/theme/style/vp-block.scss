@@ -46,10 +46,11 @@
 
         border: 2px dashed #cf962b;
         --vp-custom-block-warning-text: var(--vp-c-text-1);
-        // --vp-custom-block-warning-bg: #fcfcbe;
+        // --vp-custom-block-warning-bg: #f7f3dd;
+        --vp-custom-block-warning-bg: #FFFFCC;
         // --vp-custom-block-warning-bg: #e7ec81;
 
-        --vp-custom-block-warning-code-bg: var(--vp-c-warning-soft);
+        // --vp-custom-block-warning-code-bg: var(--vp-c-warning-soft);
         // --vp-custom-block-warning-code-bg: #1e5aa8;
 
 
@@ -73,6 +74,11 @@
         border: 2px dashed red;
         --vp-custom-block-danger-text: var(--vp-c-text-1);
         --vp-custom-block-danger-bg: #fbe2e5;
+        // --custom-color: #f7eff0;
+
+        // background: linear-gradient(45deg, var(--custom-color) 25%, white 0, white 50%, var(--custom-color) 0, var(--custom-color) 75%, white 0, white 100%);
+        // background-size: 30px 30px;
+
         --vp-custom-block-danger-code-bg: var(--vp-c-danger-soft);
 
         transition: 1s ease;
@@ -90,6 +96,8 @@
         // background-clip: text;
         // color: transparent;
         // transition: background 0.5s;
+        background: white;
+
         transition: 1s ease;
     }
 

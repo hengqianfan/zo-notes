@@ -17,6 +17,7 @@
             </div>
 
             <div class="ph-sidebar-card">
+
                 <ZoClock />
             </div>
 
@@ -61,57 +62,42 @@
 
 
         </div>
+
+
         <div class="ph-main">
-            <el-alert title="此处查看本站使用说明" type="info" :closable="false" @click="toPage()" />
 
-            <!-- <el-alert title="本站处于测试阶段," type="error" /> -->
-
-
-            <div class="ph-main-timeline">
-                <el-timeline style="max-width: 900px">
-                    <el-timeline-item :timestamp="formatDate2(item.frontmatter.zoid)" placement="top"
-                        v-for="item in data.slice(0, 6)">
-                        <el-card class="ph-main-timeline-card-container">
-                            <div class="ph-main-timeline-card">
-                                <img :src="withBase(getIconUrl(item.frontmatter.icon))" alt=""
-                                    class="ph-main-timeline-card-icon">
-                                <!-- <div class="ph-main-timeline-card-title" @click="toPage()">{{ item.frontmatter.title }}
-                                </div> -->
-
-                                <a class="ph-main-timeline-card-title" :href="withBase(item.url)">{{
-                                    item.frontmatter.title }}</a>
-                                <!-- <div class="">{{ getArticleOutline(item.src) }}</div> -->
-                            </div>
-                            <!-- <p>Tom committed 2018/4/12 20:46</p> -->
-                        </el-card>
-
-
-                    </el-timeline-item>
-
-                </el-timeline>
-            </div>
-        </div>
-
-        <div class="ph-sidebar2">
-
-            <!-- <div class="ph-life-title">
-                生活碎片
-            </div> -->
-
-            <div class="ph-life-card">
-                <div class="ph-life-card-title"> 我的日常</div>
-
-                <el-carousel autoplay arrow="always">
-                    <el-carousel-item v-for="item in posts.data" :key="item">
-                        <a :href="withBase(item.url)">
-                            <img :src="withBase(getCoverUrl(item.frontmatter.cover))" alt="" class="ph-life-card-img">
-                        </a>
-                    </el-carousel-item>
-                </el-carousel>
+            <div class="ph-main-nav">
+                <div class="ph-main-nav-item" @click="changeNowPage(0)">文章</div>
+                <div class="ph-main-nav-item" @click="changeNowPage(1)">网站</div>
+                <div class="ph-main-nav-item" @click="changeNowPage(2)">笔记</div>
+                <div class="ph-main-nav-item" @click="changeNowPage(3)">生活</div>
 
             </div>
 
+
+            <div class="ph-main-content">
+
+                <div class="" v-if="nowPage == 0">
+                    我是默认
+                </div>
+
+                <div class="" v-if="nowPage == 1">
+                    <PageSite />
+                </div>
+
+                <div class="" v-if="nowPage == 2">
+                    我是笔记
+                </div>
+
+                <div class="" v-if="nowPage == 3">
+                    我是生活
+                </div>
+
+            </div>
+
+
         </div>
+
 
 
 
@@ -132,6 +118,7 @@ import { getIconUrl, getCoverUrl } from '../../../myscript/getURL'
 import { getArticleOutline } from '../../../myscript/getArticleInfo'
 import { usePostDataStore } from '../../../stores/router'
 import { useArticlesDataStore } from '../../../stores/router'
+import PageSite from '../page-sites-x/index.vue'
 
 
 const posts = usePostDataStore()
@@ -139,18 +126,18 @@ const posts = usePostDataStore()
 const articles = useArticlesDataStore()
 
 
+// 0 文章 1 网址 2 笔记 3 生活
+const nowPage = ref(0)
 
-
-
+const changeNowPage = (mo) => {
+    nowPage.value = mo
+}
 
 const getSocialLinkIcon = (momo) => {
     return `iconfont icon-${momo}`
 }
 
 const all_tags = ref(getALLTags(data))
-
-
-
 
 
 

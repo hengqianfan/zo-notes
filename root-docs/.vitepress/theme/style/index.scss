@@ -1,3 +1,15 @@
+// * {
+//     $lineColor: #f5f0f0;
+//     background-image:
+//         linear-gradient($lineColor 1px, transparent 1px),
+
+//         linear-gradient(to right, $lineColor 1px, transparent 1px);
+
+//     background-size: 100% 10px, 10px 100%;
+//     background-position: 0 0;
+
+// }
+
 // 引入自定义变量
 @import './vars.scss';
 

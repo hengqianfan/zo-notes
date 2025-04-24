@@ -171,15 +171,16 @@ tags: []
 ```
 ### 4.5 参考博客
 
-::: warning <Badge type='warning'>说明</Badge>
+::: danger <Badge type='danger'>说明</Badge>
 
 
-本站的某些功能实现与部分UI设计，多少吸纳了下列许多优秀的 vitepress 博客项目博客分享  
+- 本站的某些功能实现与部分UI设计，多少吸纳了许多优秀的 `vitepress` 博客项目! 
 
+- 为了尽可能**保持链接的有效性**，下列网址中可能会存在Github仓库地址，请准备霍格沃兹环境！
 
 :::
 
-<Badge type='danger'>下列可能存在Github仓库地址，请准备霍格沃兹环境！</Badge>
+
 
 - [`茂茂物语`](https://github.com/maomao1996/mm-notes){target="_blank"}
 
@@ -190,6 +191,11 @@ tags: []
 - [`罗磊博客`](https://github.com/foru17/luoleiorg){target="_blank"}
 
 - [`韩小韩的博客`](https://github.com/uxiaohan/vhAstro-Theme){target="_blank"}
+
+- [`无名小栈`](https://github.com/imsyy/vitepress-theme-curve){target="_blank"}
+
+
+
 
 ## 5. 功能实现 ✅
 

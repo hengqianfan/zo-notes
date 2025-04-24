@@ -1,0 +1,130 @@
+@media screen and (max-width: 768px) {
+    .ph-all {
+
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // justify-content: center;
+        padding: 0;
+
+        .ph-sidebar {
+
+            width: 180px;
+            display: flex;
+            flex-direction: column !important;
+            align-items: center;
+            margin-top: 10px;
+            padding: 0px !important;
+
+            .ph-sidebar-card {
+                width: 300px;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                border-radius: 12px;
+                padding: 20px 0;
+                margin-bottom: 25px;
+
+                box-shadow: 5px 5px 18px #dedede,
+                    -5px -5px 18px #ffffff;
+
+                .ph-sidebar-card-img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 20px;
+                    background-color: #f5f0f0;
+                    padding: 2px;
+
+                }
+
+                .ph-sidebar-card-title {
+                    margin-top: 10px;
+                    font-family: '剑豪体';
+                }
+
+
+
+                .ph-sidebar-card-intro {
+                    font-size: 12px;
+                    color: rgb(189, 186, 186);
+                }
+
+                .ph-sidebar-card-social {
+                    padding-top: 5px;
+                    display: flex;
+                    flex-direction: row;
+
+                    .ph-sidebar-card-social-icon {
+                        margin: 0 10px;
+                    }
+                }
+
+
+
+
+                .ph-sidebar-card-articleNumGroup {
+                    display: flex;
+                    flex-direction: row;
+
+                    .ph-sidebar-card-articleNum {
+                        margin: 0 6px;
+                        width: 80px;
+                        height: 60px;
+                        background-color: white;
+                        // box-shadow: 0.1875rem 0.1875rem .125rem #f0f0f0,
+                        //     -0.1875rem -0.1875rem .125rem #faf8f8;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+
+                        .ph-sidebar-card-articleNum-num {
+                            display: flex;
+                            justify-content: center;
+                            font-size: 20px;
+                            font-family: '优设标题黑';
+                            color: #24243b;
+                        }
+
+                        .ph-sidebar-card-articleNum-type {
+                            display: flex;
+                            justify-content: center;
+                            border-bottom: #dedede;
+                            // font-family: '标小智龙珠体';
+
+                            font-size: 14px;
+                            color: #b6b2b2;
+                        }
+
+                    }
+
+                }
+
+
+
+
+            }
+
+        }
+
+        .ph-main {
+            display: none;
+        }
+
+        .ph-sidebar2 {
+            display: none;
+
+
+
+
+
+
+
+
+        }
+    }
+}

@@ -8,7 +8,7 @@
     flex-direction: row;
     justify-content: center;
 
-    background-color: #ffffff;
+
     $lineColor: #f5f0f0;
     /* 背景底色 */
     background-image:
@@ -148,6 +148,7 @@
             flex-direction: row;
             align-items: center;
 
+
             .pa-main-nav-item {
                 margin-right: 25px;
                 background-color: #f5f6f7;
@@ -159,6 +160,9 @@
                 font-family: '优设标题黑';
                 border-radius: 10px;
                 color: #445b70;
+                box-shadow: 1px 1px 0.5px rgb(229, 227, 227) inset;
+
+
             }
 
             .pa-main-nav-item:hover {

@@ -27,7 +27,7 @@
 
     .ph-sidebar {
         width: 400px;
-        // background-color: #f5f0f0;
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -130,7 +130,7 @@
     .ph-main {
         display: flex;
         flex-direction: column;
-        margin-left: 50px;
+        margin-left: 30px;
 
         .ph-announcement {
 
@@ -141,6 +141,49 @@
             width: 600px;
             height: 400px;
             margin-bottom: 40px;
+        }
+
+        .ph-main-nav {
+            margin-top: 20px;
+            background-color: white;
+
+            height: 40px;
+            width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 5px;
+
+
+            box-shadow: 5px 5px 18px #dedede,
+                -5px -5px 18px #ffffff;
+
+            .ph-main-nav-item {
+                margin: 10px;
+                width: 60px;
+                height: 20px;
+                text-align: center;
+                line-height: 20px;
+                padding: 2px;
+                font-size: 14px;
+                background-color: white;
+                border-radius: 5px;
+                box-shadow: 1px 1px 3px #dedede inset,
+                    -1px -1px 3px #ffffff inset;
+                font-family: '剑豪体';
+
+
+
+            }
+        }
+
+        .ph-main-content {
+            min-width: 1000px;
+            margin-top: 20px;
+            // background-color: #1d7e76;
+            min-height: 60vh;
+
+            background-color: white;
         }
     }
 

@@ -110,7 +110,7 @@ import { ref, watch } from 'vue'
 import { withBase, useData } from 'vitepress'
 import { data } from '/zo-data/articles.data.js'
 
-import { admin_key } from '../../../../zo-data/key';
+import { admin_key, base } from '../../../../zo-data/key';
 import { useRoute } from 'vitepress'
 import { onMounted, onUpdated } from 'vue'
 
@@ -132,11 +132,6 @@ onUpdated(() => {
     // 在重置数据 , 避免非文章中的正常跳转还保留上次标签的内容
     localStorage.setItem('now_tag', JSON.stringify({ token: '全部文章' }))
 })
-
-
-
-
-
 
 
 

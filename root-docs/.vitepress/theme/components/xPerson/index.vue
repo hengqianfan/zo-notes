@@ -1,82 +1,93 @@
-.el-alert {
-    margin: 20px 0 0;
+<template>
+    <div class="xPerson-all">
+
+        <img src="/icon/png/logo.png" alt="" class="xPerson-icon">
+        <div class="xPerson-title">{{ myTheme.administrator }}</div>
+        <div class="xPerson-intro">{{ myTheme.motto }}</div>
+        <div class="xPerson-social">
+
+
+            <a class="xPerson-social-icon" v-for="item in myTheme.socialLinks" :href="item.link" target="_blank">
+                <i :class="getSocialLinkIcon(item.name)"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</template>
+
+<script setup>
+import { myTheme } from '../../../../zo-data/theme';
+const getSocialLinkIcon = (momo) => {
+    return `iconfont icon-${momo}`
+}
+</script>
+
+<style lang="scss" scoped>
+.xPerson-all {
+    width: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 12px;
+    padding: 20px 0;
+    margin-bottom: 25px;
+
+    box-shadow: 5px 5px 18px #dedede,
+        -5px -5px 18px #ffffff;
+
+    .xPerson-icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+        background-color: #f5f0f0;
+        padding: 2px;
+    }
+
+    .xPerson-title {
+        margin-top: 10px;
+        font-family: '剑豪体';
+    }
+
+    .xPerson-intro {
+        font-size: 12px;
+        color: rgb(189, 186, 186);
+    }
+
+    .xPerson-social {
+        padding-top: 5px;
+        display: flex;
+        flex-direction: row;
+
+        .xPerson-social-icon {
+            margin: 0 10px;
+        }
+    }
 }
 
-.el-alert:first-child {
-    margin: 0;
-}
+
 
 .ph-all {
 
 
-    $lineColor: #f5f0f0;
-    background-image:
-        linear-gradient($lineColor 1px, transparent 1px),
 
-        linear-gradient(to right, $lineColor 1px, transparent 1px);
-
-    background-size: 100% 10px, 10px 100%;
-    background-position: 0 0;
-
-
-    height: 90vh;
-    display: flex;
-    flex-direction: row;
-
-    padding: 20px 20vh;
 
     .ph-sidebar {
-        width: 400px;
-        // background-color: #f5f0f0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
+
 
         .ph-sidebar-card {
-            width: 300px;
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
 
-            border-radius: 12px;
-            padding: 20px 0;
-            margin-bottom: 25px;
 
-            box-shadow: 5px 5px 18px #dedede,
-                -5px -5px 18px #ffffff;
+            .ph-sidebar-card-img {}
 
-            .ph-sidebar-card-img {
-                width: 100px;
-                height: 100px;
-                border-radius: 20px;
-                background-color: #f5f0f0;
-                padding: 2px;
-
-            }
-
-            .ph-sidebar-card-title {
-                margin-top: 10px;
-                font-family: '剑豪体';
-            }
+            .ph-sidebar-card-title {}
 
 
 
-            .ph-sidebar-card-intro {
-                font-size: 12px;
-                color: rgb(189, 186, 186);
-            }
 
-            .ph-sidebar-card-social {
-                padding-top: 5px;
-                display: flex;
-                flex-direction: row;
-
-                .ph-sidebar-card-social-icon {
-                    margin: 0 10px;
-                }
-            }
 
 
 
@@ -277,3 +288,4 @@
 
     }
 }
+</style>

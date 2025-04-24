@@ -30,6 +30,7 @@ import { ref, watch, onMounted } from 'vue';
 import { useData, withBase } from 'vitepress';
 import { data as articlesData } from '/zo-data/articles.data.js'
 import { reckonReadTime } from '../../../myscript/reckonReadTime';
+import { base } from '../../../../zo-data/key'
 
 // import { toPageWithTag } from '../../../myscript/toPage'
 
@@ -38,7 +39,13 @@ const router = useRouter()
 const toPageWithTag = (tag) => {
 
     localStorage.setItem('now_tag', JSON.stringify({ token: tag }))
-    router.go(`/zo-notes/zo-pages/all-articles?tag=${tag}`)
+    if (base == '/') {
+        router.go(`/zo-pages/all-articles?tag=${tag}`)
+
+    }
+
+    router.go(`${base}zo-pages/all-articles?tag=${tag}`)
+
 }
 
 
